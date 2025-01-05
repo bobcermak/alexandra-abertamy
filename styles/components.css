@@ -1,0 +1,55 @@
+/*Icons*/
+
+/**/
+
+/*Animations*/
+
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  50% {
+    opacity: .5;
+  }
+  70% {
+    transform: translateY(-2px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes show-up {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+/*Buttons*/
+
+.button {
+    display: inline-block;
+    background-color: var(--red, #FF4605);
+    padding: 1em 1.5em;
+    color: var(--white, #F8F7F7);
+    text-decoration: none;
+    border-radius: .65em;
+    font-weight: 900;
+    border: 2px solid transparent;
+    transition: .5s all;
+}
+
+.button:hover {
+  background-color: transparent;
+  border: 2px solid var(--red, #FF4605);
+  color: var(--red, #FF4605);
+}
+
+/*Cards*/
+
+/**/

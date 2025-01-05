@@ -1,0 +1,91 @@
+@layer reset, init, content, components;
+
+@import url(https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap) layer(reset);
+@import url(normalize.css) layer(reset);
+@import url(layout.css) layer(content);
+@import url(components.css) layer(components);
+
+@layer reset {
+    :root {
+        --red: #512100;
+        --yellow: #AF9065;
+        --black: #000000;
+        --white: #ffffff;
+        --green: #A3B18A;
+        --gray: #474A57;
+        --semi-transparent__black: rgba(0, 0, 0, 0.5);
+        --shadow: rgb(168, 168, 168);
+        --gap: 1em;
+        --header--fixed: 0;
+    }
+
+    html {
+        font-family: 'Nunito', sans-serif;
+        font-size: 16px;
+        color: var(--black, #000000);
+        background-color: var(--white, #ffffff);
+        scroll-behavior: smooth;
+        overscroll-behavior: none;
+    }
+
+    body {
+        overscroll-behavior: none;
+    }
+}
+
+@layer init {   
+
+    /*Presets*/
+
+    /*Img - responsive - Iframe*/
+
+    .img-responsive {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        margin: 0;
+        padding: 0;
+    }
+
+    .iframe {
+        display: block;
+        height: 95%;
+        object-fit: cover;
+        margin: 0;
+        padding: 0;
+    }
+
+    /*Margin - fix*/
+
+    .container--fix {
+        margin: 0;
+    }
+
+    .iframe--fix {
+        max-width: 100%;
+    }
+
+    /*Font - sizes*/
+
+    .p--size {
+        font-size: 1em;
+    }
+
+    .mid--size {
+        font-size: 1.5em;
+    }
+
+    .half-max--size {
+        font-size: 2em;
+        font-weight: 900;
+    }
+
+    .max--size {
+        font-size: 2.5em;
+    }
+
+    .ultra-max--size {
+        font-size: 3em;
+    }
+}
