@@ -34,7 +34,7 @@
 
 .button {
     display: inline-block;
-    background-color: var(--red, #FF4605);
+    background-color: var(--red, #512100);
     padding: 1em 1.5em;
     color: var(--white, #F8F7F7);
     text-decoration: none;
@@ -46,8 +46,8 @@
 
 .button:hover {
   background-color: transparent;
-  border: 2px solid var(--red, #FF4605);
-  color: var(--red, #FF4605);
+  border: 2px solid var(--red, #512100);
+  color: var(--red, #512100);
 }
 
 /*Cards*/
