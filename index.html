@@ -11,7 +11,8 @@
     <meta name="description" content="Ubytování Alexandra Abertamy v obci Hřebečná až pro 15 hostů. Užijte si klid a pohodlí v přátelské atmosféře, s moderním vybavením a možností výletů do okolí. Vychutnejte si WiFi, saunu, zahradní nábytek, ohniště a cykloturistiku. Ideální místo pro relaxaci a objevování krás Krušnohoří.">
     <meta name="keywords" content="ubytovani obec Hrebecna, hotel Hrebecna, Alexandra Abertamy, ubytovani Krusnohori, ubytovani pro 15 hostu, rodinne ubytovani v Hrebecne, relaxace v obci Hrebecna, ubytovani v prirode, dovolena Krusnohori, ubytovani s WiFi, ubytovani s grilem, klidne ubytovani Hrebecna, pratelske ubytovani v Krusnohori, vikendovy pobyt Hrebecna, ubytovani v blizkosti Abertam, turistika Krusnohori, prirodni ubytovani Hrebecna, ubytovani s moznosti cykloturistiky, ubytovani s rodinnou atmosferou">
     <script src="https://kit.fontawesome.com/924cd312b8.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/png" href="./images/original/logo.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/icons/icon-logo-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./images/icons/icon-logo192x192.png">
     <link rel="stylesheet" href="./styles/main.css">
     <title>Alexandra Abertamy | Přátelské místo s vybavením až pro 15 hostů v obci Hřebečná</title>
 </head>
@@ -44,24 +45,24 @@
             </div>
             <menu>
                 <li><a href="#header">Domů</a></li>
-                <li><a href="#">O Nás</a></li>
-                <li><a href="#">Pokoje</a></li>
-                <li><a href="#">Ceník</a></li>
-                <li><a class="button" href="#">Rezervace</a></li> <!--button-->
+                <li><a href="#about-us">O Nás</a></li>
+                <li><a href="#rooms">Pokoje</a></li>
+                <li><a href="#price-list">Ceník</a></li>
+                <li><a class="button" href="#reservation" aria-label="Tlačítko rezervace">Rezervace</a></li>
             </menu>
             <!--Desktop-->
             <menu>
                 <li><a href="#header">Domů</a></li>
-                <li><a href="#">O Nás</a></li>
-                <li><a href="#">Pokoje</a></li>
-                <li><a href="#">Ceník</a></li>
-                <li><a class="button" href="#">Rezervace</a></li> <!--button-->
+                <li><a href="#about-us">O Nás</a></li>
+                <li><a href="#rooms">Pokoje</a></li>
+                <li><a href="#price-list">Ceník</a></li>
+                <li><a class="button" href="#reservation" aria-label="Tlačítko rezervace">Rezervace</a></li>
             </menu>
             <!-- languge-dropdown-->
         </nav>
     </header>
     <main class="page__content">
-        <section class="page__welcome"> <!--MĚNĚNÍ OBRÁZKŮ?-->
+        <section class="page__welcome" id="welcome"> <!--MĚNĚNÍ OBRÁZKŮ?-->
             <article>
                 <header>
                     <h1>Ubytování v obci Hřebečná - Alexandra Abertamy</h1>
@@ -70,8 +71,8 @@
                     <p>Obklopte se klidem Krušnohoří a užijte si nezapomenutelný zážitek z ubytování.</p>
                 </div>
                 <footer>
-                    <a class="button" href="#">Pokoje</a>
-                    <a class="button" href="#">O Nás</a>
+                    <a class="button" href="#" aria-label="Tlačítko pokoje">Pokoje</a>
+                    <a class="button" href="#" aria-label="Tlačítko o nás">O Nás</a>
                 </footer>
             </article>
             <div class="location-summary">
@@ -82,7 +83,7 @@
                 </ul>
             </div>
         </section>
-        <section class="page__about">
+        <section class="page__about" id="about-us">
             <header>
                 <h2>O NÁS</h2>
                 <h3>Čtyři plně vybavené pokoje a jeden prostorný rodinný pokoj, celkem až pro 15 hostů.</h3>
@@ -105,10 +106,10 @@
                 </figure>
             </div>
             <footer>
-                <a class="button" href="#">Více</a>
+                <a class="button" href="#" aria-label="Tlačítko více">Více</a>
             </footer>
         </section>
-        <section class="page__rooms">
+        <section class="page__rooms" id="rooms">
             <header>
                 <h2>POKOJE</h2>
                 <h3>Ubytování pro 8 až 15 osob v pěti útulných pokojích.</h3>
@@ -141,10 +142,10 @@
                 </figure>
             </div>
             <footer>
-                <a class="button" href="#">Více</a>
+                <a class="button" href="#" aria-label="Tlačítko více">Více</a>
             </footer>
         </section>
-        <section class="page__travel-tips">
+        <section class="page__travel-tips" id="travel-tips">
             <h2>TIPY NA VÝLETY V OKOLÍ</h2>
             <h3>Zajímavá místa Abertamy</h3>
             <p>Objevte jedinečné kouzlo Krušných hor, které nabízí nepřeberné množství aktivit pro všechny věkové skupiny! Ať už jste milovníci přírody, historie, nebo hledáte dobrodružství pro celou rodinu, zdejší krajina vás nadchne svou rozmanitostí a krásou.</p>
@@ -162,7 +163,7 @@
                         <p>Milovníci cyklistiky si přijdou na své na trasách z Velichova na Potůčky (56km) nebo z Perninku na Potůčky (25km). Pro pěší zde máme tři naučné stezky vedoucí přes lesnatou krajinu, vrch Plešivec, údolím řeky Bystřice či stezku po stopách starých těžebních polí a pozůstatcích po těžbě. V zimně zase můžete vyzkoušet bohatou síť běžeckých tras, které dosahují délky 80 km.</p>
                     </div>
                     <footer>
-                        <a class="button" href="#">Více</a>
+                        <a class="button" href="#" aria-label="Tlačítko více">Více</a>
                     </footer>
                 </article>
                 <article>
@@ -178,7 +179,7 @@
                         <p>Malé muzeum pro fanoušky hornictví a minerálů. Najdete zde historické hornické vybavení - lampy, kahany, uniformy, nářadí ale také minerály z českých i zahraničních hornických nalezišť. Vstupné je dobrovolné.</p>
                     </div>
                     <footer>
-                        <a class="button" href="#">Více</a>
+                        <a class="button" href="#" aria-label="Tlačítko více">Více</a>
                     </footer>
                 </article>
                 <article>
@@ -194,7 +195,7 @@
                         <p>Zažijte neopakovatelné podzemní dobrodružství v jednom z nejstarších cínových dolů v českém Krušnohoří. Tato národní kulturní památka je pro vás otevřena od května do září. Součástí památkově chráněného areálu dolu je také Červená jáma.</p>
                     </div>
                     <footer>
-                        <a class="button" href="#">Více</a>
+                        <a class="button" href="#" aria-label="Tlačítko více">Více</a>
                     </footer>
                 </article>
                 <article>
@@ -210,16 +211,14 @@
                         <p>Expozice muzea Abertamy se skládá z exponátů k historii výroby kožených rukavic a hornickou expozici s minerály z Jáchymovska. Každý měsíc se zde konají ukázky výroby kožených rukavic.</p>
                     </div>
                     <footer>
-                        <a class="button" href="#">Více</a>
+                        <a class="button" href="#" aria-label="Tlačítko více">Více</a>
                     </footer>
                 </article>
             </div>
         </section>
-        <section class="page__price-list">
+        <section class="page__price-list" id="price-list">
             <h2>CENÍK UBYTOVÁNÍ</h2>
-            <div>
-                <p>Minimální obsazenost: <span>8 dospělých osob</span></p>
-            </div>
+            <p>Minimální obsazenost: <span>8 dospělých osob</span></p>
             <h3>Ceny ubytování na osobu</h3>
             <table>
                 <thead>
@@ -303,7 +302,7 @@
             </table>
             <p>Pro jakékoliv dotazy nebo specifické požadavky nás neváhejte kontaktovat!</p>
         </section>
-        <section class="page__reviews">
+        <section class="page__reviews" id="reviews">
             <header>
                 <h2>RECENZE</h2>
             </header>
@@ -358,12 +357,12 @@
                 </article>
             </footer>
         </section>
-        <section class="page__reservation">
+        <section class="page__reservation" id="reservation">
             <header>
                 <h2>Rezervace</h2>
                 <p>Máte zájem o ubytování? <b>Rezervaci si můžete snadno zajistit přímo přes náš online formulář.</b> Stačí vyplnit své údaje a my se vám co nejdříve ozveme. Pokud máte jakékoliv dotazy nebo byste preferovali osobní kontakt, neváhejte nám zavolat na číslo <a href="tel:+420 602 726 090" target="_blank"><b>602 726 090</b></a> nebo nám napište email. <b>Těšíme se na vaši zprávu!</b></p>
                 <ul>
-                    <li><a href="tel:+420 602 726 090" target="_blank">602 726 090</a> | <a href="#" target="_blank"></a></li>
+                    <li><a href="tel:+420 602 726 090" target="_blank">602 726 090</a> | <a href="mailto:chataalexandra@centrum.cz" target="_blank">chataalexandra@centrum.cz</a></li>
                     <li><a href="https://www.google.cz/maps/place/198,+Pohrani%C4%8Dn%C3%ADk%C5%AF+44,+362+35+Abertamy-H%C5%99ebe%C4%8Dn%C3%A1/@50.3773759,12.8247056,17z/data=!3m1!4b1!4m5!3m4!1s0x47a0bc984134b211:0x3d0bee489e40d260!8m2!3d50.3773725!4d12.8272805?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoJLDEwMjExMjMzSAFQAw%3D%3D" target="_blank">Pohraničníků 44/198, Abertamy - Hřebečná</a></li>
                 </ul>
             </header>
@@ -398,8 +397,33 @@
             </footer>
         </section>
     </main>
-    <footer class="page__footer">
-        
+    <footer class="page__footer" id="footer">
+        <section class="page__contact" id="contact-us">
+            <div>
+                <h3>Kontakt<span>:</span></h3>
+                <div>
+                    <h4>Adresa</h4>
+                    <a href="https://www.google.cz/maps/place/198,+Pohrani%C4%8Dn%C3%ADk%C5%AF+44,+362+35+Abertamy-H%C5%99ebe%C4%8Dn%C3%A1/@50.3773759,12.8247056,17z/data=!3m1!4b1!4m5!3m4!1s0x47a0bc984134b211:0x3d0bee489e40d260!8m2!3d50.3773725!4d12.8272805?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoJLDEwMjExMjMzSAFQAw%3D%3D" target="_blank">Pohraničníků 44/198, Abertamy - Hřebečná</a>
+                </div>
+                <div>
+                    <h4>Telefon:</h4>
+                    <a href="tel:+420 602 726 090" target="_blank"><b>602 726 090</b></a>
+                </div>
+            </div>
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2544.419793387304!2d12.827280499999999!3d50.3773725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a0bc984134b211%3A0xb1162a852526be13!2zUG9ocmFuacSNbsOta8WvIDQ0LCAzNjIgMzUgQWJlcnRhbXktSMWZZWJlxI1uw6E!5e0!3m2!1scs!2scz!4v1737044933260!5m2!1scs!2scz" width="600" height="450" style="border:0;" referrerpolicy="no-referrer-when-downgrade" title="Mapa zobrazující umístění Alexandra Abertamy" aria-label="Mapa Alexandra Abertamy"></iframe>
+            </div>
+        </section>
+        <section class="page__flap">
+            <ul>
+                <li><strong>Adresa:</strong> <a href="https://www.google.cz/maps/place/198,+Pohrani%C4%8Dn%C3%ADk%C5%AF+44,+362+35+Abertamy-H%C5%99ebe%C4%8Dn%C3%A1/@50.3773759,12.8247056,17z/data=!3m1!4b1!4m5!3m4!1s0x47a0bc984134b211:0x3d0bee489e40d260!8m2!3d50.3773725!4d12.8272805?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoJLDEwMjExMjMzSAFQAw%3D%3D" target="_blank">Pohraničníků 44/198, Abertamy - Hřebečná</a></li>
+                <li><strong>Tel.:</strong> <a href="tel:+420 602 726 090" target="_blank">602 726 090</a></li>
+                <li><strong>Email:</strong> <a href="mailto:chataalexandra@centrum.cz" target="_blank">chataalexandra@centrum.cz</a></li>
+            </ul>
+            <div>
+                <p>&copy; <span id="year"></span> Alexandra Abertamy | Vytvořil <a href="#" target="_blank">BobCermak</a></p>
+            </div>
+        </section>        
     </footer>
     <script src="script.js"></script>
 </body>
