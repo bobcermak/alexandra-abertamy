@@ -1,6 +1,38 @@
 /*Icons*/
 
-/**/
+.icon::before {
+  font-weight: 900;
+  margin-right: .5em;
+  padding: .25em;
+  font-size: 1.25em;
+}
+
+.location::before {
+  font-family: "Font Awesome 6 Free";
+  content: "\f3c5";
+}
+
+.email::before {
+  font-family: "Font Awesome 6 Free";
+  content: "\f0e0";
+}
+
+.phone::before {
+  font-family: "Font Awesome 6 Free";
+  content: "\f095";
+}
+
+.instagram::before {
+  font-family: "Font Awesome 5 Brands";
+  content: "\f16d";
+  margin: 0;
+}
+
+.facebook::before {
+  font-family: "Font Awesome 5 Brands";
+  content: "\f09a";
+  margin: 0;
+}
 
 /*Animations*/
 
