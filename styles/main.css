@@ -9,6 +9,7 @@
     :root {
         --red: #512100;
         --yellow: #AF9065;
+        --rich--black: #001A23;
         --black: #000000;
         --white: #ffffff;
         --green: #A3B18A;
@@ -56,11 +57,7 @@
         padding: 0;
     }
 
-    /*Margin - fix*/
-
-    .container--fix {
-        margin: 0;
-    }
+    /*Width - fix*/
 
     .iframe--fix {
         max-width: 100%;

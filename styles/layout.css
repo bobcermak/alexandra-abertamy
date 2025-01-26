@@ -1,1 +1,33 @@
+/*Bg*/
+
+.page {
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+}
+
 /*Header*/
+
+.page__header {
+    height: 100vh;
+    height: 100dvh;
+}
+
+.contact-container {
+    background-color: var(--rich--black, #001A23);
+}
+
+.contact-container * {
+    margin: 0;
+}
+
+.contact-container__contacts {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
+.contact-container__contacts li {
+    list-style: none;
+}
