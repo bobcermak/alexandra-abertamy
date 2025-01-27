@@ -16,8 +16,7 @@
         --gray: #474A57;
         --semi-transparent__black: rgba(0, 0, 0, 0.5);
         --shadow: rgb(168, 168, 168);
-        --gap: 1em;
-        --header--fixed: 0;
+        --main-width: 1536px;
     }
 
     html {

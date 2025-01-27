@@ -12,8 +12,8 @@
 /*Contact*/
 
 .page__header {
-    height: 100vh;
-    height: 100dvh;
+    height: 20vh;
+    height: 20dvh;
 }
 
 .contact-container {
@@ -31,7 +31,7 @@
     flex-direction: column;
     align-items: center;
     font-size: .85em;
-    max-width: 1536px;
+    max-width: var(--main-width);
     margin: 0 auto;
 }
 
@@ -74,4 +74,52 @@
 
 .contact-container li a:hover {
     color: var(--yellow, #AF9065);
+}
+
+/*Navbar*/
+
+.navbar {
+    
+}
+
+.navbar__logo {
+    display: inline-block;
+}
+
+.navbar__logo__img {
+    width: 180px;
+}
+
+/*Hamburger - menu*/
+
+.navbar__hamburger-menu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 20%;
+    background-color: var(--white, #ffffff); /*bg bude tmavší*/
+}
+
+/*Desktop - menu*/
+
+.navbar__desktop-menu {
+    display: none;
+}
+
+/*Main - index.html*/
+
+.page__content {
+    flex-grow: 1;
+}
+
+/*Section - page__welcome*/
+
+.page__welcome {
+    height: 75dvh;
+    margin-top: 100em; /*!!!*/
 }
