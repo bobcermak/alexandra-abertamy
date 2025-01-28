@@ -64,6 +64,8 @@
 
 /*Buttons*/
 
+/*Normal*/
+
 .button {
     display: inline-block;
     background-color: var(--red, #512100);
@@ -73,7 +75,7 @@
     border-radius: .65em;
     font-weight: 900;
     border: 2px solid transparent;
-    transition: .5s all;
+    transition: .25s ease-in-out;
 }
 
 .button:hover {

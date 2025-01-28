@@ -1,14 +1,14 @@
-@layer reset, init, content, components;
+@layer reset, init, content, components, hamburger;
 
 @import url(https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap) layer(reset);
 @import url(normalize.css) layer(reset);
 @import url(layout.css) layer(content);
 @import url(components.css) layer(components);
+@import url(hamburger.css) layer(hamburger);
 
 @layer reset {
     :root {
         --red: #512100;
-        --yellow: #AF9065;
         --rich--black: #001A23;
         --black: #000000;
         --white: #ffffff;

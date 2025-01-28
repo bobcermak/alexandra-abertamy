@@ -21,12 +21,12 @@
     <header class="page__header" id="header">
         <div class="contact-container">
             <div class="contact-container__wrapper">
-                <ul class="contacts">
-                    <li><a class="icon location contacts__phone" href="https://www.google.cz/maps/place/198,+Pohrani%C4%8Dn%C3%ADk%C5%AF+44,+362+35+Abertamy-H%C5%99ebe%C4%8Dn%C3%A1/@50.3773759,12.8247056,17z/data=!3m1!4b1!4m5!3m4!1s0x47a0bc984134b211:0x3d0bee489e40d260!8m2!3d50.3773725!4d12.8272805?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoJLDEwMjExMjMzSAFQAw%3D%3D" target="_blank">Pohraničníků 44/198, Abertamy - Hřebečná</a></li>
-                    <li><a class="icon email contacts__phone" href="mailto:chataalexandra@centrum.cz" target="_blank">chataalexandra@centrum.cz</a></li>
-                    <li><a class="icon phone contacts__phone" href="tel:+420602726090" target="_blank">602 726 090</a></li>
+                <ul class="contacts-list">
+                    <li><a class="icon location" href="https://www.google.cz/maps/place/198,+Pohrani%C4%8Dn%C3%ADk%C5%AF+44,+362+35+Abertamy-H%C5%99ebe%C4%8Dn%C3%A1/@50.3773759,12.8247056,17z/data=!3m1!4b1!4m5!3m4!1s0x47a0bc984134b211:0x3d0bee489e40d260!8m2!3d50.3773725!4d12.8272805?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoJLDEwMjExMjMzSAFQAw%3D%3D" target="_blank">Pohraničníků 44/198, Abertamy - Hřebečná</a></li>
+                    <li><a class="icon email" href="mailto:chataalexandra@centrum.cz" target="_blank">chataalexandra@centrum.cz</a></li>
+                    <li><a class="icon phone" href="tel:+420602726090" target="_blank">602 726 090</a></li>
                 </ul>
-                <ul class="socials">
+                <ul class="socials-list">
                     <li><a class="icon instagram" href="https://www.facebook.com/share/15izFVYbRi/?mibextid=wwXIfr" target="_blank" aria-label="Instagram"></a></li>
                     <li><a class="icon facebook" href="#" target="_blank" aria-label="Facebook"></a></li>
                 </ul>
@@ -41,18 +41,27 @@
                 </picture>
             </a>
             <!--Mobile-->
-            <div class="navbar__hamburger hamburger" class="#" onclick="toggleMenu()">
+            <div class="navbar__hamburger hamburger" onclick="toggleMenu()">
                 <span class="line"></span>
                 <span class="line"></span>
                 <span class="line"></span>
             </div>
             <menu class="navbar__hamburger-menu">
+                <li class="navbar__hamburger-menu__logo">
+                    <a href="#header">
+                        <picture>
+                            <source srcset="./images/back/logo.avif" type="image/avif">
+                            <source srcset="./images/back/logo.webp" type="image/webp">
+                            <img class="img-responsive navbar__logo__img" src="./images/original/logo.png" loading="lazy" width="1280" height="701" alt="Alexandra Abertamy - logo">
+                        </picture>
+                    </a>
+                </li>
                 <li><a href="#header">Domů</a></li>
                 <li><a href="#about-us">O Nás</a></li>
                 <li><a href="#rooms">Pokoje</a></li>
                 <li><a href="#price-list">Ceník</a></li>
                 <li><a class="button" href="#reservation" aria-label="Tlačítko rezervace">Rezervace</a></li>
-            </menu>
+            </menu>            
             <!--Desktop-->
             <menu class="navbar__desktop-menu">
                 <li><a href="#header">Domů</a></li>
