@@ -17,7 +17,7 @@
 }
 
 .contact-container * {
-    padding: .25em; /*!!!*/
+    padding: .25em;
 }
 
 .contact-container__wrapper {
@@ -185,11 +185,25 @@
 .page__content {
     flex-grow: 1;
     margin: 0;
-    /**/
 }
 
 /*Section - page__welcome*/
 
 .page__welcome {
-    height: 75dvh;
+    height: 90vh;
+    height: 90dvh;
+    background-attachment: fixed;
+    background-position: left center;
+    background-size: cover;
+    background-image: url(../images/original/main-house.jpeg);
+    background-image: -webkit-image-set(
+        url(../images/back/main-house.avif) type("image/avif"),
+        url(../images/back/main-house.webp) type("image/webp"),
+        url(../images/original/main-house.jpeg) type("image/jpeg")
+    );
+    background-image: image-set(
+        url(../images/back/main-house.avif) type("image/avif"),
+        url(../images/back/main-house.webp) type("image/webp"),
+        url(../images/original/main-house.jpeg) type("image/jpeg")
+    );
 }
