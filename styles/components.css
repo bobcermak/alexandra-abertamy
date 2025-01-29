@@ -67,20 +67,46 @@
 /*Normal*/
 
 .button {
-    display: inline-block;
-    background-color: var(--red, #512100);
-    padding: 1em 1.5em;
-    color: var(--white, #F8F7F7);
-    text-decoration: none;
-    border-radius: .65em;
-    font-weight: 900;
-    border: 2px solid transparent;
-    transition: .25s ease-in-out;
+  display: inline-block;
+  background-color: var(--red, #512100);
+  padding: 1em 1.5em;
+  color: var(--white, #F8F7F7);
+  text-decoration: none;
+  border-radius: .65em;
+  font-weight: 900;
+  border: 2px solid transparent;
+  transition: .25s ease-in-out;
 }
 
 .button:hover {
   background-color: transparent;
   border: 2px solid var(--red, #512100);
+  color: var(--red, #512100);
+}
+
+/*White - border / transparent*/
+
+.button--transparent {
+  background-color: transparent;
+  color: var(--white, #F8F7F7);
+  border: 2px solid var(--white, #F8F7F7);
+}
+
+.button--transparent:hover {
+  background-color: var(--white, #F8F7F7);
+  color: var(--red, #512100);
+}
+
+/*Square*/
+
+.button--square {
+  border-radius: 0;
+}
+
+/*Hover - red / white*/
+
+.button--red-white:hover {
+  background-color: var(--white, #F8F7F7);
   color: var(--red, #512100);
 }
 

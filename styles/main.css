@@ -1,6 +1,6 @@
 @layer reset, init, content, components, hamburger;
-
 @import url(https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap) layer(reset);
+@import url(https://fonts.googleapis.com/css2?family=Cardo&display=swap) layer(reset);
 @import url(normalize.css) layer(reset);
 @import url(layout.css) layer(content);
 @import url(components.css) layer(components);
@@ -31,7 +31,7 @@
     body {
         overscroll-behavior: none;
     }
-    h1, h2, h3, h4, h5, h6 {
+    h1, h2, h3, h4, h5, h6, p, ul {
         margin: 0;
     }
 }

@@ -169,7 +169,7 @@
         left: 0;
         bottom: -2px;
         width: 100%;
-        height: 1.5px;
+        height: 2px;
         background-color: var(--red, #512100);
         transform: scaleX(0);
         transition: transform 0.25s ease-in-out;
@@ -190,8 +190,9 @@
 /*Section - page__welcome*/
 
 .page__welcome {
-    height: 90vh;
-    height: 90dvh;
+    position: relative;
+    height: 70vh;
+    height: 70dvh;
     background-attachment: fixed;
     background-position: left center;
     background-size: cover;
@@ -206,4 +207,36 @@
         url(../images/back/main-house.webp) type("image/webp"),
         url(../images/original/main-house.jpeg) type("image/jpeg")
     );
+}
+
+.welcome-card { /*responsive -> static*/
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 10em;
+    margin-left: 5em;
+    padding: 2em;
+    background-color: var(--semi-transparent__black, rgba(0, 0, 0, 0.5));
+    color: var(--white, #ffffff);
+    width: fit-content;
+}
+
+.welcome-card__header {
+    margin-bottom: .5em;
+}
+
+.welcome-card__content {
+    width: fit-content;
+    margin-bottom: 2em;
+}
+
+.welcome-card__content p {
+    font-family: 'Cardo', serif; 
+    font-weight: 800;
+    max-width: 30ch;
+    line-height: 1.25;
+}
+
+.welcome-card__footer :first-child {
+    margin-right: .5em;
 }
