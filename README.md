@@ -1,5 +1,5 @@
 # Alexandra Abertamy | Přátelské místo s vybavením až pro 15 hostů v Hřebčíně
-[Náhled webu](#)
+[Náhled webu](https://bobcermak.github.io/alexandra-abertamy/)
 
 ## Licence
 Tento projekt je chráněn omezenou licencí. Kód smí být použit pouze pro referenční účely a nesmí být kopírován, modifikován nebo distribuován bez výslovného písemného souhlasu autora, pokud není uvedeno jinak v dohodě s klientem.
