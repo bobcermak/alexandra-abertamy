@@ -22,6 +22,16 @@
   content: "\f095";
 }
 
+.home::before {
+  font-family: "Font Awesome 6 Free";
+  content: "\f015";
+}
+
+.coffee::before {
+  font-family: "Font Awesome 6 Free";
+  content: "\f0f4";
+}
+
 .instagram::before {
   font-family: "Font Awesome 5 Brands";
   content: "\f16d";
@@ -72,7 +82,7 @@
   padding: 1em 1.5em;
   color: var(--white, #F8F7F7);
   text-decoration: none;
-  border-radius: .65em;
+  border-radius: .25em;
   font-weight: 900;
   border: 2px solid transparent;
   transition: .25s ease-in-out;
@@ -112,4 +122,21 @@
 
 /*Cards*/
 
-/**/
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  background-color: var(--green, #A3B18A);
+  height: 15em;
+  width: 13em;
+  border-radius: .25em;
+  padding: 1.5em 1em;
+  transition:.25s ease-in-out;
+  text-decoration: none;
+  color: var(--white, #ffffff);
+}
+
+.card:hover {
+  background-color: var(--dark-green, #7F8B62); /*continue*/
+}

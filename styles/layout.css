@@ -225,20 +225,18 @@
 /*Welcome - card*/
 
 .welcome-card {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    margin-left: 10%;
-    margin-bottom: 40%;
+    margin-left: 8%;
+    margin-bottom: 36%;
     padding: 2em;
+    border-radius: .25em;
     background-color: var(--semi-transparent__black, rgba(0, 0, 0, 0.5));
     color: var(--white, #ffffff);
-    max-width: 50em;
+    max-width: 36em;
     z-index: 1;
 }
 
 .welcome-card__header {
-    margin-bottom: .5em;
+    margin-bottom: 1em;
 }
 
 .welcome-card__header h1 {
@@ -249,6 +247,7 @@
 .welcome-card__header span {
     text-decoration: underline;
     text-underline-position: under;
+    line-height: 1.55;
 }
 
 .welcome-card__content {
@@ -268,8 +267,9 @@
 }
 
 .welcome-card__footer :first-child {
-    margin-right: .5em;
-    margin-bottom: .5em;
+    --margin: .5em;
+    margin-right: var(--margin);
+    margin-bottom: var(--margin);
 }
 
 @media screen and (min-width: 340px) {
@@ -284,7 +284,7 @@
 
 @media screen and (min-width: 640px) {
     .welcome-card {
-        margin-bottom: 10%;
+        margin-bottom: 15%;
     }
     
     .welcome-card__content p  {
@@ -292,16 +292,28 @@
     }
 }
 
+@media screen and (min-width: 1280px) {
+    .welcome-card {
+        margin-bottom: 10%;
+    }
+}
+
 /*Location - summary*/
 
 .location-summary {
+    position: relative;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 1.5em;
+    gap: 2em;
     padding: 0;
+    margin-top: -5em;
 }
 
 .location-summary li {
-    flex-basis: 30%; /*continue*/
+    color: var(--white, #ffffff);
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 700;
+    list-style: none;
 }
