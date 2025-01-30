@@ -189,8 +189,11 @@
 
 /*Section - page__welcome*/
 
-.page__welcome {
+.container-welcome {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
     height: 70vh;
     height: 70dvh;
     background-attachment: fixed;
@@ -209,25 +212,52 @@
     );
 }
 
-.welcome-card { /*responsive -> static*/
+.container-welcome::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+}
+
+/*Welcome - card*/
+
+.welcome-card {
     position: absolute;
     left: 0;
     bottom: 0;
-    margin-bottom: 10em;
-    margin-left: 5em;
+    margin-left: 10%;
+    margin-bottom: 40%;
     padding: 2em;
     background-color: var(--semi-transparent__black, rgba(0, 0, 0, 0.5));
     color: var(--white, #ffffff);
-    width: fit-content;
+    max-width: 50em;
+    z-index: 1;
 }
 
 .welcome-card__header {
     margin-bottom: .5em;
 }
 
+.welcome-card__header h1 {
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.welcome-card__header span {
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
 .welcome-card__content {
     width: fit-content;
     margin-bottom: 2em;
+}
+
+.welcome-card__content p  {
+    font-size: 1.5em;
 }
 
 .welcome-card__content p {
@@ -239,4 +269,39 @@
 
 .welcome-card__footer :first-child {
     margin-right: .5em;
+    margin-bottom: .5em;
+}
+
+@media screen and (min-width: 340px) {
+    .welcome-card {
+        margin-bottom: 25%;
+    }
+    
+    .welcome-card__content p  {
+        font-size: 2em;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .welcome-card {
+        margin-bottom: 10%;
+    }
+    
+    .welcome-card__content p  {
+        font-size: 2.5em;
+    }
+}
+
+/*Location - summary*/
+
+.location-summary {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    padding: 0;
+}
+
+.location-summary li {
+    flex-basis: 30%; /*continue*/
 }
