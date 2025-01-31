@@ -104,6 +104,7 @@
     right: 20%;
     list-style: none;
     background-color: var(--white, #ffffff); /*bg bude tmavší*/
+    z-index: 1;
 }
 
 .navbar__hamburger-menu__logo {
@@ -259,7 +260,8 @@
 }
 
 .welcome-card__dash {
-    display: none;
+    position: absolute;
+    left: -1000%;
 }
 
 .welcome-card__content {
@@ -301,7 +303,11 @@
         margin-bottom: .5em;
     }
 
-    .welcome-card__title-span, .welcome-card__dash {
+    .welcome-card__dash {
+        position: static;
+    }
+
+    .welcome-card__title-span {
         display: inline;
     }
 

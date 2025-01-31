@@ -122,13 +122,13 @@
 
 /*Change - properties-buttons*/
 
-.change-properties-button {
+.button--change-properties {
   background-color: var(--white, #ffffff);
   color: var(--red, #512100);
   border: 2px solid var(--red, #512100);
 }
 
-.change-properties-button:hover {
+.button--change-properties:hover {
   background-color: var(--red, #512100);
   color: var(--white, #ffffff);
 }
