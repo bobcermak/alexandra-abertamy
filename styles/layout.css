@@ -204,14 +204,14 @@
     background-size: cover;
     background-image: url(../images/original/main-house.jpeg);
     background-image: -webkit-image-set(
-        url(../images/back/main-house.avif) type("image/avif"),
-        url(../images/back/main-house.webp) type("image/webp"),
-        url(../images/original/main-house.jpeg) type("image/jpeg")
+        url(../images/back/main-house.avif) type(image/avif),
+        url(../images/back/main-house.webp) type(image/webp),
+        url(../images/original/main-house.jpeg) type(image/jpeg)
     );
     background-image: image-set(
-        url(../images/back/main-house.avif) type("image/avif"),
-        url(../images/back/main-house.webp) type("image/webp"),
-        url(../images/original/main-house.jpeg) type("image/jpeg")
+        url(../images/back/main-house.avif) type(image/avif),
+        url(../images/back/main-house.webp) type(image/webp),
+        url(../images/original/main-house.jpeg) type(image/jpeg)
     );
 }
 
