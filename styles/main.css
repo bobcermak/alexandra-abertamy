@@ -9,6 +9,7 @@
 @layer reset {
     :root {
         --red: #512100;
+        --dark-red: #3B1900;
         --rich--black: #001A23;
         --black: #000000;
         --white: #ffffff;

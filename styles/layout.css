@@ -12,12 +12,13 @@
 /*Contact*/
 
 .contact-container {
+    --padding: .25em;
     background-color: var(--rich--black, #001A23);
     padding: .5em 0;
 }
 
 .contact-container * {
-    padding: .25em;
+    padding: var(--padding);
 }
 
 .contact-container__wrapper {
@@ -44,7 +45,7 @@
 .contacts-list a, .socials-list a {
     color: var(--white, #ffffff);
     text-decoration: none;
-    padding: .25em;
+    padding: var(--padding);
     transition: .25s ease-in-out;
 }
 
@@ -125,7 +126,7 @@
 .navbar__hamburger-menu a {
     color: var(--black, #000000);
     text-decoration: none;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 /*Desktop - menu*/
@@ -155,7 +156,7 @@
         position: relative;
         color: var(--black, #000000);
         text-decoration: none;
-        font-weight: 800;
+        font-weight: 700;
         transition: .25s ease-in-out;;
     }
 
@@ -189,15 +190,16 @@
 
 /*Section - page__welcome*/
 
-.container-welcome {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    height: 70vh;
-    height: 70dvh;
+.welcome-container {
+    position: relative; /*for - welcome-card*/
+}
+
+.welcome-header {
+    position: relative; /*for - gradient*/
+    height: 30vh;
+    height: 30dvh;
     background-attachment: fixed;
-    background-position: left center;
+    background-position: center center;
     background-size: cover;
     background-image: url(../images/original/main-house.jpeg);
     background-image: -webkit-image-set(
@@ -212,7 +214,9 @@
     );
 }
 
-.container-welcome::before {
+/*Welcome - header*/
+
+.welcome-header::before {
     content: '';
     position: absolute;
     top: 0;
@@ -222,46 +226,53 @@
     background: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
 }
 
+@media screen and (min-width: 768px) {
+    .welcome-header {
+        height: 70vh;
+        height: 70dvh;
+    }
+}
+
 /*Welcome - card*/
 
 .welcome-card {
-    margin-left: 8%;
-    margin-bottom: 36%;
-    padding: 2em;
-    border-radius: .25em;
-    background-color: var(--semi-transparent__black, rgba(0, 0, 0, 0.5));
-    color: var(--white, #ffffff);
-    max-width: 36em;
-    z-index: 1;
+    background-color: transparent;
+    text-align: center;
+    margin-top: 1em;
 }
 
 .welcome-card__header {
-    margin-bottom: 1em;
+    margin-bottom: .25em;
 }
 
 .welcome-card__header h1 {
-    font-size: 1em;
+    --font-size: 1em;
+    font-size: var(--font-size);
     font-weight: 700;
 }
 
-.welcome-card__header span {
+.welcome-card__title-span {
+    display: block;
     text-decoration: underline;
     text-underline-position: under;
     line-height: 1.55;
 }
 
+.welcome-card__dash {
+    display: none;
+}
+
 .welcome-card__content {
     width: fit-content;
-    margin-bottom: 2em;
+    margin: 0 auto;
+    margin-bottom: 1em;
 }
 
 .welcome-card__content p  {
-    font-size: 1.5em;
-}
-
-.welcome-card__content p {
+    --font-size: 1.5em;
+    font-size: var(--font-size);
     font-family: 'Cardo', serif; 
-    font-weight: 800;
+    font-weight: 700;
     max-width: 30ch;
     line-height: 1.25;
 }
@@ -272,48 +283,84 @@
     margin-bottom: var(--margin);
 }
 
-@media screen and (min-width: 340px) {
+@media screen and (min-width: 768px) {
     .welcome-card {
-        margin-bottom: 25%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        margin-bottom: 12%;
+        margin-left: 10%;
+        background-color: var(--semi-transparent__black, rgba(0, 0, 0, 0.5));
+        padding: 1.5em;
+        border-radius: .25em;
+        color: var(--white, #ffffff);
+        text-align: left;
     }
-    
+
+    .welcome-card__header {
+        margin-bottom: .5em;
+    }
+
+    .welcome-card__title-span, .welcome-card__dash {
+        display: inline;
+    }
+
+    .welcome-card__content {
+        width: fit-content;
+        margin-bottom: 2em;
+    }
+
     .welcome-card__content p  {
-        font-size: 2em;
+        --font-size: 2.5em;
+        max-width: 35ch;
     }
 }
 
-@media screen and (min-width: 640px) {
-    .welcome-card {
-        margin-bottom: 15%;
-    }
-    
-    .welcome-card__content p  {
-        font-size: 2.5em;
-    }
-}
+/*Welcome - footer*/
 
-@media screen and (min-width: 1280px) {
-    .welcome-card {
-        margin-bottom: 10%;
-    }
-}
-
-/*Location - summary*/
-
-.location-summary {
+.welcome-footer {
+    --margin: .5em;
     position: relative;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 2em;
-    padding: 0;
-    margin-top: -5em;
+    margin-top: var(--margin);
+    max-width: var(--main-width);
+    margin: var(--margin) var(--margin);
 }
 
-.location-summary li {
-    color: var(--white, #ffffff);
-    text-decoration: none;
-    font-size: 1.5em;
-    font-weight: 700;
-    list-style: none;
+.welcome-footer__location-summary {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0;
+    gap: 1em;
+    margin: 0 auto;
 }
+
+.welcome-footer__location-summary li {
+    list-style: none;
+    flex-basis: 90%;
+    flex-grow: 1;
+}
+
+@media screen and (min-width: 768px) {
+    .welcome-footer {
+        margin: -5em var(--margin);
+    }
+
+    .welcome-footer__location-summary li {
+        flex-basis: 40%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .welcome-footer__location-summary li {
+        flex-basis: 25%;
+    }
+}
+
+@media screen and (min-width: 1536px) {
+    .welcome-footer {
+        margin: -5em auto;
+    }
+}
+
+/*Section - page__about*/

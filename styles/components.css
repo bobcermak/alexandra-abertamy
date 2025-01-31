@@ -1,7 +1,7 @@
 /*Icons*/
 
 .icon::before {
-  font-weight: 900;
+  font-weight: 700;
   margin-right: .5em;
   padding: .25em;
   font-size: 1.25em;
@@ -83,7 +83,7 @@
   color: var(--white, #F8F7F7);
   text-decoration: none;
   border-radius: .25em;
-  font-weight: 900;
+  font-weight: 700;
   border: 2px solid transparent;
   transition: .25s ease-in-out;
 }
@@ -96,15 +96,54 @@
 
 /*White - border / transparent*/
 
-.button--transparent {
+.button--transparent-white {
   background-color: transparent;
   color: var(--white, #F8F7F7);
   border: 2px solid var(--white, #F8F7F7);
 }
 
-.button--transparent:hover {
+.button--transparent-white:hover {
   background-color: var(--white, #F8F7F7);
   color: var(--red, #512100);
+}
+
+/*Transparent - red*/
+
+.button--transparent-red {
+  background-color: var(--white, #ffffff);
+  color: var(--red, #512100);
+  border: 2px solid var(--red, #512100);
+}
+
+.button--transparent-red:hover {
+  background-color: var(--red, #512100);
+  color: var(--white, #F8F7F7);
+}
+
+/*Change - properties-buttons*/
+
+.change-properties-button {
+  background-color: var(--white, #ffffff);
+  color: var(--red, #512100);
+  border: 2px solid var(--red, #512100);
+}
+
+.change-properties-button:hover {
+  background-color: var(--red, #512100);
+  color: var(--white, #ffffff);
+}
+
+@media screen and (min-width: 768px) {
+  .button--change-properties {
+    background-color: transparent;
+    color: var(--white, #F8F7F7);
+    border: 2px solid var(--white, #F8F7F7);
+  }
+  
+  .button--change-properties:hover {
+    background-color: var(--white, #F8F7F7);
+    color: var(--red, #512100);
+  }
 }
 
 /*Square*/
@@ -115,28 +154,61 @@
 
 /*Hover - red / white*/
 
-.button--red-white:hover {
+.button--red-white-hover:hover {
   background-color: var(--white, #F8F7F7);
   color: var(--red, #512100);
 }
 
+/*Hover - dark-red*/
+
+.button--dark-red-hover:hover {
+  background-color: var(--dark-red, #3B1900);
+  border: 2px solid var(--dark-red, #3B1900);
+  color: var(--white, #ffffff);
+}
+
 /*Cards*/
 
+/*Welcome - card*/
+
 .card {
+  --font-size: 1.75em;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: start;
   background-color: var(--green, #A3B18A);
-  height: 15em;
-  width: 13em;
+  height: 300px;
   border-radius: .25em;
   padding: 1.5em 1em;
-  transition:.25s ease-in-out;
+  transition: .25s ease-in-out;
   text-decoration: none;
   color: var(--white, #ffffff);
+  font-size: var(--font-size);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.card::before {
+  font-size: 1.5em;
+  transition: .25s ease-in-out;
+  padding: 0;
+}
+
+.card a {
+  text-decoration: none;
+  color: var(--white, #ffffff);
+  transition: .25s ease-in-out;
 }
 
 .card:hover {
-  background-color: var(--dark-green, #7F8B62); /*continue*/
+  background-color: var(--dark-green, #7F8B62);
+}
+
+.card:hover::before {
+  transform: translate(30%, 20%);
+}
+
+.card:hover a {
+  transform: translate(8%, -50%);
 }
