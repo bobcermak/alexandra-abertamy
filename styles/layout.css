@@ -9,6 +9,10 @@
 
 /*Header*/
 
+.page__header {
+    /*effect jako mercuria jina barva header u scroll / pruhledne a pak zase normalni kdž je v normalu*/
+}
+
 /*Contact*/
 
 .contact-container {
@@ -94,7 +98,8 @@
 /*Hamburger - menu*/
 
 .navbar__hamburger-menu {
-    position: absolute;
+    position: fixed;
+    display: none;
     margin: 0;
     top: 0;
     bottom: 0;
@@ -102,7 +107,7 @@
     right: 20%;
     list-style: none;
     background-color: var(--white, #ffffff); /*bg bude tmavší*/
-    z-index: 1;
+    z-index: 2;
 }
 
 .navbar__hamburger-menu__logo {
@@ -116,6 +121,11 @@
 
 .navbar__hamburger-menu li {
     padding: 1em 0;
+}
+
+.navbar__hamburger-menu li a {
+    padding: 1em 0;
+    padding-right: 1em;
 }
 
 .navbar__hamburger-menu li:first-child {
