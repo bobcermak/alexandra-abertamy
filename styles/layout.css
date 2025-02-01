@@ -95,8 +95,6 @@
 
 .navbar__hamburger-menu {
     position: absolute;
-    display: none;
-    flex-direction: column;
     margin: 0;
     top: 0;
     bottom: 0;
@@ -120,8 +118,9 @@
     padding: 1em 0;
 }
 
-.navbar__hamburger-menu li:first-child, .navbar__hamburger-menu li:nth-child(2) {
+.navbar__hamburger-menu li:first-child {
     padding-top: 0;
+    padding-bottom: 0;
 }
 
 .navbar__hamburger-menu a {
