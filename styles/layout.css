@@ -200,16 +200,11 @@
 
 /*Section - page__welcome*/
 
-.welcome-container {
-    position: relative; /*for - welcome-card*/
-}
-
 .welcome-header {
     position: relative; /*for - gradient*/
     height: 30vh;
     height: 30dvh;
-    /* background-attachment: fixed; */
-    background-position: center center;
+    background-position: center;
     background-size: cover;
     background-image: url(../images/original/main-house.jpeg);
     background-image: -webkit-image-set(
@@ -222,7 +217,6 @@
         url(../images/back/main-house.webp) type("image/webp"),
         url(../images/original/main-house.jpeg) type("image/jpeg")
     );
-
 }
 
 /*Welcome - header*/
@@ -238,9 +232,14 @@
 }
 
 @media screen and (min-width: 768px) {
+    .welcome-container {
+        position: relative; /*for - welcome-card*/
+    }
+    
     .welcome-header {
         height: 70vh;
         height: 70dvh;
+        background-attachment: fixed;
     }
 }
 
