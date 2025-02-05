@@ -14,7 +14,7 @@
     background-color: var(--rich--black, #001A23);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 761px) {
     .hamburger {
         display: none;
     }

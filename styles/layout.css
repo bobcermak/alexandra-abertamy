@@ -58,7 +58,7 @@
     margin-top: .5em;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 961px) {
     .contact-container__wrapper {
         flex-direction: row;
         justify-content: space-between;
@@ -145,7 +145,7 @@
     display: none;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 761px) {
     .navbar__desktop-menu {
         display: flex;
         align-items: center;
@@ -231,7 +231,7 @@
     background: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 761px) {
     .welcome-container {
         position: relative; /*for - welcome-card*/
     }
@@ -294,7 +294,7 @@
     margin-bottom: var(--margin);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 761px) {
     .welcome-card {
         position: absolute;
         left: 0;
@@ -356,7 +356,7 @@
     flex-grow: 1;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 761px) {
     .welcome-footer {
         margin: -5em var(--margin);
     }
@@ -366,13 +366,13 @@
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 961px) {
     .welcome-footer__location-summary li {
         flex-basis: 25%;
     }
 }
 
-@media screen and (min-width: 1536.999px) {
+@media screen and (min-width: 1537px) {
     .welcome-footer {
         margin: -5em auto;
     }

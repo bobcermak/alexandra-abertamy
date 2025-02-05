@@ -133,7 +133,7 @@
   color: var(--white, #ffffff);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 761px) {
   .button--change-properties {
     background-color: transparent;
     color: var(--white, #F8F7F7);
