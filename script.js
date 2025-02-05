@@ -114,3 +114,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ];
     createObserver(".page__reviews", reviewsAnimationData);
 });
+
+//Footer
+
+document.getElementById("year").textContent = new Date().getFullYear();
