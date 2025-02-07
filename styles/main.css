@@ -9,7 +9,8 @@
 @layer reset {
     :root {
         --red: #512100;
-        --dark-red: #3B1900;
+        --light-red: #6e2b00;
+        --dark-red: #351904;
         --rich--black: #001A23;
         --black: #000000;
         --white: #ffffff;
@@ -33,16 +34,13 @@
     body {
         overscroll-behavior: none;
     }
-    h1, h2, h3, h4, h5, h6, p, ul {
-        margin: 0;
-    }
 }
 
 @layer init {   
 
-    /*Presets*/
+    /*presets*/
 
-    /*Img - responsive - Iframe*/
+    /*img - responsive - Iframe*/
 
     .img-responsive {
         display: block;
@@ -61,13 +59,13 @@
         padding: 0;
     }
 
-    /*Width - fix*/
+    /*width - fix*/
 
     .iframe--fix {
         max-width: 100%;
     }
 
-    /*Font - sizes*/
+    /*font - sizes*/
 
     .p--size {
         font-size: 1em;

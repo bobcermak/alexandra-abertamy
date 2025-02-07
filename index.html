@@ -21,7 +21,7 @@
     <header class="page__header" id="header">
         <div class="contact-container">
             <div class="contact-container__wrapper">
-                <ul class="contacts-list">
+                <ul class="contact-container__contacts-list">
                     <li><a class="icon location" href="https://www.google.cz/maps/place/198,+Pohrani%C4%8Dn%C3%ADk%C5%AF+44,+362+35+Abertamy-H%C5%99ebe%C4%8Dn%C3%A1/@50.3773759,12.8247056,17z/data=!3m1!4b1!4m5!3m4!1s0x47a0bc984134b211:0x3d0bee489e40d260!8m2!3d50.3773725!4d12.8272805?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoJLDEwMjExMjMzSAFQAw%3D%3D" target="_blank">Pohraničníků 44/198, Abertamy - Hřebečná</a></li>
                     <li><a class="icon email" href="mailto:chataalexandra@centrum.cz" target="_blank">chataalexandra@centrum.cz</a></li>
                     <li><a class="icon phone" href="tel:+420602726090" target="_blank">602 726 090</a></li>
@@ -60,7 +60,7 @@
                 <li><a href="#">O Nás</a></li>
                 <li><a href="#">Pokoje</a></li>
                 <li><a href="#price-list">Ceník</a></li>
-                <li><a class="button" href="#reservation" aria-label="Tlačítko rezervace">Rezervace</a></li>
+                <li><a class="button button--red-shadow" href="#reservation" aria-label="Tlačítko rezervace">Rezervace</a></li>
             </menu>            
             <!--Desktop-->
             <menu class="navbar__desktop-menu">
@@ -68,26 +68,28 @@
                 <li><a class="underline-effect" href="#">O Nás</a></li>
                 <li><a class="underline-effect" href="#">Pokoje</a></li>
                 <li><a class="underline-effect" href="#price-list">Ceník</a></li>
-                <li><a class="button" href="#reservation" aria-label="Tlačítko rezervace">Rezervace</a></li>
+                <li><a class="button button--red-shadow" href="#reservation" aria-label="Tlačítko rezervace">Rezervace</a></li>
             </menu>
             <!-- languge-dropdown-->
         </nav>
     </header>
     <main class="page__content">
         <section class="page__welcome" id="welcome"> <!--MĚNĚNÍ OBRÁZKŮ?-->
-            <div class="welcome-container">
-                <header class="welcome-header"></header>
-                <div class="welcome-card">
-                    <header class="welcome-card__header">
-                        <h1>UBYTOVÁNÍ V OBCI HŘEBEČNÁ <span class="welcome-card__dash">-</span> <span class="welcome-card__title-span">ALEXANDRA ABERTAMY</span></h1>
-                    </header>
-                    <div class="welcome-card__content">
-                        <p>Obklopte se klidem Krušnohoří a užijte si nezapomenutelný pobyt.</p>
+            <div class="welcome-content">
+                <header class="welcome-content__header"></header>
+                <div class="welcome-content__container">
+                    <div class="welcome-content__card">
+                        <header class="welcome-content__card__header">
+                            <h1>UBYTOVÁNÍ V OBCI HŘEBEČNÁ <span class="welcome-content__card__dash">-</span> <span class="welcome-content__card__title-span">ALEXANDRA ABERTAMY</span></h1>
+                        </header>
+                        <div class="welcome-content__card__content">
+                            <p>Obklopte se klidem Krušnohoří a užijte si nezapomenutelný pobyt.</p>
+                        </div>
+                        <footer class="welcome-content__card__footer">
+                            <a class="button button--red-shadow button--dark-red-hover button--square" href="#" aria-label="Tlačítko pokoje">Pokoje</a>
+                            <a class="button button--change-properties button--square" href="#" aria-label="Tlačítko o nás">O Nás</a>
+                        </footer>
                     </div>
-                    <footer class="welcome-card__footer">
-                        <a class="button button--dark-red-hover button--square" href="#" aria-label="Tlačítko pokoje">Pokoje</a>
-                        <a class="button button--change-properties button--square" href="#" aria-label="Tlačítko o nás">O Nás</a>
-                    </footer>
                 </div>
             </div>
             <footer class="welcome-footer">

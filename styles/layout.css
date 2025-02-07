@@ -1,4 +1,4 @@
-/*Bg*/
+/*bg*/
 
 .page {
     min-height: 100vh;
@@ -7,18 +7,25 @@
     flex-direction: column;
 }
 
-/*Header*/
+/*page__header*/
 
 .page__header {
     /*effect jako mercuria jina barva header u scroll / pruhledne a pak zase normalni kdž je v normalu*/
 }
 
-/*Contact*/
+/*contact-container*/
 
 .contact-container {
+    display: none;
     --padding: .25em;
     background-color: var(--rich--black, #001A23);
     padding: .5em 0;
+}
+
+@media screen and (min-width: 761px) {
+    .contact-container {
+        display: block;
+    }
 }
 
 .contact-container * {
@@ -34,19 +41,19 @@
     margin: 0 auto;
 }
 
-.contacts-list, .socials-list {
+.contact-container__contacts-list, .socials-list {
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
-.contacts-list li {
+.contact-container__contacts-list li {
     display: inline-block;
     list-style: none;
     margin-right: 1em;
 }
 
-.contacts-list a, .socials-list a {
+.contact-container__contacts-list a, .socials-list a {
     color: var(--white, #ffffff);
     text-decoration: none;
     padding: var(--padding);
@@ -69,13 +76,13 @@
     }
 }
 
-/*Hover*/
+/*hover*/
 
 .contact-container a:hover {
     color: var(--green, #A3B18A);
 }
 
-/*Navbar*/
+/*navbar*/
 
 .navbar {
     display: flex;
@@ -95,7 +102,7 @@
     width: 180px;
 }
 
-/*Hamburger - menu*/
+/*hamburger - menu*/
 
 .navbar__hamburger-menu {
     position: fixed;
@@ -139,7 +146,7 @@
     font-weight: 700;
 }
 
-/*Desktop - menu*/
+/*desktop - menu*/
 
 .navbar__desktop-menu {
     display: none;
@@ -191,23 +198,23 @@
     }
 }
 
-/*Main - index.html*/
+/*main - index.html*/
 
 .page__content {
     flex-grow: 1;
     margin: 0;
 }
 
-/*Section - page__welcome*/
+/*section - page__welcome*/
 
-.welcome-header {
+.welcome-content__header {
     position: relative; /*for - gradient*/
     height: 30vh;
     height: 30dvh;
     background-position: center;
     background-size: cover;
-    background-image: url(../images/original/main-house.jpeg);
-    background-image: -webkit-image-set(
+    background-image: url(https://www.ceskehory.cz/profil/users/foto/45889.jpg); /*warm - background image*/
+    /* background-image: -webkit-image-set(
         url(../images/back/main-house.avif) type("image/avif"),
         url(../images/back/main-house.webp) type("image/webp"),
         url(../images/original/main-house.jpeg) type("image/jpeg")
@@ -216,91 +223,105 @@
         url(../images/back/main-house.avif) type("image/avif"),
         url(../images/back/main-house.webp) type("image/webp"),
         url(../images/original/main-house.jpeg) type("image/jpeg")
-    );
+    ); */
 }
 
-/*Welcome - header*/
+/*welcome-content__header*/
 
-.welcome-header::before {
+.welcome-content__header::before {
     content: '';
     position: absolute;
     top: 0;
+    bottom: 0;
     left: 0;
     right: 0;
-    bottom: 0;
     background: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
 }
 
 @media screen and (min-width: 761px) {
-    .welcome-container {
-        position: relative; /*for - welcome-card*/
+    .welcome-content {
+        position: relative; /*for - welcome-content__container*/
     }
     
-    .welcome-header {
+    .welcome-content__header {
         height: 70vh;
         height: 70dvh;
         background-attachment: fixed;
     }
 }
 
-/*Welcome - card*/
+/*welcome-content__card*/
 
-.welcome-card {
+@media screen and (min-width: 761px) {
+    .welcome-content__container {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        max-width: var(--main-width);
+        margin: 0 auto;
+        padding: .5em;
+    }
+}
+
+.welcome-content__card {
     background-color: transparent;
     text-align: center;
     margin-top: 1em;
 }
 
-.welcome-card__header {
+.welcome-content__card__header {
     margin-bottom: .25em;
 }
 
-.welcome-card__header h1 {
+.welcome-content__card__header h1 {
     --font-size: 1em;
     font-size: var(--font-size);
     font-weight: 700;
+    margin: 0;
 }
 
-.welcome-card__title-span {
+.welcome-content__card__title-span {
     display: block;
     text-decoration: underline;
     text-underline-position: under;
     line-height: 1.55;
 }
 
-.welcome-card__dash {
-    position: absolute;
-    left: -1000%;
+.welcome-content__card__dash {
+    display: none;
 }
 
-.welcome-card__content {
+.welcome-content__card__content {
     width: fit-content;
     margin: 0 auto;
     margin-bottom: 1em;
 }
 
-.welcome-card__content p  {
+.welcome-content__card__content p  {
     --font-size: 1.5em;
     font-size: var(--font-size);
     font-family: 'Cardo', serif; 
     font-weight: 700;
     max-width: 30ch;
     line-height: 1.25;
+    margin: 0;
 }
 
-.welcome-card__footer :first-child {
+.welcome-content__card__footer :first-child {
     --margin: .5em;
     margin-right: var(--margin);
     margin-bottom: var(--margin);
 }
 
 @media screen and (min-width: 761px) {
-    .welcome-card {
-        position: absolute;
-        left: 0;
-        bottom: 0;
+    .welcome-content__card {
         margin-bottom: 12%;
-        margin-left: 10%;
+        width: fit-content;
         background-color: var(--semi-transparent__black, rgba(0, 0, 0, 0.5));
         padding: 1.5em;
         border-radius: .25em;
@@ -308,30 +329,26 @@
         text-align: left;
     }
 
-    .welcome-card__header {
+    .welcome-content__card__header {
         margin-bottom: .5em;
     }
 
-    .welcome-card__dash {
-        position: static;
-    }
-
-    .welcome-card__title-span {
+    .welcome-content__card__title-span, .welcome-content__card__dash {
         display: inline;
     }
 
-    .welcome-card__content {
+    .welcome-content__card__content {
         width: fit-content;
         margin-bottom: 2em;
     }
 
-    .welcome-card__content p  {
+    .welcome-content__card__content p  {
         --font-size: 2.5em;
         max-width: 35ch;
     }
 }
 
-/*Welcome - footer*/
+/*welcome-footer*/
 
 .welcome-footer {
     --margin: .5em;
@@ -378,4 +395,4 @@
     }
 }
 
-/*Section - page__about*/
+/*section - page__about*/

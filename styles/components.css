@@ -94,6 +94,16 @@
   color: var(--red, #512100);
 }
 
+/*Red - shadow*/
+
+.button--red-shadow {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button--red-shadow:hover {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
 /*White - border / transparent*/
 
 .button--transparent-white {
@@ -177,7 +187,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: start;
-  background-color: var(--green, #A3B18A);
+  background-color: var(--light-red, #6e2b00);
   height: 300px;
   border-radius: .25em;
   padding: 1.5em 1em;
@@ -202,7 +212,7 @@
 }
 
 .card:hover {
-  background-color: var(--dark-green, #7F8B62);
+  background-color: var(--dark-red, #351904);
 }
 
 .card:hover::before {
