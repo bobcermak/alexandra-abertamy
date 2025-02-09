@@ -11,7 +11,7 @@
     width: 100%;
     height: .35em;
     border-radius: 2em;
-    background-color: var(--rich--black, #001A23);
+    background-color: var(--accent, #001A23);
 }
 
 @media screen and (min-width: 761px) {

@@ -26,7 +26,7 @@
                     <li><a class="icon email" href="mailto:chataalexandra@centrum.cz" target="_blank">chataalexandra@centrum.cz</a></li>
                     <li><a class="icon phone" href="tel:+420602726090" target="_blank">602 726 090</a></li>
                 </ul>
-                <ul class="socials-list">
+                <ul class="contact-container__socials-list">
                     <li><a class="icon instagram" href="https://www.facebook.com/share/15izFVYbRi/?mibextid=wwXIfr" target="_blank" aria-label="Instagram"></a></li>
                     <li><a class="icon facebook" href="#" target="_blank" aria-label="Facebook"></a></li>
                 </ul>
@@ -40,29 +40,40 @@
                     <img class="img-responsive navbar__logo__img" src="./images/original/logo.png" loading="lazy" width="1280" height="701" alt="Alexandra Abertamy - logo">
                 </picture>
             </a>
-            <!--Mobile-->
+            <!--mobile-->
             <div class="navbar__hamburger hamburger" onclick="toggleMenu()">
                 <span class="line"></span>
                 <span class="line"></span>
                 <span class="line"></span>
             </div>
             <menu class="navbar__hamburger-menu">
-                <li class="navbar__hamburger-menu__logo">
-                    <a href="#header">
-                        <picture>
-                            <source srcset="./images/back/logo.avif" type="image/avif">
-                            <source srcset="./images/back/logo.webp" type="image/webp">
-                            <img class="img-responsive navbar__logo__img" src="./images/original/logo.png" loading="lazy" width="1280" height="701" alt="Alexandra Abertamy - logo">
-                        </picture>
-                    </a>
-                </li>
-                <li><a href="#header">Domů</a></li>
-                <li><a href="#">O Nás</a></li>
-                <li><a href="#">Pokoje</a></li>
-                <li><a href="#price-list">Ceník</a></li>
-                <li><a class="button button--red-shadow" href="#reservation" aria-label="Tlačítko rezervace">Rezervace</a></li>
+                <div class="navbar__hamburger-menu__items">
+                    <li class="navbar__hamburger-menu__logo">
+                        <a href="#header">
+                            <picture>
+                                <source srcset="./images/back/logo.avif" type="image/avif">
+                                <source srcset="./images/back/logo.webp" type="image/webp">
+                                <img class="img-responsive navbar__logo__img" src="./images/original/logo.png" loading="lazy" width="1280" height="701" alt="Alexandra Abertamy - logo">
+                            </picture>
+                        </a>
+                    </li>
+                    <li><a href="#header">Domů</a></li>
+                    <li><a href="#">O Nás</a></li>
+                    <li><a href="#">Pokoje</a></li>
+                    <li><a href="#price-list">Ceník</a></li>
+                    <li><a class="button button--red-shadow" href="#reservation" aria-label="Tlačítko rezervace">Rezervace</a></li>
+                </div>
+                <div class="navbar__hamburger-menu__contacts-list">
+                    <h2>Kontakty</h2>
+                    <li><a class="icon location" href="https://www.google.cz/maps/place/198,+Pohrani%C4%8Dn%C3%ADk%C5%AF+44,+362+35+Abertamy-H%C5%99ebe%C4%8Dn%C3%A1/@50.3773759,12.8247056,17z/data=!3m1!4b1!4m5!3m4!1s0x47a0bc984134b211:0x3d0bee489e40d260!8m2!3d50.3773725!4d12.8272805?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoJLDEwMjExMjMzSAFQAw%3D%3D" target="_blank"><span class="navbar__hamburger-menu__location-hide">Pohraničníků 44/198,</span> Abertamy - Hřebečná</a></li>
+                    <li class="navbar__hamburger-menu__email-hide"><a class="icon email" href="mailto:chataalexandra@centrum.cz" target="_blank">chataalexandra@centrum.cz</a></li>
+                    <li class="navbar__hamburger-menu__email-shorter-hide"><a class="icon email" href="mailto:chataalexandra@centrum.cz" target="_blank">@chataalexandra</a></li>
+                    <li><a class="icon phone" href="tel:+420602726090" target="_blank">602 726 090</a></li>
+                    <li class="navbar__hamburger-menu__icon"><a class="icon instagram" href="https://www.facebook.com/share/15izFVYbRi/?mibextid=wwXIfr" target="_blank" aria-label="Instagram"></a></li>
+                    <li class="navbar__hamburger-menu__icon"><a class="icon facebook" href="#" target="_blank" aria-label="Facebook"></a></li>
+                </div>
             </menu>            
-            <!--Desktop-->
+            <!--desktop-->
             <menu class="navbar__desktop-menu">
                 <li><a class="underline-effect" href="#header">Domů</a></li>
                 <li><a class="underline-effect" href="#">O Nás</a></li>
@@ -119,7 +130,7 @@
                     </picture>
                 </figure>
                 <figure class="container--fix">
-                    <!--Sauna-->
+                    <!--sauna-->
                 </figure>
             </div>
             <footer>

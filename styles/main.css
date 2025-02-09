@@ -8,16 +8,14 @@
 
 @layer reset {
     :root {
-        --red: #512100;
-        --light-red: #6e2b00;
-        --dark-red: #351904;
-        --rich--black: #001A23;
-        --black: #000000;
-        --white: #ffffff;
+        --dominant: #512100;
+        --dominant-dark: #3B1900;
+        --dominant-light: #874f2f;
+        --accent: #001A23;
+        --background-primary: #ffffff;
         --green: #A3B18A;
-        --dark-green: #7F8B62;
-        --gray: #474A57;
-        --semi-transparent__black: rgba(0, 0, 0, 0.5);
+        --semi-transparent-dark: rgba(0, 0, 0, 0.5);
+        --gray: #A8A29E;
         --shadow: rgb(168, 168, 168);
         --main-width: 1536px;
     }
@@ -25,8 +23,8 @@
     html {
         font-family: 'Nunito', sans-serif;
         font-size: 16px;
-        color: var(--black, #000000);
-        background-color: var(--white, #ffffff);
+        color: var(--accent, #001A23);
+        background-color: var(--background-primary, #ffffff);
         scroll-behavior: smooth;
         overscroll-behavior: none;
     }
@@ -63,28 +61,5 @@
 
     .iframe--fix {
         max-width: 100%;
-    }
-
-    /*font - sizes*/
-
-    .p--size {
-        font-size: 1em;
-    }
-
-    .mid--size {
-        font-size: 1.5em;
-    }
-
-    .half-max--size {
-        font-size: 2em;
-        font-weight: 900;
-    }
-
-    .max--size {
-        font-size: 2.5em;
-    }
-
-    .ultra-max--size {
-        font-size: 3em;
     }
 }

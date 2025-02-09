@@ -18,7 +18,7 @@
 .contact-container {
     display: none;
     --padding: .25em;
-    background-color: var(--rich--black, #001A23);
+    background-color: var(--accent, #001A23);
     padding: .5em 0;
 }
 
@@ -41,7 +41,7 @@
     margin: 0 auto;
 }
 
-.contact-container__contacts-list, .socials-list {
+.contact-container__contacts-list, .contact-container__socials-list {
     margin: 0;
     padding: 0;
     text-align: center;
@@ -53,14 +53,14 @@
     margin-right: 1em;
 }
 
-.contact-container__contacts-list a, .socials-list a {
-    color: var(--white, #ffffff);
+.contact-container__contacts-list a, .contact-container__socials-list a {
+    color: var(--background-primary, #ffffff);
     text-decoration: none;
     padding: var(--padding);
     transition: .25s ease-in-out;
 }
 
-.socials-list li {
+.contact-container__socials-list li {
     display: inline-block;
     margin-top: .5em;
 }
@@ -71,7 +71,7 @@
         justify-content: space-between;
     }
 
-    .socials-list li {
+    .contact-container__socials-list li {
         margin-top: 0;
     }
 }
@@ -107,14 +107,23 @@
 .navbar__hamburger-menu {
     position: fixed;
     display: none;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: space-between;
     margin: 0;
     top: 0;
     bottom: 0;
     left: 0;
     right: 20%;
-    list-style: none;
-    background-color: var(--white, #ffffff); /*bg bude tmavší*/
+    background-color: var(--background-primary, #ffffff); /*bg bude tmavší*/
     z-index: 2;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+.navbar__hamburger-menu__items {
+    list-style: none;
+    padding: 0;
 }
 
 .navbar__hamburger-menu__logo {
@@ -130,7 +139,7 @@
     padding: 1em 0;
 }
 
-.navbar__hamburger-menu li a {
+.navbar__hamburger-menu a {
     padding: 1em 0;
     padding-right: 1em;
 }
@@ -141,9 +150,49 @@
 }
 
 .navbar__hamburger-menu a {
-    color: var(--black, #000000);
+    color: var(--accent, #001A23);
     text-decoration: none;
     font-weight: 700;
+}
+
+.navbar__hamburger-menu__contacts-list {
+    padding: 0;
+    margin-bottom: 2em;
+}
+
+.navbar__hamburger-menu__contacts-list h2 {
+    color: var(--gray, #A8A29E);
+}
+
+.navbar__hamburger-menu__contacts-list li {
+    list-style: none;
+}
+
+.navbar__hamburger-menu__location-hide {
+    position: absolute;
+    left: -1000%;
+}
+
+.navbar__hamburger-menu__email-hide {
+    display: none;
+}
+
+.navbar__hamburger-menu__contacts-list li span {
+    display: block;
+}
+
+.navbar__hamburger-menu__icon {
+    display: inline-block;
+}
+
+@media screen and (min-width: 541px) {
+    .navbar__hamburger-menu__email-hide {
+        display: block;
+    }
+
+    .navbar__hamburger-menu__email-shorter-hide {
+        display: none;
+    }
 }
 
 /*desktop - menu*/
@@ -171,14 +220,14 @@
 
     .navbar__desktop-menu a {
         position: relative;
-        color: var(--black, #000000);
+        color: var(--accent, #001A23);
         text-decoration: none;
         font-weight: 700;
         transition: .25s ease-in-out;;
     }
 
     .navbar__desktop-menu a:hover {
-        color: var(--red, #512100);
+        color: var(--dominant, #512100);
     }
 
     .underline-effect::after {
@@ -188,7 +237,7 @@
         bottom: -2px;
         width: 100%;
         height: 2px;
-        background-color: var(--red, #512100);
+        background-color: var(--dominant, #512100);
         transform: scaleX(0);
         transition: transform 0.25s ease-in-out;
     }
@@ -322,10 +371,10 @@
     .welcome-content__card {
         margin-bottom: 12%;
         width: fit-content;
-        background-color: var(--semi-transparent__black, rgba(0, 0, 0, 0.5));
+        background-color: var(--semi-transparent-dark, rgba(0, 0, 0, 0.5));
         padding: 1.5em;
         border-radius: .25em;
-        color: var(--white, #ffffff);
+        color: var(--background-primary, #ffffff);
         text-align: left;
     }
 

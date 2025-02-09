@@ -78,9 +78,9 @@
 
 .button {
   display: inline-block;
-  background-color: var(--red, #512100);
+  background-color: var(--dominant, #512100);
   padding: 1em 1.5em;
-  color: var(--white, #F8F7F7);
+  color: var(--background-primary, #ffffff);
   text-decoration: none;
   border-radius: .25em;
   font-weight: 700;
@@ -90,8 +90,8 @@
 
 .button:hover {
   background-color: transparent;
-  border: 2px solid var(--red, #512100);
-  color: var(--red, #512100);
+  border: 2px solid var(--dominant, #512100);
+  color: var(--dominant, #512100);
 }
 
 /*Red - shadow*/
@@ -108,51 +108,51 @@
 
 .button--transparent-white {
   background-color: transparent;
-  color: var(--white, #F8F7F7);
-  border: 2px solid var(--white, #F8F7F7);
+  color: var(--background-primary, #ffffff);
+  border: 2px solid var(--background-primary, #ffffff);
 }
 
 .button--transparent-white:hover {
-  background-color: var(--white, #F8F7F7);
-  color: var(--red, #512100);
+  background-color: var(--background-primary, #ffffff);
+  color: var(--dominant, #512100);
 }
 
 /*Transparent - red*/
 
 .button--transparent-red {
-  background-color: var(--white, #ffffff);
-  color: var(--red, #512100);
-  border: 2px solid var(--red, #512100);
+  background-color: var(--background-primary, #ffffff);
+  color: var(--dominant, #512100);
+  border: 2px solid var(--dominant, #512100);
 }
 
 .button--transparent-red:hover {
-  background-color: var(--red, #512100);
-  color: var(--white, #F8F7F7);
+  background-color: var(--dominant, #512100);
+  color: var(--background-primary, #ffffff);
 }
 
 /*Change - properties-buttons*/
 
 .button--change-properties {
-  background-color: var(--white, #ffffff);
-  color: var(--red, #512100);
-  border: 2px solid var(--red, #512100);
+  background-color: var(--background-primary, #ffffff);
+  color: var(--dominant, #512100);
+  border: 2px solid var(--dominant, #512100);
 }
 
 .button--change-properties:hover {
-  background-color: var(--red, #512100);
-  color: var(--white, #ffffff);
+  background-color: var(--dominant, #512100);
+  color: var(--background-primary, #ffffff);
 }
 
 @media screen and (min-width: 761px) {
   .button--change-properties {
     background-color: transparent;
-    color: var(--white, #F8F7F7);
-    border: 2px solid var(--white, #F8F7F7);
+    color: var(--background-primary, #ffffff);
+    border: 2px solid var(--background-primary, #ffffff);
   }
   
   .button--change-properties:hover {
-    background-color: var(--white, #F8F7F7);
-    color: var(--red, #512100);
+    background-color: var(--background-primary, #ffffff);
+    color: var(--dominant, #512100);
   }
 }
 
@@ -165,16 +165,16 @@
 /*Hover - red / white*/
 
 .button--red-white-hover:hover {
-  background-color: var(--white, #F8F7F7);
-  color: var(--red, #512100);
+  background-color: var(--background-primary, #ffffff);
+  color: var(--dominant, #512100);
 }
 
 /*Hover - dark-red*/
 
 .button--dark-red-hover:hover {
-  background-color: var(--dark-red, #3B1900);
-  border: 2px solid var(--dark-red, #3B1900);
-  color: var(--white, #ffffff);
+  background-color: var(--dominant-dark, #3B1900);
+  border: 2px solid var(--dominant-dark, #3B1900);
+  color: var(--background-primary, #ffffff);
 }
 
 /*Cards*/
@@ -187,13 +187,13 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: start;
-  background-color: var(--light-red, #6e2b00);
+  background-color: var(--dominant-light, #874f2f);
   height: 300px;
   border-radius: .25em;
   padding: 1.5em 1em;
   transition: .25s ease-in-out;
   text-decoration: none;
-  color: var(--white, #ffffff);
+  color: var(--background-primary, #ffffff);
   font-size: var(--font-size);
   font-weight: 700;
   cursor: pointer;
@@ -207,12 +207,12 @@
 
 .card a {
   text-decoration: none;
-  color: var(--white, #ffffff);
+  color: var(--background-primary, #ffffff);
   transition: .25s ease-in-out;
 }
 
 .card:hover {
-  background-color: var(--dark-red, #351904);
+  background-color: var(--dominant-dark, #3B1900);
 }
 
 .card:hover::before {
