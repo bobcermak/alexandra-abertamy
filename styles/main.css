@@ -8,14 +8,15 @@
 
 @layer reset {
     :root {
-        --dominant: #512100;
-        --dominant-dark: #3B1900;
-        --dominant-light: #874f2f;
+        --primary: #512100;
+        --primary-dark: #3B1900;
+        --primary-light: #874f2f;
+        --secondary: #A3B18A;
         --accent: #001A23;
-        --background-primary: #ffffff;
-        --green: #A3B18A;
-        --semi-transparent-dark: rgba(0, 0, 0, 0.5);
         --gray: #A8A29E;
+        --background-primary: #ffffff;
+        --background-secondary: #ffe8d2;
+        --semi-transparent-dark: rgba(0, 0, 0, 0.5);
         --shadow: rgb(168, 168, 168);
         --main-width: 1536px;
     }

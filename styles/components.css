@@ -78,7 +78,7 @@
 
 .button {
   display: inline-block;
-  background-color: var(--dominant, #512100);
+  background-color: var(--primary, #512100);
   padding: 1em 1.5em;
   color: var(--background-primary, #ffffff);
   text-decoration: none;
@@ -90,8 +90,8 @@
 
 .button:hover {
   background-color: transparent;
-  border: 2px solid var(--dominant, #512100);
-  color: var(--dominant, #512100);
+  border: 2px solid var(--primary, #512100);
+  color: var(--primary, #512100);
 }
 
 /*Red - shadow*/
@@ -114,19 +114,19 @@
 
 .button--transparent-white:hover {
   background-color: var(--background-primary, #ffffff);
-  color: var(--dominant, #512100);
+  color: var(--primary, #512100);
 }
 
 /*Transparent - red*/
 
 .button--transparent-red {
   background-color: var(--background-primary, #ffffff);
-  color: var(--dominant, #512100);
-  border: 2px solid var(--dominant, #512100);
+  color: var(--primary, #512100);
+  border: 2px solid var(--primary, #512100);
 }
 
 .button--transparent-red:hover {
-  background-color: var(--dominant, #512100);
+  background-color: var(--primary, #512100);
   color: var(--background-primary, #ffffff);
 }
 
@@ -134,12 +134,12 @@
 
 .button--change-properties {
   background-color: var(--background-primary, #ffffff);
-  color: var(--dominant, #512100);
-  border: 2px solid var(--dominant, #512100);
+  color: var(--primary, #512100);
+  border: 2px solid var(--primary, #512100);
 }
 
 .button--change-properties:hover {
-  background-color: var(--dominant, #512100);
+  background-color: var(--primary, #512100);
   color: var(--background-primary, #ffffff);
 }
 
@@ -152,7 +152,7 @@
   
   .button--change-properties:hover {
     background-color: var(--background-primary, #ffffff);
-    color: var(--dominant, #512100);
+    color: var(--primary, #512100);
   }
 }
 
@@ -166,14 +166,14 @@
 
 .button--red-white-hover:hover {
   background-color: var(--background-primary, #ffffff);
-  color: var(--dominant, #512100);
+  color: var(--primary, #512100);
 }
 
 /*Hover - dark-red*/
 
 .button--dark-red-hover:hover {
-  background-color: var(--dominant-dark, #3B1900);
-  border: 2px solid var(--dominant-dark, #3B1900);
+  background-color: var(--primary-dark, #3B1900);
+  border: 2px solid var(--primary-dark, #3B1900);
   color: var(--background-primary, #ffffff);
 }
 
@@ -187,7 +187,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: start;
-  background-color: var(--dominant-light, #874f2f);
+  background-color: var(--primary-light, #874f2f);
   height: 300px;
   border-radius: .25em;
   padding: 1.5em 1em;
@@ -212,7 +212,7 @@
 }
 
 .card:hover {
-  background-color: var(--dominant-dark, #3B1900);
+  background-color: var(--primary-dark, #3B1900);
 }
 
 .card:hover::before {
