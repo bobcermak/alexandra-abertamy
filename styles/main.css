@@ -16,7 +16,7 @@
         --background-primary: #EEEEEE;
         --semi-transparent-dark: rgba(0, 0, 0, 0.5);
         --shadow: rgb(168, 168, 168);
-        --main-width: 1536px;
+        --max-width: 1536px;
     }
 
     html {
