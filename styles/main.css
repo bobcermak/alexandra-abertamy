@@ -12,9 +12,8 @@
         --primary-dark: #3B1900;
         --secondary: #A3B18A;
         --accent: #001A23;
-        --gray: #A8A29E;
-        --background-primary: #ffffff;
-        --background-secondary: #ffe8d2;
+        --gray: #A09C9C;
+        --background-primary: #EEEEEE;
         --semi-transparent-dark: rgba(0, 0, 0, 0.5);
         --shadow: rgb(168, 168, 168);
         --main-width: 1536px;
@@ -24,7 +23,7 @@
         font-family: 'Nunito', sans-serif;
         font-size: 16px;
         color: var(--accent, #001A23);
-        background-color: var(--background-primary, #ffffff);
+        background-color: var(--background-primary, #EEEEEE);
         scroll-behavior: smooth;
         overscroll-behavior: none;
     }

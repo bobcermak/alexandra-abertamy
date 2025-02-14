@@ -80,7 +80,7 @@
   display: inline-block;
   background-color: var(--primary, #512100);
   padding: 1em 1.5em;
-  color: var(--background-primary, #ffffff);
+  color: var(--background-primary, #EEEEEE);
   text-decoration: none;
   border-radius: .25em;
   font-weight: 700;
@@ -108,50 +108,50 @@
 
 .button--transparent-white {
   background-color: transparent;
-  color: var(--background-primary, #ffffff);
-  border: 2px solid var(--background-primary, #ffffff);
+  color: var(--background-primary, #EEEEEE);
+  border: 2px solid var(--background-primary, #EEEEEE);
 }
 
 .button--transparent-white:hover {
-  background-color: var(--background-primary, #ffffff);
+  background-color: var(--background-primary, #EEEEEE);
   color: var(--primary, #512100);
 }
 
 /*Transparent - red*/
 
 .button--transparent-red {
-  background-color: var(--background-primary, #ffffff);
+  background-color: var(--background-primary, #EEEEEE);
   color: var(--primary, #512100);
   border: 2px solid var(--primary, #512100);
 }
 
 .button--transparent-red:hover {
   background-color: var(--primary, #512100);
-  color: var(--background-primary, #ffffff);
+  color: var(--background-primary, #EEEEEE);
 }
 
 /*Change - properties-buttons*/
 
 .button--change-properties {
-  background-color: var(--background-primary, #ffffff);
+  background-color: var(--background-primary, #EEEEEE);
   color: var(--primary, #512100);
   border: 2px solid var(--primary, #512100);
 }
 
 .button--change-properties:hover {
   background-color: var(--primary, #512100);
-  color: var(--background-primary, #ffffff);
+  color: var(--background-primary, #EEEEEE);
 }
 
 @media screen and (min-width: 761px) {
   .button--change-properties {
     background-color: transparent;
-    color: var(--background-primary, #ffffff);
-    border: 2px solid var(--background-primary, #ffffff);
+    color: var(--background-primary, #EEEEEE);
+    border: 2px solid var(--background-primary, #EEEEEE);
   }
   
   .button--change-properties:hover {
-    background-color: var(--background-primary, #ffffff);
+    background-color: var(--background-primary, #EEEEEE);
     color: var(--primary, #512100);
   }
 }
@@ -165,7 +165,7 @@
 /*Hover - red / white*/
 
 .button--red-white-hover:hover {
-  background-color: var(--background-primary, #ffffff);
+  background-color: var(--background-primary, #EEEEEE);
   color: var(--primary, #512100);
 }
 
@@ -174,51 +174,7 @@
 .button--dark-red-hover:hover {
   background-color: var(--primary-dark, #3B1900);
   border: 2px solid var(--primary-dark, #3B1900);
-  color: var(--background-primary, #ffffff);
+  color: var(--background-primary, #EEEEEE);
 }
 
 /*Cards*/
-
-/*Welcome - card*/
-
-.card {
-  --font-size: 1.75em;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: start;
-  background-color: var(--primary-light, #874f2f);
-  height: 300px;
-  border-radius: .25em;
-  padding: 1.5em 1em;
-  transition: .25s ease-in-out;
-  text-decoration: none;
-  color: var(--background-primary, #ffffff);
-  font-size: var(--font-size);
-  font-weight: 700;
-  cursor: pointer;
-}
-
-.card::before {
-  font-size: 1.5em;
-  transition: .25s ease-in-out;
-  padding: 0;
-}
-
-.card a {
-  text-decoration: none;
-  color: var(--background-primary, #ffffff);
-  transition: .25s ease-in-out;
-}
-
-.card:hover {
-  background-color: var(--primary-dark, #3B1900);
-}
-
-.card:hover::before {
-  transform: translate(30%, 20%);
-}
-
-.card:hover a {
-  transform: translate(8%, -50%);
-}
