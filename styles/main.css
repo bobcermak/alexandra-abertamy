@@ -9,11 +9,11 @@
 @layer reset {
     :root {
         --primary: #512100;
-        --primary-dark: #3B1900;
         --secondary: #A3B18A;
-        --accent: #001A23;
+        --accent: #3B1900;
         --gray: #A09C9C;
-        --background-primary: #EEEEEE;
+        --background-primary: #ffffff;
+        --background-secondary: #F8DFDF;
         --semi-transparent-dark: rgba(0, 0, 0, 0.5);
         --shadow: rgb(168, 168, 168);
         --max-width: 1536px;

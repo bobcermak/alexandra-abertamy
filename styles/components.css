@@ -80,7 +80,7 @@
   display: inline-block;
   background-color: var(--primary, #512100);
   padding: 1em 1.5em;
-  color: var(--background-primary, #EEEEEE);
+  color: var(--background-primary, #ffffff);
   text-decoration: none;
   border-radius: .25em;
   font-weight: 700;
@@ -108,50 +108,50 @@
 
 .button--transparent-white {
   background-color: transparent;
-  color: var(--background-primary, #EEEEEE);
-  border: 2px solid var(--background-primary, #EEEEEE);
+  color: var(--background-primary, #ffffff);
+  border: 2px solid var(--background-primary, #ffffff);
 }
 
 .button--transparent-white:hover {
-  background-color: var(--background-primary, #EEEEEE);
+  background-color: var(--background-primary, #ffffff);
   color: var(--primary, #512100);
 }
 
 /*Transparent - red*/
 
 .button--transparent-red {
-  background-color: var(--background-primary, #EEEEEE);
+  background-color: var(--background-primary, #ffffff);
   color: var(--primary, #512100);
   border: 2px solid var(--primary, #512100);
 }
 
 .button--transparent-red:hover {
   background-color: var(--primary, #512100);
-  color: var(--background-primary, #EEEEEE);
+  color: var(--background-primary, #ffffff);
 }
 
 /*Change - properties-buttons*/
 
 .button--change-properties {
-  background-color: var(--background-primary, #EEEEEE);
+  background-color: var(--background-primary, #ffffff);
   color: var(--primary, #512100);
   border: 2px solid var(--primary, #512100);
 }
 
 .button--change-properties:hover {
   background-color: var(--primary, #512100);
-  color: var(--background-primary, #EEEEEE);
+  color: var(--background-primary, #ffffff);
 }
 
 @media screen and (min-width: 761px) {
   .button--change-properties {
     background-color: transparent;
-    color: var(--background-primary, #EEEEEE);
-    border: 2px solid var(--background-primary, #EEEEEE);
+    color: var(--background-primary, #ffffff);
+    border: 2px solid var(--background-primary, #ffffff);
   }
   
   .button--change-properties:hover {
-    background-color: var(--background-primary, #EEEEEE);
+    background-color: var(--background-primary, #ffffff);
     color: var(--primary, #512100);
   }
 }
@@ -165,7 +165,7 @@
 /*Hover - red / white*/
 
 .button--red-white-hover:hover {
-  background-color: var(--background-primary, #EEEEEE);
+  background-color: var(--background-primary, #ffffff);
   color: var(--primary, #512100);
 }
 
@@ -174,7 +174,7 @@
 .button--dark-red-hover:hover {
   background-color: var(--primary-dark, #3B1900);
   border: 2px solid var(--primary-dark, #3B1900);
-  color: var(--background-primary, #EEEEEE);
+  color: var(--background-primary, #ffffff);
 }
 
 /*Cards*/
