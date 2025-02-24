@@ -22,8 +22,8 @@
     html {
         font-family: 'Nunito', sans-serif;
         font-size: 16px;
-        color: var(--accent, #001A23);
-        background-color: var(--background-primary, #EEEEEE);
+        color: var(--accent, #3B1900);
+        background-color: var(--background-primary, #ffffff);
         scroll-behavior: smooth;
         overscroll-behavior: none;
     }
