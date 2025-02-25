@@ -80,12 +80,13 @@
   display: inline-block;
   background-color: var(--primary, #512100);
   padding: 1em 1.5em;
-  color: var(--background-primary, #ffffff);
+  color: var(--background-primary, #FFFFFF);
   text-decoration: none;
   border-radius: .25em;
   font-weight: 700;
   border: 2px solid transparent;
   transition: .25s ease-in-out;
+  box-shadow: 0 4px 12px var(--gray, #A09C9C);
 }
 
 .button:hover {
@@ -94,66 +95,17 @@
   color: var(--primary, #512100);
 }
 
-/*Red - shadow*/
-
-.button--red-shadow {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.button--red-shadow:hover {
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-}
-
-/*White - border / transparent*/
-
-.button--transparent-white {
-  background-color: transparent;
-  color: var(--background-primary, #ffffff);
-  border: 2px solid var(--background-primary, #ffffff);
-}
-
-.button--transparent-white:hover {
-  background-color: var(--background-primary, #ffffff);
-  color: var(--primary, #512100);
-}
-
 /*Transparent - red*/
 
 .button--transparent-red {
-  background-color: var(--background-primary, #ffffff);
+  background-color: transparent;
   color: var(--primary, #512100);
   border: 2px solid var(--primary, #512100);
 }
 
 .button--transparent-red:hover {
   background-color: var(--primary, #512100);
-  color: var(--background-primary, #ffffff);
-}
-
-/*Change - properties-buttons*/
-
-.button--change-properties {
-  background-color: var(--background-primary, #ffffff);
-  color: var(--primary, #512100);
-  border: 2px solid var(--primary, #512100);
-}
-
-.button--change-properties:hover {
-  background-color: var(--primary, #512100);
-  color: var(--background-primary, #ffffff);
-}
-
-@media screen and (min-width: 761px) {
-  .button--change-properties {
-    background-color: transparent;
-    color: var(--background-primary, #ffffff);
-    border: 2px solid var(--background-primary, #ffffff);
-  }
-  
-  .button--change-properties:hover {
-    background-color: var(--background-primary, #ffffff);
-    color: var(--primary, #512100);
-  }
+  color: var(--background-primary, #FFFFFF);
 }
 
 /*Square*/
@@ -165,16 +117,36 @@
 /*Hover - red / white*/
 
 .button--red-white-hover:hover {
-  background-color: var(--background-primary, #ffffff);
+  background-color: var(--background-primary, #FFFFFF);
   color: var(--primary, #512100);
 }
 
 /*Hover - dark-red*/
 
 .button--dark-red-hover:hover {
-  background-color: var(--primary-dark, #3B1900);
-  border: 2px solid var(--primary-dark, #3B1900);
-  color: var(--background-primary, #ffffff);
+  background-color: var(--accent, #3B1900);
+  border: 2px solid var(--accent, #3B1900);
+  color: var(--background-primary, #FFFFFF);
+}
+
+/*Figure*/
+
+/*Figure - corner*/
+
+.figure--corner {
+  position: relative;
+  overflow: hidden;
+}
+
+.figure--corner__figpaction {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 1em 2em;
+  background-color: var(--semi-transparent-dark, rgba(0, 0, 0, 0.5));
+  color: var(--white, #FFFFFF);
+  font-size: 1.2em;
+  font-weight: 400;
 }
 
 /*Cards*/

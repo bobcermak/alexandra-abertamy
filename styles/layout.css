@@ -18,7 +18,7 @@
 .contact-container {
     display: none;
     --padding: .25em;
-    background-color: var(--accent, #001A23);
+    background-color: var(--accent, #3B1900);
     padding: .5em 0;
 }
 
@@ -54,7 +54,7 @@
 }
 
 .contact-container__contacts-list a, .contact-container__socials-list a {
-    color: var(--background-primary, #ffffff);
+    color: var(--background-primary, #FFFFFF);
     text-decoration: none;
     padding: var(--padding);
     transition: .25s ease-in-out;
@@ -115,7 +115,7 @@
     bottom: 0;
     left: 0;
     right: 20%;
-    background-color: var(--background-primary, #ffffff); /*bg bude tmavší*/
+    background-color: var(--background-primary, #FFFFFF); /*bg bude tmavší*/
     z-index: 2;
     padding-top: .5em;
     padding-bottom: .5em;
@@ -256,6 +256,97 @@
 
 /*section - page__welcome*/
 
+.page__welcome {
+    background-position: center;
+    background-size: cover;
+    background-image: url(../images/assets/original/welcome-image.png); /*warm - background image*/
+    background-image: -webkit-image-set(
+        url(../images/assets/back/welcome-image.avif) type("image/avif"),
+        url(../images/assets/back/welcome-image.webp) type("image/webp"),
+        url(../images/assets/original/welcome-image.png) type("image/png")
+    );
+    background-image: image-set(
+        url(../images/assets/back/welcome-image.avif) type("image/avif"),
+        url(../images/assets/back/welcome-image.webp) type("image/webp"),
+        url(../images/assets/original/welcome-image.png) type("image/jpeg")
+    );
+}
 
+.welcome__header figure {
+    margin: 0;
+}
+
+.welcome__header img {
+    height: 35vh;
+    height: 35dvh;
+}
+
+.welcome__content {
+    margin: 1em .5em;
+    text-align: center;
+}
+
+.welcome__content__header h1 {
+    margin: 0;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.welcome__content__dash {
+    display: none;
+}
+
+.welcome__content__title {
+    display: block;
+    text-decoration: underline;
+    text-underline-offset: .2em;
+}
+
+.welcome__content__content {
+    margin: .5em 0;
+}
+
+.welcome__content__intro-text {
+    font-size: 2em;
+    margin: 0;
+    font-weight: 700;
+}
+
+.welcome__content__about-text {
+    margin-top: 1em;
+}
+
+/*grid*/
+
+.welcome__footer {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    gap: .5em;
+    margin: 0 .5em;
+}
+
+.welcome__footer figure {
+    margin: 0;
+    border-radius: .5em;
+}
+
+.welcome__footer__sauna {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.welcome__footer__interactive-card {
+    display: none;
+}
+
+.welcome__footer__main-hut {
+    grid-column: 1 / -1;
+}
+
+.welcome__footer__common-room {
+    grid-column: 2;
+}
 
 /*section - page__about*/
