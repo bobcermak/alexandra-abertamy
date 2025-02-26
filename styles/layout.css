@@ -321,8 +321,8 @@
 
 .welcome__footer {
     display: grid;
-    grid-auto-rows: auto;
-    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(auto, 400px);
+    grid-template-columns: 1fr;
     gap: .5em;
     margin: 0 .5em;
 }
@@ -330,10 +330,14 @@
 .welcome__footer figure {
     margin: 0;
     border-radius: .5em;
+    height: 100%;
+}
+
+.welcome__footer img {
+    height: 100%;
 }
 
 .welcome__footer__sauna {
-    grid-column: 1;
     grid-row: 2;
 }
 
@@ -341,12 +345,22 @@
     display: none;
 }
 
-.welcome__footer__main-hut {
-    grid-column: 1 / -1;
-}
+@media screen and (min-width: 540px) {
+    .welcome__footer {
+        display: grid;
+        grid-auto-rows: minmax(auto, 400px);
+        grid-template-columns: 1fr 1fr;
+        gap: .5em;
+        margin: 0 .5em;
+    }
 
-.welcome__footer__common-room {
-    grid-column: 2;
+    .welcome__footer__main-hut {
+        grid-column: 1 / -1;
+    }
+
+    .welcome__footer__common-room {
+        grid-row: 2;
+    }
 }
 
 /*section - page__about*/
