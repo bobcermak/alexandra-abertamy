@@ -33,7 +33,7 @@
             </div>
         </div>
         <nav class="navbar">
-            <a class="navbar__logo" href="#header">
+            <a class="navbar__logo" href="#header" aria-label="Domů">
                 <picture>
                     <source srcset="./images/assets/back/logo.avif" type="image/avif">
                     <source srcset="./images/assets/back/logo.webp" type="image/webp">
@@ -41,7 +41,7 @@
                 </picture>
             </a>
             <!--mobile-->
-            <div class="navbar__hamburger hamburger" onclick="toggleMenu()">
+            <div class="navbar__hamburger hamburger" onclick="toggleMenu()" aria-label="Hlavní navigace">
                 <span class="line"></span>
                 <span class="line"></span>
                 <span class="line"></span>
@@ -49,7 +49,7 @@
             <menu class="navbar__hamburger-menu">
                 <div class="navbar__hamburger-menu__items">
                     <li class="navbar__hamburger-menu__logo">
-                        <a href="#header">
+                        <a href="#header" aria-label="Domů">
                             <picture>
                                 <source srcset="./images/back/logo.avif" type="image/avif">
                                 <source srcset="./images/back/logo.webp" type="image/webp">
@@ -86,73 +86,75 @@
     </header>
     <main class="page__content">
         <section class="page__welcome" id="welcome"> <!--MĚNĚNÍ OBRÁZKŮ?-->
-            <header class="welcome__header">
-                <a href="#">
-                    <figure class="figure--corner">
-                        <picture>
-                            <source srcset="./images/back/main-hut_front.avif" type="image/avif">
-                            <source srcset="./images/back/main-hut_front.webp" type="image/webp">
-                            <img class="img-responsive welcome__header__img" src="./images/original/main-hut_front.jpg" loading="lazy" width="2448" height="3264" alt="Alexandra Abertamy - náhled chaty ze předu">
-                        </picture>
-                        <figcaption class="figure--corner__figpaction">Chata Alexandra</figcaption>
-                    </figure>
-                </a>
-            </header>
-            <div class="welcome__content">
-                <header class="welcome__content__header">
-                    <h1>UBYTOVÁNÍ V OBCI HŘEBEČNÁ <span class="welcome__content__dash">-</span> <span class="welcome__content__title">ALEXANDRA ABERTAMY</span></h1>
+            <div class="welcome-container">
+                <header class="welcome__header">
+                    <a href="./images/original/main-hut_front.jpg" target="_blank" aria-label="Obrázek Chaty Alexandra">
+                        <figure class="figure--corner">
+                            <picture>
+                                <source srcset="./images/back/main-hut_front.avif" type="image/avif">
+                                <source srcset="./images/back/main-hut_front.webp" type="image/webp">
+                                <img class="img-responsive welcome__header__img" src="./images/original/main-hut_front.jpg" loading="lazy" width="2448" height="3264" alt="Alexandra Abertamy - náhled chaty ze předu">
+                            </picture>
+                            <figcaption class="figure--corner__figpaction">Chata Alexandra</figcaption>
+                        </figure>
+                    </a>
                 </header>
-                <div class="welcome__content__content">
-                    <p class="welcome__content__intro-text">Obklopte se klidem Krušnohoří a užijte si nezapomenutelný pobyt.</p>
-                    <p class="welcome__content__about-text">Chata Alexandra se nachází v obci Hřebečná - Abertamy. Chata s přátelskou atmosférou je ideální pro Vaši dovolenou v kterémkoliv ročním období. Je moderně a vkusně vybavena.</p>
+                <div class="welcome__content">
+                    <header class="welcome__content__header">
+                        <h1>UBYTOVÁNÍ V OBCI HŘEBEČNÁ <span class="welcome__content__dash">-</span> <span class="welcome__content__title">ALEXANDRA ABERTAMY</span></h1>
+                    </header>
+                    <div class="welcome__content__content">
+                        <p class="welcome__content__intro-text">Obklopte se klidem Krušnohoří a užijte si nezapomenutelný pobyt.</p>
+                        <p class="welcome__content__about-text">Chata Alexandra se nachází v obci Hřebečná - Abertamy. Chata s přátelskou atmosférou je ideální pro Vaši dovolenou v kterémkoliv ročním období. Je moderně a vkusně vybavena.</p>
+                    </div>
+                    <footer class="welcome__content__footer">
+                        <a class="button button--dark-red-hover" href="#" aria-label="Tlačítko pokoje">Pokoje</a>
+                        <a class="button button--transparent-red button--red-white-hover" href="#" aria-label="Tlačítko o nás">O Nás</a>
+                    </footer>
                 </div>
-                <footer class="welcome__content__footer">
-                    <a class="button button--dark-red-hover" href="#" aria-label="Tlačítko pokoje">Pokoje</a>
-                    <a class="button button--transparent-red button--red-white-hover" href="#" aria-label="Tlačítko o nás">O Nás</a>
+                <footer class="welcome__footer">
+                    <a href="./images/original/sauna.jpg" class="welcome__footer__sauna" target="_blank" aria-label="Obrázek sauny">
+                        <figure class="figure--corner">
+                            <picture>
+                                <source srcset="./images/back/sauna.avif" type="image/avif">
+                                <source srcset="./images/back/sauna.webp" type="image/webp">
+                                <img class="img-responsive" src="./images/original/sauna.jpg" loading="lazy" width="2058" height="3264" alt="Alexandra Abertamy - náhled sauny">
+                            </picture>
+                            <figcaption class="figure--corner__figpaction">Sauna</figcaption>
+                        </figure>
+                    </a>
+                    <a href="./images/original/main-hut_front.jpg" class="welcome__footer__interactive-card" target="_blank" aria-label="Obrázek Chaty Alexandra">
+                        <figure class="figure--corner">
+                            <picture>
+                                <source srcset="./images/back/main-hut_front.avif" type="image/avif">
+                                <source srcset="./images/back/main-hut_front.webp" type="image/webp">
+                                <img class="img-responsive" src="./images/original/main-hut_front.jpg" loading="lazy" width="2448" height="3264" alt="Alexandra Abertamy - náhled chaty ze předu">
+                            </picture>
+                            <figcaption class="figure--corner__figpaction">Chata Alexandra</figcaption>
+                        </figure>
+                    </a>
+                    <a href="./images/original/main-hut_back.jpg" class="welcome__footer__main-hut" target="_blank" aria-label="Obrázek Chaty Alexandra">
+                        <figure class="figure--corner">
+                            <picture>
+                                <source srcset="./images/back/main-hut_back.avif" type="image/avif">
+                                <source srcset="./images/back/main-hut_back.webp" type="image/webp">
+                                <img class="img-responsive" src="./images/original/main-hut_back.jpg" loading="lazy" width="2448" height="3264" alt="Alexandra Abertamy - náhled chaty ze zadu">
+                            </picture>
+                            <figcaption class="figure--corner__figpaction">Chata Alexandra</figcaption>
+                        </figure>
+                    </a>
+                    <a href="./images/original/common-room.jpg" class="welcome__footer__common-room" target="_blank" aria-label="Obrázek společenské místnosti">
+                        <figure class="figure--corner">
+                            <picture>
+                                <source srcset="./images/back/common-room.avif" type="image/avif">
+                                <source srcset="./images/back/common-room.webp" type="image/webp">
+                                <img class="img-responsive" src="./images/original/common-room.jpg" loading="lazy" width="2448" height="3264" alt="Alexandra Abertamy - náhled společenské místnosti">
+                            </picture>
+                            <figcaption class="figure--corner__figpaction">Společenská místnost</figcaption>
+                        </figure>
+                    </a>
                 </footer>
             </div>
-            <footer class="welcome__footer">
-                <a href="#" class="welcome__footer__sauna">
-                    <figure class="figure--corner">
-                        <picture>
-                            <source srcset="./images/back/sauna.avif" type="image/avif">
-                            <source srcset="./images/back/sauna.webp" type="image/webp">
-                            <img class="img-responsive" src="./images/original/sauna.jpg" loading="lazy" width="2058" height="3264" alt="Alexandra Abertamy - náhled sauny">
-                        </picture>
-                        <figcaption class="figure--corner__figpaction">Sauna</figcaption>
-                    </figure>
-                </a>
-                <a href="#" class="welcome__footer__interactive-card">
-                    <figure class="figure--corner">
-                        <picture>
-                            <source srcset="./images/back/main-hut_front.avif" type="image/avif">
-                            <source srcset="./images/back/main-hut_front.webp" type="image/webp">
-                            <img class="img-responsive" src="./images/original/main-hut_front.jpg" loading="lazy" width="2448" height="3264" alt="Alexandra Abertamy - náhled chaty ze předu">
-                        </picture>
-                        <figcaption class="figure--corner__figpaction">Chata Alexandra</figcaption>
-                    </figure>
-                </a>
-                <a href="#" class="welcome__footer__main-hut">
-                    <figure class="figure--corner">
-                        <picture>
-                            <source srcset="./images/back/main-hut_back.avif" type="image/avif">
-                            <source srcset="./images/back/main-hut_back.webp" type="image/webp">
-                            <img class="img-responsive" src="./images/original/main-hut_back.jpg" loading="lazy" width="2448" height="3264" alt="Alexandra Abertamy - náhled chaty ze zadu">
-                        </picture>
-                        <figcaption class="figure--corner__figpaction">Chata Alexandra</figcaption>
-                    </figure>
-                </a>
-                <a href="#" class="welcome__footer__common-room">
-                    <figure class="figure--corner">
-                        <picture>
-                            <source srcset="./images/back/common-room.avif" type="image/avif">
-                            <source srcset="./images/back/common-room.webp" type="image/webp">
-                            <img class="img-responsive" src="./images/original/common-room.jpg" loading="lazy" width="2448" height="3264" alt="Alexandra Abertamy - náhled společenské místnosti">
-                        </picture>
-                        <figcaption class="figure--corner__figpaction">Společenská místnost</figcaption>
-                    </figure>
-                </a>
-            </footer>
         </section>
         <section class="page__about" id="about-us">
             <header>
