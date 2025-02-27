@@ -143,10 +143,23 @@
   left: 0;
   bottom: 0;
   padding: 1em 2em;
-  background-color: var(--semi-transparent-dark, rgba(0, 0, 0, 0.5));
   color: var(--white, #FFFFFF);
   font-size: 1.2em;
   font-weight: 400;
 }
 
 /*Cards*/
+
+/*Card - hover*/
+
+.card--dark-zoom-hover img, .card--dark-zoom-hover figure {
+  transition: .25s ease-in-out;
+}
+
+.card--dark-zoom-hover:hover img {
+  transform: scale(1.2);
+}
+
+.card--dark-zoom-hover:hover figure {
+  opacity: .75;
+}

@@ -11,6 +11,8 @@
 
 .page__header {
     /*effect jako mercuria jina barva header u scroll / pruhledne a pak zase normalni kdž je v normalu*/
+    box-shadow: 0 1px 6px var(--gray, #A09C9C);
+    z-index: 1;
 }
 
 /*contact-container*/
@@ -261,7 +263,7 @@
     flex-direction: column;
     background-position: center;
     background-size: cover;
-    background-image: url(../images/assets/original/welcome-image.png);
+    background-image: url(../images/assets/original/);
     background-image: -webkit-image-set(
         url(../images/assets/bckps/welcome-image.avif) type("image/avif"),
         url(../images/assets/bckps/welcome-image.webp) type("image/webp"),
@@ -275,12 +277,6 @@
     color: var(--primary, #512100);
     height: 290vh;
     height: 290dvh;
-}
-
-@media screen and (min-width: 1601px) {
-    .page__welcome {
-        background-size: 102.25%;
-    }
 }
 
 .welcome-wrapper {
