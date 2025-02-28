@@ -291,7 +291,6 @@
     }
 
     .welcome-wrapper {
-        margin-top: 5em;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -318,7 +317,6 @@
 
 @media screen and (min-width: 961px) {
     .welcome-wrapper__content {
-        margin-top: -5em;
         text-align: left;
         width: 55%;
     }
@@ -357,12 +355,22 @@
 }
 
 @media screen and (min-width: 961px) {
-    .welcome-wrapper__content__header h1 {
-        font-size: 1.5em;
-    }
-
     .welcome-wrapper__content__title, .welcome-wrapper__content__dash {
         display: inline;
+    }
+
+    .welcome-wrapper__content__intro-text {
+        font-size: 2.5em;
+    }
+
+    .welcome-wrapper__content__about-text {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 1281px) {
+    .welcome-wrapper__content__header h1 {
+        font-size: 1.5em;
     }
 
     .welcome-wrapper__content__intro-text {
@@ -370,7 +378,6 @@
     }
 
     .welcome-wrapper__content__about-text {
-        width: 80%;
         font-size: 1.5em;
     }
 }
@@ -380,7 +387,7 @@
 .welcome-wrapper__footer {
     position: relative;
     display: grid;
-    grid-auto-rows: minmax(auto, 400px);
+    grid-template-rows: repeat(3, minmax(auto, 400px));
     gap: .5em;
     margin: 0 .5em;
 }
@@ -430,6 +437,18 @@
     width: 2em;
 }
 
+@media screen and (min-width: 961px) {
+    .welcome-wrapper__footer::before {
+        top: -2.25%;
+        left: -2%;
+    }
+    
+    .welcome-wrapper__footer::after {
+        bottom: -2.25%;
+        right: -2%;
+    }
+}
+
 .welcome-wrapper__footer figure {
     margin: 0;
     border-radius: .5em;
@@ -451,6 +470,7 @@
 @media screen and (min-width: 541px) {
     .welcome-wrapper__footer {
         grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, minmax(auto, 400px));
     }
 
     .welcome-wrapper__footer__main-hut {
@@ -464,7 +484,8 @@
 
 @media screen and (min-width: 961px) {
     .welcome-wrapper__footer {
-        grid-auto-rows: minmax(auto, 180px);
+        grid-template-rows: repeat(3, minmax(auto, 140px));
+        margin-top: 4em;
     }
 
     .welcome-wrapper__footer__sauna {
@@ -486,4 +507,10 @@
     }
 }
 
+@media screen and (min-width: 1281px) {
+    .welcome-wrapper__footer {
+        grid-template-rows: repeat(3, minmax(auto, 180px));
+        margin-top: 2em;
+    }
+}
 /*section - page__about*/
