@@ -7,38 +7,38 @@
   font-size: 1.25em;
 }
 
-.location::before {
+.icon--location::before {
   font-family: "Font Awesome 6 Free";
   content: "\f3c5";
 }
 
-.email::before {
+.icon--email::before {
   font-family: "Font Awesome 6 Free";
   content: "\f0e0";
 }
 
-.phone::before {
+.icon--phone::before {
   font-family: "Font Awesome 6 Free";
   content: "\f095";
 }
 
-.home::before {
+.icon--home::before {
   font-family: "Font Awesome 6 Free";
   content: "\f015";
 }
 
-.coffee::before {
+.icon--coffee::before {
   font-family: "Font Awesome 6 Free";
   content: "\f0f4";
 }
 
-.instagram::before {
+.icon--instagram::before {
   font-family: "Font Awesome 5 Brands";
   content: "\f16d";
   margin: 0;
 }
 
-.facebook::before {
+.icon--facebook::before {
   font-family: "Font Awesome 5 Brands";
   content: "\f09a";
   margin: 0;
@@ -86,7 +86,7 @@
   font-weight: 700;
   border: 2px solid transparent;
   transition: .25s ease-in-out;
-  box-shadow: 0 4px 12px var(--gray, #A09C9C);
+  box-shadow: 0 2px 12px var(--gray, #A09C9C);
 }
 
 .button:hover {
@@ -129,6 +129,76 @@
   color: var(--background-primary, #FFFFFF);
 }
 
+/*Ornaments*/
+
+/*Bend*/
+
+.bend {
+  position: relative;
+}
+
+.bend::before {
+  content: "";
+  position: absolute;
+  top: -2%;
+  left: -.75%;
+  height: 1em;
+  width: 2em;
+  background-image: url(../images/assets/original/photos-ornament.svg);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  transform: rotate(180deg);
+}
+
+.bend::after {
+  content: "";
+  position: absolute;
+  bottom: -2%;
+  right: -.75%;
+  height: 1em;
+  width: 2em;
+  background-image: url(../images/assets/original/photos-ornament.svg);
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 961px) {
+  .bend::before {
+      top: -2.25%;
+      left: -2%;
+  }
+  
+  .bend::after {
+      bottom: -2.25%;
+      right: -2%;
+  }
+}
+
+/*Underline*/
+
+.underline {
+  position: relative;
+}
+
+.underline::after {
+  content: "";
+  position: absolute;
+  bottom: -175%;
+  left: .3%;
+  height: 2em;
+  width: 100%;
+  background-image: url(../images/assets/original/underline-accent.svg);
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+/*Sections-title*/
+
+.sections-title {
+  font-family: 'K2D', sans-serif;
+  font-size: 32px;
+}
+
 /*Figure*/
 
 /*Figure - corner*/
@@ -144,6 +214,7 @@
   bottom: 0;
   padding: 1em 2em;
   color: var(--white, #FFFFFF);
+  background-color: var(--semi-transparent-dark, rgba(0, 0, 0, 0.5));
   font-size: 1.2em;
   font-weight: 400;
 }
@@ -158,8 +229,5 @@
 
 .card--dark-zoom-hover:hover img {
   transform: scale(1.2);
-}
-
-.card--dark-zoom-hover:hover figure {
   opacity: .75;
 }
