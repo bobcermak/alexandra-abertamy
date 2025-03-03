@@ -77,6 +77,7 @@
 /*Normal*/
 
 .button {
+  position: relative;
   display: inline-block;
   background-color: var(--primary, #512100);
   padding: 1em 1.5em;
@@ -87,12 +88,31 @@
   border: 2px solid transparent;
   transition: .25s ease-in-out;
   box-shadow: 0 2px 12px var(--gray, #A09C9C);
+  z-index: 1;
+  overflow: hidden;
+}
+ 
+.button:hover {
+  color: var(--primary, #512100);
 }
 
-.button:hover {
-  background-color: transparent;
-  border: 2px solid var(--primary, #512100);
-  color: var(--primary, #512100);
+.button::after {
+  content: "";
+  position: absolute;
+  background-color: var(--background-primary, #FFFFFF);
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: -30%;
+  right: -30%;
+  transform: skewX(-45deg) scale(0, 1);
+  transition: .5s all;
+}
+
+.button:hover::after {
+  transform: skewX(-45deg) scale(1, 1);
+  -webkit-transition: .5s all;
+  transition: .5s all;
 }
 
 /*Transparent - red*/
@@ -103,30 +123,18 @@
   border: 2px solid var(--primary, #512100);
 }
 
+.button--transparent-red::after {
+  background-color: transparent;
+}
+
 .button--transparent-red:hover {
-  background-color: var(--primary, #512100);
-  color: var(--background-primary, #FFFFFF);
+  box-shadow: 0 4px 24px var(--gray, #A09C9C);
 }
 
 /*Square*/
 
 .button--square {
   border-radius: 0;
-}
-
-/*Hover - red / white*/
-
-.button--red-white-hover:hover {
-  background-color: var(--background-primary, #FFFFFF);
-  color: var(--primary, #512100);
-}
-
-/*Hover - dark-red*/
-
-.button--dark-red-hover:hover {
-  background-color: var(--accent, #3B1900);
-  border: 2px solid var(--accent, #3B1900);
-  color: var(--background-primary, #FFFFFF);
 }
 
 /*Ornaments*/
