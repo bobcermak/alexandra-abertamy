@@ -102,7 +102,7 @@
   background-color: var(--background-primary, #FFFFFF);
   z-index: -1;
   top: 0;
-  bottom: 0;
+  bottom: -5%;
   left: -30%;
   right: -30%;
   transform: skewX(-45deg) scale(0, 1);
@@ -225,6 +225,44 @@
   background-color: var(--semi-transparent-dark, rgba(0, 0, 0, 0.5));
   font-size: 1.2em;
   font-weight: 400;
+}
+
+/*Highlight*/
+
+.highlight {
+  width: fit-content;
+  color: var(--accent, #3B1900);
+}
+
+.highlight p {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+.highlight small {
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+@media screen and (min-width: 1282px) and (max-width: 1331px) {
+  .highlight p {
+    font-size: 1.25em;
+  }
+  
+  .highlight small {
+    font-size: 1.25em;
+  }
+}
+
+.highlight--text-align-center {
+  text-align: center;
+}
+
+@media screen and (min-width: 961px) {
+  .highlight--text-align-left {
+    text-align: left;
+  }
 }
 
 /*Cards*/
