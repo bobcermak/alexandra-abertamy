@@ -173,7 +173,7 @@
 @media screen and (min-width: 961px) {
   .bend::before {
       top: -2.25%;
-      left: -2%;
+      left: -1%;
   }
   
   .bend::after {
