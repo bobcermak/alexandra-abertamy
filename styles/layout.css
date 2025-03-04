@@ -264,8 +264,9 @@
     background-size: cover;
     background-image: url(../images/assets/original/welcome-image.svg);
     color: var(--primary, #512100);
-    height: 290vh;
-    height: 290dvh;
+    height: 350vh;
+    height: 350dvh;
+    z-index: 1;
 }
 
 @media screen and (min-width: 541px) {
@@ -457,8 +458,14 @@
 
 @media screen and (min-width: 1281px) {
     .welcome-wrapper__footer {
-        grid-template-rows: repeat(3, minmax(auto, 180px));
+        grid-template-rows: repeat(3, minmax(auto, 160px));
         margin-top: 2em;
+    }
+}
+
+@media screen and (min-width: 1537px) {
+    .welcome-wrapper__footer {
+        grid-template-rows: repeat(3, minmax(auto, 180px));
     }
 }
 
@@ -472,10 +479,11 @@
     background-size: cover;
     background-image: url(../images/assets/original/about-us-image.svg);
     color: var(--primary, #512100);
-    height: 290vh;
-    height: 290dvh;
-    margin-top: -19em;
+    height: 350vh;
+    height: 350dvh;
+    margin-top: -25em;
     border: 2px solid;
+    z-index: -1;
 }
 
 .about-wrapper {
