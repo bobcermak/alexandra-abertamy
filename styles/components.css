@@ -117,17 +117,17 @@
 
 /*Transparent - red*/
 
-.button--transparent-red {
+.button--transparent {
   background-color: transparent;
   color: var(--primary, #512100);
   border: 2px solid var(--primary, #512100);
 }
 
-.button--transparent-red::after {
+.button--transparent::after {
   background-color: transparent;
 }
 
-.button--transparent-red:hover {
+.button--transparent:hover {
   box-shadow: 0 4px 24px var(--gray, #A09C9C);
 }
 
