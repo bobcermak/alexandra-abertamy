@@ -260,20 +260,9 @@
 .page__welcome {
     display: flex;
     flex-direction: column;
-    background-position: center;
-    background-size: cover;
-    background-image: url(../images/assets/original/welcome-image.svg);
+    background-color: var(--background-secondary, #F9E8E8);
     color: var(--primary, #512100);
-    height: 290vh;
-    height: 290dvh;
-    z-index: 1;
-}
-
-@media screen and (min-width: 541px) {
-    .page__welcome {
-        height: 220vh;
-        height: 220dvh;
-    }
+    padding-bottom: 1em;
 }
 
 .welcome-wrapper {
@@ -283,8 +272,13 @@
 
 @media screen and (min-width: 961px) {
     .page__welcome {
+        background-position: center;
+        background-size: cover;
+        background-image: url(../images/assets/original/welcome-image.svg);
+        background-color: transparent;
         height: 85vh;
         height: 85dvh;
+        padding-bottom: 0;
     }
 
     .welcome-wrapper {
@@ -472,22 +466,22 @@
 /*section - page__about*/
 
 .page__about {
-    position: relative;
     display: flex;
     flex-direction: column;
-    background-position: center;
-    background-size: cover;
-    background-image: url(../images/assets/original/about-us-image.svg);
     color: var(--primary, #512100);
-    height: 112vh;
-    height: 112dvh;
-    margin-top: -27.5em;
-    z-index: -1;
+    margin-top: 2em;
 }
 
 @media screen and (min-width: 961px) {
     .page__about {
-        z-index: 0;
+        background-position: center;
+        background-size: cover;
+        background-image: url(../images/assets/original/about-us-image.svg);
+        background-color: transparent;
+        margin-top: 0;
+        height: 100vh;
+        height: 100dvh;
+        z-index: 1;
     }
 }
 
@@ -511,18 +505,6 @@
 @media screen and (min-width: 1537px) {
     .about-wrapper {
         margin: 0 auto;
-    }
-}
-
-@media screen and (min-width: 541px) {
-    .page__about {
-        margin-top: -18em;
-    }
-}
-
-@media screen and (min-width: 961px) {
-    .page__about {
-        margin-top: 0;
     }
 }
 
@@ -634,4 +616,10 @@
 
 .about-wrapper__gallery img {
     border-radius: .5em;
+}
+
+/*section - page__rooms*/
+
+.page__rooms {
+    /*bg-image-figma -> oba rohy*/
 }
