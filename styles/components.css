@@ -257,7 +257,7 @@
 
 .highlight {
   width: fit-content;
-  color: var(--primary, #512100);
+  color: var(--accent, #3B1900);
 }
 
 .highlight p {
