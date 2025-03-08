@@ -17,7 +17,19 @@
         --background-primary: #FFFFFF;
         --background-secondary: #F9E8E8;
         --semi-transparent-dark: rgba(0, 0, 0, 0.5);
-        --max-width: 1536px;
+        --max-width: 960px;
+    }
+
+    @media screen and (min-width: 1281px) {
+        :root {
+            --max-width: 1280px;
+        }
+    }
+
+    @media screen and (min-width: 1537px) {
+        :root {
+            --max-width: 1536px;
+        }
     }
 
     html {

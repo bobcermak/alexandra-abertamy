@@ -271,7 +271,7 @@
   font-weight: 300;
 }
 
-@media screen and (min-width: 1282px) and (max-width: 1331px) {
+@media screen and (min-width: 1281px) and (max-width: 1537px) {
   .highlight p {
     font-size: 1.25em;
   }

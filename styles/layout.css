@@ -262,7 +262,7 @@
     flex-direction: column;
     background-color: var(--background-secondary, #F9E8E8);
     color: var(--primary, #512100);
-    margin-bottom: 1em;
+    padding-bottom: 2em;
 }
 
 .welcome-wrapper {
@@ -481,6 +481,14 @@
 
 .about-wrapper {
     max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.about-wrapper h2 {
+    margin-left: .25em;
+}
+
+.about-wrapper__details {
     margin: 0 .5em;
 }
 
@@ -503,7 +511,7 @@
 }
 
 .about-wrapper__header {
-    border-bottom: 2px solid var(--primary, #512100);
+    border-bottom: 1.5px solid var(--primary, #512100);
     padding-bottom: .75em;
 }
 
@@ -604,6 +612,7 @@
     margin-top: 2em;
     background-color: var(--background-secondary, #F9E8E8);
     border: 2px solid;
+    padding-bottom: 2em;
 }
 
 @media screen and (min-width: 961px) {
@@ -616,4 +625,9 @@
         height: 100vh;
         height: 100dvh;
     }
+}
+
+.rooms-wrapper {
+    max-width: var(--max-width);
+    margin: 0 auto;
 }
