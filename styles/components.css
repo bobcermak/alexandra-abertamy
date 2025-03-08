@@ -84,7 +84,6 @@
   border: 2px solid transparent;
   transition: .25s ease-in-out;
   box-shadow: 0 2px 12px var(--gray, #A09C9C);
-  z-index: 1;
   overflow: hidden;
 }
  

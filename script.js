@@ -1,10 +1,10 @@
-//Language
+//language
 
 //
 
-//Header
+//header
 
-//Roll
+//roll
 
 document.addEventListener('DOMContentLoaded', function() {
     let lastScrollY = window.scrollY;
@@ -19,11 +19,16 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-//Side-bar
+//side-bar
 
-//
+function toggleMenu() {
+    const menu = document.querySelector('.navbar__hamburger-menu');
+    const menuContent = document.querySelector('.menu-wrapper');
+    menu.classList.toggle('visible');
+    menuContent.classList.toggle('visible');
+}
 
-//Color
+//color
 
 const headerLinks = document.querySelectorAll('header a');
 headerLinks.forEach(link => {
@@ -32,9 +37,9 @@ headerLinks.forEach(link => {
     }
 });
 
-//Main
+//main
 
-//Animations
+//animations
 
 document.addEventListener("DOMContentLoaded", () => {
     const applyAnimations = (animations) => {
@@ -44,19 +49,16 @@ document.addEventListener("DOMContentLoaded", () => {
         }, delay);
       });
     };
-  
     const animationOffers = [
       { element: document.querySelector(".container--ad"), delay: 400 },
       { element: document.querySelector(".cards__1"), delay: 700 },
       { element: document.querySelector(".cards__2"), delay: 900 },
       { element: document.querySelector(".cards__3"), delay: 1100 },
     ];
-  
     const animationLocation = [
       { element: document.querySelector(".container--ad--another-pages"), delay: 400 },
       { element: document.querySelector(".page__iframe"), delay: 700 },
     ];
-  
     applyAnimations([...animationOffers, ...animationLocation]);
 });  
 document.addEventListener("DOMContentLoaded", function () {
@@ -115,6 +117,6 @@ document.addEventListener("DOMContentLoaded", function () {
     createObserver(".page__reviews", reviewsAnimationData);
 });
 
-//Footer
+//footer
 
 document.getElementById("year").textContent = new Date().getFullYear();

@@ -105,93 +105,119 @@
 
 /*hamburger - menu*/
 
+/*FIX!!!*/
+
 .navbar__hamburger-menu {
-    position: fixed;
     display: none;
-    /* display: flex; */
+    position: fixed;
+    top: -10%;
+    bottom: -10%;
+    left: 0;
+    right: 0;
+    background-color: var(--semi-transparent-dark, rgba(0, 0, 0, 0.5));
+}
+
+.menu-wrapper {
+    position: fixed;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin: 0;
     top: 0;
     bottom: 0;
-    left: 0;
-    right: 20%;
-    background-color: var(--background-primary, #FFFFFF); /*bg bude tmavší*/
+    left: -100%;
+    right: -80%;
+    background-color: var(--background-primary, #FFFFFF);
     z-index: 2;
     padding-top: .5em;
     padding-bottom: .5em;
+    padding-left: 2em;
+    transition: right .5s ease-in-out;
 }
 
-.navbar__hamburger-menu__items {
+.menu-wrapper.visible {
+    left: 0;
+    right: 20%;
+}
+
+.navbar__hamburger-menu.visible {
+    display: block;
+}
+
+/*!!!*/
+
+.menu-wrapper__items {
     list-style: none;
     padding: 0;
 }
 
-.navbar__hamburger-menu__logo {
-    margin-top: 1.5em;
+.menu-wrapper__logo {
     margin-left: -2em;
+}
+
+.menu-wrapper__close {
+    top: 0;
+    right: 0;
+    margin-top: 1.75em;
+    margin-right: 1.25em;
 }
 
 .navbar__hamburger {
     margin-right: 1.25em;
 }
 
-.navbar__hamburger-menu li {
+.menu-wrapper li {
     padding: 1em 0;
 }
 
-.navbar__hamburger-menu a {
+.menu-wrapper a {
     padding: 1em 0;
     padding-right: 1em;
 }
 
-.navbar__hamburger-menu li:first-child {
+.menu-wrapper li:first-child {
     padding-top: 0;
     padding-bottom: 0;
 }
 
-.navbar__hamburger-menu a {
+.menu-wrapper a {
     color: var(--black, #010B13);
     text-decoration: none;
     font-weight: 700;
 }
 
-.navbar__hamburger-menu__contacts-list {
+.menu-wrapper__contacts-list {
     padding: 0;
     margin-bottom: 2em;
 }
 
-.navbar__hamburger-menu__contacts-list h2 {
-    color: var(--gray, #A09C9C);
-}
-
-.navbar__hamburger-menu__contacts-list li {
+.menu-wrapper__contacts-list li {
     list-style: none;
 }
 
-.navbar__hamburger-menu__location-hide {
+.menu-wrapper__location-hide {
     position: absolute;
     left: -1000%;
 }
 
-.navbar__hamburger-menu__email-hide {
+.menu-wrapper__email-hide {
     display: none;
 }
 
-.navbar__hamburger-menu__contacts-list li span {
+.menu-wrapper__contacts-list li span {
     display: block;
 }
 
-.navbar__hamburger-menu__icon {
+.menu-wrapper__icon {
     display: inline-block;
 }
 
 @media screen and (min-width: 541px) {
-    .navbar__hamburger-menu__email-hide {
+    .menu-wrapper__email-hide {
         display: block;
     }
 
-    .navbar__hamburger-menu__email-shorter-hide {
+    .menu-wrapper__email-shorter-hide {
         display: none;
     }
 }

@@ -1,3 +1,5 @@
+/*Hamburger*/
+
 .hamburger {
     display: flex;
     flex-direction: column;
@@ -18,4 +20,29 @@
     .hamburger {
         display: none;
     }
+}
+
+/*Close*/
+
+.close {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 2.5em;
+    height: 2.5em;
+    gap: .4em;
+    cursor: pointer;
+}
+
+.line--close {
+    position: absolute;
+}
+
+.close .line--close:nth-child(1) {
+    transform: rotate(45deg);
+}
+
+.close .line--close:nth-child(2) {
+    transform: rotate(-45deg);
 }
