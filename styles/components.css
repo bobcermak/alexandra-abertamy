@@ -22,16 +22,6 @@
   content: "\f095";
 }
 
-.icon--home::before {
-  font-family: "Font Awesome 6 Free";
-  content: "\f015";
-}
-
-.icon--coffee::before {
-  font-family: "Font Awesome 6 Free";
-  content: "\f0f4";
-}
-
 .icon--instagram::before {
   font-family: "Font Awesome 5 Brands";
   content: "\f16d";
@@ -42,6 +32,12 @@
   font-family: "Font Awesome 5 Brands";
   content: "\f09a";
   margin: 0;
+}
+
+.icon--check::before {
+  font-family: "Font Awesome 6 Free";
+  content: "\f00c";
+  color: var(--secondary, #A3B18A);
 }
 
 /*Animations*/
@@ -123,12 +119,28 @@
   border: 2px solid var(--primary, #512100);
 }
 
+.button--transparent:hover {
+  box-shadow: 0 4px 24px var(--gray, #A09C9C);
+}
+
 .button--transparent::after {
   background-color: transparent;
 }
 
-.button--transparent:hover {
-  box-shadow: 0 4px 24px var(--gray, #A09C9C);
+/*No shadow*/
+
+.button--no-shadow {
+  box-shadow: none;
+}
+
+.button--no-shadow:hover {
+  background-color: var(--primary, #512100);
+  color: var(--white, #FFFFFF);
+  box-shadow: none;
+}
+
+.button--no-shadow::after {
+  background-color: transparent;
 }
 
 /*Square*/
@@ -170,6 +182,14 @@
   object-fit: cover;
 }
 
+.bend--broken-img::before {
+  top: -3%;
+}
+
+.bend--broken-img::after {
+  bottom: -3%;
+}
+
 @media screen and (min-width: 541px) {
   .bend::before {
       top: -2%;
@@ -179,6 +199,14 @@
   .bend::after {
       bottom: -2%;
       right: -.75%;
+  }
+
+  .bend--broken-img::before {
+    top: -3%;
+  }
+  
+  .bend--broken-img::after {
+    bottom: -3%;
   }
 }
 
@@ -292,6 +320,51 @@
 }
 
 /*Cards*/
+
+/*Card - rooms*/
+
+.card--rooms {
+  display: grid;
+  grid-template-rows: minmax(auto, 210px) minmax(auto, 130px) minmax(auto, 90px);
+  overflow: hidden;
+  background-color: var(--white, #FFFFFF);
+  border-radius: .5em;
+  container-type: inline-size;
+}
+
+.card--rooms div {
+  padding-top: 1em;
+  padding-left: 1em;
+}
+
+.card--rooms div p {
+  margin: 0;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+@container (min-width: 300px) {
+  .card--rooms div p {
+    font-size: 2em;
+  }
+}
+
+.card--rooms div ul {
+  padding: 0;
+  margin-top: .5em;
+}
+
+.card--rooms div li {
+  list-style: none;
+  margin-top: .25em;
+  font-weight: 700;
+}
+
+.card--rooms footer {
+  align-content: center;
+  padding-left: 1em;
+  margin-top: .75em;
+}
 
 /*Card - hover*/
 

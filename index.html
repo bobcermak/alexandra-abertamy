@@ -163,7 +163,6 @@
                     <div class="about-wrapper__accommodation-info">
                         <header class="about-wrapper__header">
                             <h3>Plně zařízené pokoje a rodinný apartmán, celkem pro 15 hostů.</h3>
-                            <!--mobile-->
                             <p><strong>Chata Alexandra</strong> - <strong>Hřebečná - Abertamy</strong>. Ideální pro dovolenou po celý rok. Moderně vybavená pro maximální pohodlí.</p>
                             <p>Skvělá poloha pro <b>cyklisty, běžkaře, lyžaře, turisty, rodiny, houbaře</b>. Užijte si krásy <strong>Krušných hor</strong>.</p>
                             <p>Kapacita: <strong>11 lůžek</strong> ve 4 pokojích (+ sprcha, WC) + <strong>4lůžkový pokoj</strong> s vanou a WC.</p>
@@ -187,7 +186,7 @@
                             <a class="button" href="#" aria-label="Tlačítko více">Chci znát více</a>
                         </footer>
                     </div>
-                    <div class="about-wrapper__gallery bend">
+                    <div class="about-wrapper__gallery bend bend--broken-img">
                         <figure class="about-wrapper__gallery__common-room">
                             <picture>
                                 <source srcset="./images/bckps/common-room-other-side.avif" type="image/avif">
@@ -199,7 +198,7 @@
                             <picture>
                                 <source srcset="./images/bckps/double-room.avif" type="image/avif">
                                 <source srcset="./images/bckps/double-room.webp" type="image/webp">
-                                <img class="img-responsive" src="./images/original/double-room.jpg" loading="lazy" width="2448" height="3264" alt="Alexandra Abertamy - náhled dvoulužkového pokoje">
+                                <img class="img-responsive" src="./images/original/double-room.jpg" loading="lazy" width="2082" height="2776" alt="Alexandra Abertamy - náhled dvoulužkového pokoje">
                             </picture>
                         </figure>
                     </div>
@@ -211,36 +210,72 @@
                 <header class="rooms-wrapper__header">
                     <h2 class="underline sections-title">Pokoje</h2>
                     <h3>Ubytování pro 8 až 15 osob v pěti útulných pokojích.</h3>
-                    <p>Všechny pokoje mají vlastní sociální zařízení, TV/satelit a bezplatné Wi-Fi připojení k internetu.</p>
                 </header>
-                <div class="rooms-wrapper__cards">
-                    <figure>
-                        <picture>
-                            <source srcset="./images/bckps/bedroom-orange.avif" type="image/avif">
-                            <source srcset="./images/bckps/bedroom-orange.webp" type="image/webp">
-                            <img class="img-responsive" src="./images/original/bedroom-orange.jpeg" loading="lazy" width="1280" height="890" alt="Alexandra Abertamy - náhled třílůžkového pokoje">
-                        </picture>
-                        <figcaption>3x třílůžkový pokoj</figcaption>
-                    </figure>
-                    <figure>
-                        <picture>
-                            <source srcset="./images/bckps/bedroom-sidephoto.avif" type="image/avif">
-                            <source srcset="./images/bckps/bedroom-sidephoto.webp" type="image/webp">
-                            <img class="img-responsive" src="./images/original/bedroom-sidephoto.jpeg" loading="lazy" width="1280" height="853" alt="Alexandra Abertamy - náhled dvoulůžkového pokoje">
-                        </picture>
-                        <figcaption>1x dvoulůžkový pokoj</figcaption>
-                    </figure>
-                    <figure>
-                        <picture>
-                            <source srcset="./images/bckps/bedroom-normal.avif" type="image/avif">
-                            <source srcset="./images/bckps/bedroom-normal.webp" type="image/webp">
-                            <img class="img-responsive" src="./images/original/bedroom-normal.jpeg" loading="lazy" width="1280" height="853" alt="Alexandra Abertamy - náhled čtyřlůžkového pokoje">
-                        </picture>
-                        <figcaption>1x čtyřlůžkový pokoj</figcaption>
-                    </figure>
+                <div class="rooms-wrapper__description">
+                    <p>* Všechny pokoje mají vlastní sociální zařízení, TV/satelit a bezplatné Wi-Fi připojení k internetu.</p>
                 </div>
-                <footer class="rooms-wrapper__footer">
-                    <a class="button" href="#" aria-label="Tlačítko více">Více</a>
+                <footer class="rooms-wrapper__cards">
+                    <article class="rooms-wrapper__cards__double-room card--rooms">
+                        <header>
+                            <picture>
+                                <source srcset="./images/bckps/double-room.avif" type="image/avif">
+                                <source srcset="./images/bckps/double-room.webp" type="image/webp">
+                                <img class="img-responsive" src="./images/original/double-room.jpg" loading="lazy" width="2082" height="2776" alt="Alexandra Abertamy - náhled dvoulužkového pokoje">
+                            </picture>
+                        </header>
+                        <div>
+                            <p>Dvoulůžkový pokoj</p>
+                            <ul>
+                                <li class="icon icon--check">Vlastní koupelna</li>
+                                <li class="icon icon--check">Vlastní záchod</li>
+                                <li class="icon icon--check">Celkem <b>1x</b> k dispozici</li>
+                            </ul>
+                        </div>
+                        <footer>
+                            <a class="button button--transparent button--no-shadow" href="#" aria-label="Chci se domluvit">Chci se domluvit</a>
+                        </footer>
+                    </article>
+                    <article class="rooms-wrapper__cards__triple-room card--rooms">
+                        <header>
+                            <picture>
+                                <source srcset="./images/bckps/triple-room.avif" type="image/avif">
+                                <source srcset="./images/bckps/triple-room.webp" type="image/webp">
+                                <img class="img-responsive" src="./images/original/triple-room.jpg" loading="lazy" width="2448" height="3264" alt="Alexandra Abertamy - náhled trojlužkového pokoje">
+                            </picture>
+                        </header>
+                        <div>
+                            <p>Třílůžkový pokoj</p>
+                            <ul>
+                                <li class="icon icon--check">Vlastní koupelna</li>
+                                <li class="icon icon--check">Vlastní záchod</li>
+                                <li class="icon icon--check">Celkem <b>3x</b> k dispozici</li>
+                            </ul>
+                        </div>
+                        <footer>
+                            <a class="button button--transparent button--no-shadow" href="#" aria-label="Chci se domluvit">Chci se domluvit</a>
+                        </footer>
+                    </article>
+                    <article class="rooms-wrapper__cards__quadruple-room card--rooms">
+                        <header>
+                            <!--jiný obrázek-->
+                            <picture>
+                                <source srcset="./images/bckps/triple-room.avif" type="image/avif">
+                                <source srcset="./images/bckps/triple-room.webp" type="image/webp">
+                                <img class="img-responsive" src="./images/original/triple-room.jpg" loading="lazy" width="2448" height="3264" alt="Alexandra Abertamy - náhled trojlužkového pokoje">
+                            </picture>
+                        </header>
+                        <div>
+                            <p>Čtyřlůžkový pokoj</p>
+                            <ul>
+                                <li class="icon icon--check">Vlastní koupelna</li>
+                                <li class="icon icon--check">Vlastní záchod</li>
+                                <li class="icon icon--check">Celkem <b>1x</b> k dispozici</li>
+                            </ul>
+                        </div>
+                        <footer>
+                            <a class="button button--transparent button--no-shadow" href="#" aria-label="Chci se domluvit">Chci se domluvit</a>
+                        </footer>
+                    </article>
                 </footer>
             </div>
         </section>
