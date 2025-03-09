@@ -47,15 +47,29 @@
     opacity: 0;
     transform: translateY(50px);
   }
+
   50% {
     opacity: .5;
   }
+
   70% {
     transform: translateY(-2px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes slide-to-right {
+  0% {
+    left: -120%;
+    right: 120%;
+  }
+
+  100% {
+    right: 20%;
   }
 }
 
@@ -63,6 +77,7 @@
   0% {
       opacity: 0;
   }
+
   100% {
       opacity: 1;
   }
@@ -85,10 +100,24 @@
   transition: .25s ease-in-out;
   box-shadow: 0 2px 12px var(--gray, #A09C9C);
   overflow: hidden;
+  z-index: 0;
 }
  
 .button:hover {
+  background-color: var(--background-primary, #FFFFFF);
   color: var(--primary, #512100);
+  border: 2px solid var(--primary, #512100);
+}
+
+@media screen and (min-width: 761px) {
+  .button {
+    z-index: 1;
+  }
+   
+  .button:hover {
+    background-color: transparent;
+    color: var(--primary, #512100);
+  }
 }
 
 .button::after {
@@ -324,7 +353,7 @@
 
 .card--rooms {
   display: grid;
-  grid-template-rows: minmax(auto, 210px) minmax(auto, 130px) minmax(auto, 90px);
+  grid-template-rows: minmax(auto, 260px) minmax(auto, 130px) minmax(auto, 90px);
   overflow: hidden;
   background-color: var(--white, #FFFFFF);
   border-radius: .5em;
