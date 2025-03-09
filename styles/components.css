@@ -388,6 +388,10 @@
   font-weight: 700;
 }
 
+.card--rooms div li strong {
+  color: var(--accent, #3B1900);
+}
+
 .card--rooms footer {
   align-content: center;
   padding-left: 1em;
