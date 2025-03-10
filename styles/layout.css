@@ -2,7 +2,7 @@
 
 .page {
     min-height: 100vh;
-    min-height: 100dvh;
+    min-height: 100svh;
     display: flex;
     flex-direction: column;
 }
@@ -292,7 +292,7 @@
         background-image: url(../images/assets/original/welcome-image.svg);
         background-color: transparent;
         height: 85vh;
-        height: 85dvh;
+        height: 85svh;
         margin-bottom: 0;
     }
 
@@ -313,7 +313,7 @@
 
 .welcome-wrapper__header__img {
     height: 35vh;
-    height: 35dvh;
+    height: 35svh;
 }
 
 .welcome-wrapper__content {
@@ -620,7 +620,7 @@
         background-image: url(../images/assets/original/rooms-image.svg);
         background-color: transparent;
         height: 105vh;
-        height: 105dvh;
+        height: 105svh;
         margin-top: -1em;
     }
 }
@@ -697,7 +697,7 @@
         background-image: url(../images/assets/original/rooms-image.svg);
         background-color: transparent;
         height: 105vh;
-        height: 105dvh;
+        height: 105svh;
         margin-top: -1em;
     }
 } */
