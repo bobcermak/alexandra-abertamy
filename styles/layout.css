@@ -10,7 +10,6 @@
 /*page__header*/
 
 .page__header {
-    /*effect jako mercuria jina barva header u scroll / pruhledne a pak zase normalni kdž je v normalu*/
     z-index: 1;
 }
 
