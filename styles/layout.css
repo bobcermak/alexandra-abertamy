@@ -132,6 +132,10 @@
     animation: slide-to-right .5s ease-in-out forwards;
 }
 
+.menu-wrapper.closing {
+    animation: slide-to-left .5s ease-in-out forwards;
+}
+
 .navbar__hamburger-menu.visible {
     display: block;
 }
@@ -303,6 +307,17 @@
 
     .welcome-wrapper__header {
         display: none;
+    }
+}
+  
+@media screen and (min-width: 2001px) {
+    .page__welcome {
+        display: flex;
+        align-items: center;
+    }
+
+    .welcome-wrapper {
+        margin-top: -14em;
     }
 }
 
@@ -618,8 +633,8 @@
         background-size: cover;
         background-image: url(../images/assets/original/rooms-image.svg);
         background-color: transparent;
-        height: 105vh;
-        height: 105svh;
+        height: 125vh;
+        height: 125svh;
         margin-top: -1em;
     }
 }
@@ -631,19 +646,32 @@
     flex-grow: 1;
 }
 
+@media screen and (min-width: 961px) {
+    .rooms-wrapper {
+        margin-top: -4em;
+    }
+}
+
 .rooms-wrapper__header h3 {
     font-size: 2em;
     margin: 0;
+    text-align: center;
 }
 
 .rooms-wrapper__description p {
     margin-top: .5em;
     margin-bottom: 1.5em;
+    text-align: center;
 }
 
 @media screen and (min-width: 961px) {
     .rooms-wrapper__header h3 {
         font-size: 2.5em;
+        text-align: left;
+    }
+
+    .rooms-wrapper__description p {
+        text-align: left;
     }
 }
 

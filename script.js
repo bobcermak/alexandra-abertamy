@@ -24,16 +24,33 @@ document.addEventListener('DOMContentLoaded', function() {
 function toggleMenu() {
     const menu = document.querySelector('.navbar__hamburger-menu');
     const menuContent = document.querySelector('.menu-wrapper');
-    menu.classList.toggle('visible');
-    menuContent.classList.toggle('visible');
+    if (menu.classList.contains('visible')) {
+        menu.classList.add('closing');
+        menuContent.classList.add('closing');
+
+        setTimeout(() => {
+            menu.classList.remove('visible', 'closing');
+            menuContent.classList.remove('visible', 'closing');
+        }, 300);
+    } else {
+        menu.classList.add('visible');
+        menuContent.classList.add('visible');
+    }
 }
+document.querySelectorAll('.menu-wrapper a').forEach(link => {
+    link.addEventListener('click', () => {
+        if (document.querySelector('.navbar__hamburger-menu').classList.contains('visible')) {
+            toggleMenu();
+        }
+    });
+});
 
 //color
 
 const headerLinks = document.querySelectorAll('header a');
 headerLinks.forEach(link => {
-    if (link.classList.contains('activeLi')) {
-        link.style.color = '#FF4605';
+    if (link.classList.contains('active-a')) {
+        link.style.color = '#512100';
     }
 });
 

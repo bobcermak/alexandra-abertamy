@@ -62,6 +62,17 @@
   }
 }
 
+@keyframes slide-to-left {
+  0% {
+    right: 20%;
+  }
+
+  100% {
+    left: -120%;
+    right: 120%;
+  }
+}
+
 @keyframes slide-to-right {
   0% {
     left: -120%;
@@ -102,22 +113,11 @@
   overflow: hidden;
   z-index: 0;
 }
- 
+
 .button:hover {
-  background-color: var(--background-primary, #FFFFFF);
+  background-color: transparent;
   color: var(--primary, #512100);
   border: 2px solid var(--primary, #512100);
-}
-
-@media screen and (min-width: 761px) {
-  .button {
-    z-index: 1;
-  }
-   
-  .button:hover {
-    background-color: transparent;
-    color: var(--primary, #512100);
-  }
 }
 
 .button::after {
