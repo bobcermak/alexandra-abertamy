@@ -516,7 +516,7 @@
 
 .about-wrapper__header {
     border-bottom: 1.5px solid var(--primary, #512100);
-    padding-bottom: .5em;
+    padding-bottom: .75em;
 }
 
 .about-wrapper__header p:nth-of-type(1) {
