@@ -94,6 +94,26 @@
   }
 }
 
+@keyframes show-up--slow-dark {
+  0% {
+      background-color: transparent;
+  }
+
+  100% {
+    background-color: var(--semi-transparent-dark, rgba(0, 0, 0, 0.5));
+  }
+}
+
+@keyframes show-back--slow-dark {
+  0% {
+      background-color: var(--semi-transparent-dark, rgba(0, 0, 0, 0.5));
+  }
+
+  100% {
+    background-color: transparent;
+  }
+}
+
 /*Buttons*/
 
 /*Normal*/
