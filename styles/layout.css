@@ -47,7 +47,7 @@
     text-align: center;
 }
 
-.contact-container__contacts-list li {
+.contact-container__contacts-list a {
     display: inline-block;
     list-style: none;
     margin-right: 1em;
@@ -58,6 +58,7 @@
     text-decoration: none;
     padding: var(--padding);
     transition: .25s ease-in-out;
+    font-style: normal;
 }
 
 .contact-container__socials-list li {
