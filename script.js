@@ -24,19 +24,23 @@ document.addEventListener('DOMContentLoaded', function() {
 function toggleMenu() {
     const menu = document.querySelector('.navbar__hamburger-menu');
     const menuContent = document.querySelector('.menu-wrapper');
+    const darkContent = document.querySelector('.dark-wrapper');
     if (menu.classList.contains('visible')) {
         menu.classList.add('closing');
         menuContent.classList.add('closing');
-
+        darkContent.classList.add('closing');
         setTimeout(() => {
             menu.classList.remove('visible', 'closing');
             menuContent.classList.remove('visible', 'closing');
+            darkContent.classList.remove('visible', 'closing');
         }, 300);
     } else {
         menu.classList.add('visible');
         menuContent.classList.add('visible');
+        darkContent.classList.add('visible');
     }
 }
+
 document.querySelectorAll('.menu-wrapper a').forEach(link => {
     link.addEventListener('click', () => {
         if (document.querySelector('.navbar__hamburger-menu').classList.contains('visible')) {

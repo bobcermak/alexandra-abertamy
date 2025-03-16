@@ -292,7 +292,7 @@
   content: "";
   position: absolute;
   bottom: -175%;
-  left: .3%;
+  left: 0;
   right: 0;
   height: 2em;
   background-image: url(../images/assets/original/underline-accent.svg);
