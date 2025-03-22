@@ -518,6 +518,7 @@
 @media screen and (min-width: 961px) {
     .about-wrapper__details {
         display: flex;
+        justify-content: center;
         gap: 5rem;
         align-items: center;
         margin-top: 2rem; 
@@ -663,21 +664,12 @@
 
 /*section - page__travel-tips*/
 
-/* .page__travel-tips {
-    display: flex;
-    align-items: center;
-    background-color: var(--background-secondary, #F9E8E8);
+.page__rooms {
     padding-bottom: .5rem;
 }
 
-@media screen and (min-width: 961px) {
-    .page__travel-tips {
-        background-position: center;
-        background-size: cover;
-        background-image: url(../images/assets/original/rooms-image.svg);
-        background-color: transparent;
-        height: 105vh;
-        height: 105svh;
-        margin-top: -1rem;
-    }
-} */
+.travel-tips-wrapper {
+    max-width: var(--max-width);
+    margin: 1.25rem auto;
+    padding: 0 .5rem;
+}
