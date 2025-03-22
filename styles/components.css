@@ -180,6 +180,7 @@
 
 .button--no-shadow {
   box-shadow: none;
+  transition: background-color .25s ease-in-out, color .25s ease-in-out;
 }
 
 .button--no-shadow:hover {
