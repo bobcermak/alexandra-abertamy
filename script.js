@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function toggleMenu() {
     const menu = document.querySelector('.navbar__hamburger-menu');
     const menuContent = document.querySelector('.menu-wrapper');
-    const darkContent = document.querySelector('.dark-wrapper');
+    const darkContent = document.querySelector('.exit-wrapper');
     if (menu.classList.contains('visible')) {
         menu.classList.add('closing');
         menuContent.classList.add('closing');
@@ -47,15 +47,6 @@ document.querySelectorAll('.menu-wrapper a').forEach(link => {
             toggleMenu();
         }
     });
-});
-
-//color
-
-const headerLinks = document.querySelectorAll('header a');
-headerLinks.forEach(link => {
-    if (link.classList.contains('active-a')) {
-        link.style.color = '#512100';
-    }
 });
 
 //main
