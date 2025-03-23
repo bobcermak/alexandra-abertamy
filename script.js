@@ -51,6 +51,10 @@ document.querySelectorAll('.menu-wrapper a').forEach(link => {
 
 //main
 
+//slider
+
+
+
 //animations
 
 document.addEventListener("DOMContentLoaded", () => {

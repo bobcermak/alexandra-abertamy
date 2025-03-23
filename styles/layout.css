@@ -707,12 +707,14 @@
     content: "";
     position: absolute;
     top: 102%;
+    left: 0;
     height: 80px;
     width: 90px;
     background-image: url(../images/assets/original/hike-image-mobile.svg);
     background-repeat: no-repeat;
     object-fit: cover;
     transform: rotate(15deg);
+    z-index: -1;
 }
 
 .travel-tips-wrapper__content::after {
@@ -737,8 +739,22 @@
     }
 }
 
-@media screen and (min-width: 961px) {
+@media screen and (min-width: 1281px) {
+    .travel-tips-wrapper__content::before {
+        top: 80%;
+        left: 0;
+        height: 245px;
+        width: 320px;
+        background-image: url(../images/assets/original/hike-image-desktop.svg);
+    }
     
+    .travel-tips-wrapper__content::after {
+        top: -25%;
+        right: 0;
+        height: 190px;
+        width: 245px;
+        background-image: url(../images/assets/original/bike-image-desktop.svg);
+    }
 }
 
 .travel-tips-wrapper__trip-content-header-img {
