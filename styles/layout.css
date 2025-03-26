@@ -739,6 +739,13 @@
     }
 }
 
+@media screen and (min-width: 961px) {
+    .travel-tips-wrapper__content::after {
+        top: -20%;
+        right: 0;
+    }
+}
+
 @media screen and (min-width: 1281px) {
     .travel-tips-wrapper__content::before {
         top: 80%;
