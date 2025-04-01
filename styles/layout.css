@@ -673,8 +673,8 @@
 
 .page__travel-tips {
     padding-bottom: 5rem;
-    overflow-x: hidden;
     border: 2px solid;
+    overflow: hidden;
 }
 
 .travel-tips-wrapper {
