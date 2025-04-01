@@ -53,7 +53,36 @@ document.querySelectorAll('.menu-wrapper a').forEach(link => {
 
 //slider
 
-
+document.addEventListener('DOMContentLoaded', function() {
+    let slides = document.querySelectorAll('.travel-tips-wrapper__trip-content');
+    let dots = document.querySelectorAll('.travel-tips-wrapper__content-slider-dot');
+    let currentIndex = 0;
+    let autoSlide = true;
+    const delay = 4000;
+    function changeSlide() {
+        slides.forEach(slide => {
+            slide.classList.remove('active', 'animate-slide');
+        });
+        slides[currentIndex].classList.add('active', 'animate-slide');
+        dots.forEach(dot => dot.checked = false);
+        dots[currentIndex].checked = true;
+    }
+    function autoAdvance() {
+        if (autoSlide) {
+            currentIndex = (currentIndex + 1) % slides.length;
+            changeSlide();
+        }
+    }
+    dots.forEach((dot, index) => {
+        dot.addEventListener('change', () => {
+            autoSlide = false;
+            currentIndex = index;
+            changeSlide();
+        });
+    });
+    let interval = setInterval(autoAdvance, delay);
+    changeSlide();
+});
 
 //animations
 

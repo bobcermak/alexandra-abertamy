@@ -114,6 +114,16 @@
   }
 }
 
+@keyframes slide-in-from-right {
+  from {
+      transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
 /*Buttons*/
 
 /*Normal*/
@@ -197,6 +207,45 @@
 
 .button--square {
   border-radius: 0;
+}
+
+/*Inputs*/
+
+/*Slider dot*/
+
+.slider-dot {
+  display: none;
+}
+
+.slider-dot + label {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 1.25rem;
+  border-radius: 50%;
+  background-color: var(--dark-pink, #FFB6B6);
+  transition: background-color .3s ease-in-out, transform .3s ease-in-out;
+  cursor: pointer;
+}
+
+.slider-dot + label::after {
+  content: "";
+  position: absolute;
+  top: -12.5px;
+  left: -12.5px;
+  right: -12.5px;
+  bottom: -12.5px;
+  background-color: transparent;
+}
+
+.slider-dot:checked + label {
+  background-color: var(--accent, #3B1900);
+  transform: scale(1.25);
+}
+
+.slider-dot + label:hover {
+  background-color: var(--accent, #3B1900);
 }
 
 /*Ornaments*/
