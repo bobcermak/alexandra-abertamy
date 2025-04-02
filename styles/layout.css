@@ -646,6 +646,10 @@
     margin-bottom: 1.5rem;
 }
 
+.rooms-wrapper__description-text {
+    opacity: .7;
+}
+
 .rooms-wrapper__cards {
     display: flex;
     flex-wrap: wrap;
