@@ -162,6 +162,22 @@ document.addEventListener("DOMContentLoaded", function () {
     createObserver(".page__reviews", reviewsAnimationData);
 });
 
+//p
+
+document.addEventListener("DOMContentLoaded", () => {
+    const paragraphs = document.querySelectorAll(".travel-tips-wrapper__trip-content-summary-info");
+    const maxLength = 200;
+
+    paragraphs.forEach(p => {
+        let text = p.textContent.trim();
+        if (text.length > maxLength) {
+            p.textContent = text.slice(0, maxLength - 3) + "...";
+        } else {
+            p.textContent = text.padEnd(maxLength, " ");
+        }
+    });
+});
+
 //footer
 
 document.getElementById("year").textContent = new Date().getFullYear();

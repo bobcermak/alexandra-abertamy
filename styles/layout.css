@@ -673,7 +673,6 @@
 
 .page__travel-tips {
     padding-bottom: 5rem;
-    border: 2px solid;
     overflow: hidden;
 }
 
@@ -695,7 +694,6 @@
 
 .travel-tips-wrapper__content {
     position: relative;
-    border: 2px solid;
 }
 
 .travel-tips-wrapper__content::before {
@@ -751,7 +749,7 @@
     }
     
     .travel-tips-wrapper__content::after {
-        top: -25%;
+        top: -35%;
         right: 0;
         height: 190px;
         width: 245px;
@@ -846,19 +844,14 @@
 
 .travel-tips-wrapper__trip-content {
     display: none;
-    opacity: 0;
-    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
-    transform: translateX(100%);
 }
 
 .travel-tips-wrapper__trip-content.active {
     display: grid;
-    opacity: 1;
-    transform: translateX(0);
 }
 
 .travel-tips-wrapper__trip-content.animate-slide {
-    animation: slide-in-from-right 1s forwards;
+    animation: slide-in-from-right .5s forwards;
 }
 
 /*slider-dots*/
@@ -867,13 +860,14 @@
     display: flex;
     justify-content: center;
     margin-top: .5rem;
-    border: 2px solid;
 }
 
 @media screen and (min-width: 1281px) {
     .travel-tips-wrapper__content-slider-dots {
         position: absolute;
         width: 50%;
-        margin-top: -15rem;
+        margin-top: -14rem;
     }
 }
+
+/*page__price-list*/
