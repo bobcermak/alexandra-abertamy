@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let dots = document.querySelectorAll('.travel-tips-wrapper__content-slider-dot');
     let currentIndex = 0;
     let autoSlide = true;
-    const delay = 4000;
+    const delay = 12000;
     function changeSlide() {
         slides.forEach(slide => {
             slide.classList.remove('active', 'animate-slide');
