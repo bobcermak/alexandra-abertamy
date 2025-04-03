@@ -779,6 +779,12 @@
     font-size: 2rem;
 }
 
+@media screen and (min-width: 541px) and (max-width: 641px) {
+    .travel-tips-wrapper__trip-content-summary-title {
+        height: 4.5rem;
+    }
+}
+
 .travel-tips-wrapper__trip-content-summary-info {
     margin: 0;
     margin-top: .5rem;
@@ -855,7 +861,7 @@
 }
 
 .travel-tips-wrapper__trip-content.animate-slide {
-    animation: slide-in-from-right .5s forwards;
+    animation: slide-in-from-right 1.5s forwards;
 }
 
 /*slider-dots*/

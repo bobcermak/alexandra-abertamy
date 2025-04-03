@@ -115,22 +115,12 @@
 }
 
 @keyframes slide-in-from-right {
-  from {
-      transform: translateX(100%);
+  0% {
+    opacity: .25;
   }
 
-  to {
-    transform: translateX(0);
-  }
-}
-
-@keyframes slide-left-from-in {
-  from {
-      transform: translateX(0);
-  }
-
-  to {
-    transform: translateX(-100%);
+  100% {
+    opacity: 1;
   }
 }
 
