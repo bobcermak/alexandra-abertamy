@@ -422,51 +422,57 @@
 
 /*Card - rooms*/
 
-.card--rooms {
+.card-template {
   display: grid;
-  grid-template-rows: minmax(auto, 260px) minmax(auto, 130px) minmax(auto, 90px);
+  grid-template-rows: minmax(auto, 260px) minmax(auto, 155px) minmax(auto, 90px);
   overflow: hidden;
   background-color: var(--white, #FFFFFF);
   border-radius: .5rem;
   container-type: inline-size;
 }
 
-.card--rooms__content {
+.card-template__content {
   padding-top: 1rem;
   padding-left: 1rem;
 }
 
-.card--rooms__content-title {
+.card-template__content-title {
   margin: 0;
   font-size: 1.5rem;
   font-weight: 700;
 }
 
 @container (min-width: 300px) {
-  .card--rooms__content-title {
+  .card-template__content-title {
     font-size: 2rem;
   }
 }
 
-.card--rooms__content-list {
+.card-template__content-list {
   padding: 0;
   margin-top: .5rem;
 }
 
-.card--rooms__content-item {
+.card-template__content-item {
   list-style: none;
   margin-top: .25rem;
   font-weight: 700;
 }
 
-.card--rooms__content-item-strong {
+.card-template__content-item-strong {
   color: var(--accent, #3B1900);
 }
 
-.card--rooms__footer {
+.card-template__footer {
   align-content: center;
   padding-left: 1rem;
   margin-top: .75rem;
+}
+
+/*Card - rooms --Card - about*/
+
+.about-wrapper__accommodation-info-wrapper-card {
+  padding: 0;
 }
 
 /*Card - hover*/

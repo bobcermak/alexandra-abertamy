@@ -509,7 +509,7 @@
     padding-bottom: 1.5rem;
 }
 
-@media screen and (min-width: 961px) {
+@media screen and (min-width: 1281px) {
     .page__about {
         margin-top: 0;
         margin-bottom: 2.5rem;
@@ -522,7 +522,7 @@
     padding: .5rem;
 }
 
-@media screen and (min-width: 961px) {
+@media screen and (min-width: 1281px) {
     .about-wrapper__details {
         display: flex;
         justify-content: center;
@@ -561,6 +561,32 @@
     }
 }
 
+.about-wrapper__accommodation-info-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
+    flex-wrap: wrap;
+    container-type: inline-size;
+    margin-top: 1rem;
+    border-top: 1.5px solid var(--primary, #512100);
+    padding-top: .75rem;
+}
+
+.about-wrapper__accommodation-info-wrapper-card {
+    margin-left: 2rem;
+}
+
+@media screen and (min-width: 961px) {
+    .about-wrapper__accommodation-info-wrapper {
+        justify-content: space-between;
+    }
+
+    .about-wrapper__accommodation-info-wrapper-card {
+        margin-left: 0;
+    }
+}
+
 .about-wrapper__accommodation-info-summary {
     display: flex;
     flex-direction: column;
@@ -571,16 +597,10 @@
 
 @media screen and (min-width: 961px) {
     .about-wrapper__accommodation-info-summary {
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-between;
         align-items: start;
         margin: 1rem 0;
-    }
-}
-
-@media screen and (min-width: 1281px) {
-    .about-wrapper__accommodation-info-summary {
-        flex-direction: row;
     }
 }
 
@@ -592,7 +612,7 @@
     gap: 1rem;
 }
 
-@media screen and (min-width: 961px) {
+@media screen and (min-width: 1281px) {
     .about-wrapper__gallery {
         grid-template-columns: repeat(2, minmax(auto, 625px));
         grid-template-rows: minmax(auto, 600px);
@@ -617,7 +637,7 @@
     padding-bottom: .5rem;
 }
 
-@media screen and (min-width: 961px) {
+@media screen and (min-width: 1281px) {
     .page__rooms {
         background-position: center;
         background-size: cover;
@@ -636,7 +656,7 @@
     flex-grow: 1;
 }
 
-@media screen and (min-width: 961px) {
+@media screen and (min-width: 1281px) {
     .rooms-wrapper {
         margin-top: -4rem;
     }
@@ -667,7 +687,7 @@
     }
 }
 
-@media screen and (min-width: 961px){
+@media screen and (min-width: 1281px){
     .rooms-wrapper__cards-double-room, .rooms-wrapper__cards-triple-room, .rooms-wrapper__cards-quadruple-room {
         flex-basis: 30%;
     }
@@ -765,6 +785,12 @@
     max-height: 300px;
 }
 
+@media screen and (min-width: 1281px) {
+    .travel-tips-wrapper__trip-content-header, .travel-tips-wrapper__trip-content-footer {
+        max-height: 400px;
+    }
+}
+
 .travel-tips-wrapper__trip-content-header-img {
     border-radius: .5rem;
 }
@@ -777,6 +803,12 @@
 .travel-tips-wrapper__trip-content-summary-title {
     margin: 0;
     font-size: 2rem;
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1362px) {
+    .travel-tips-wrapper__trip-content-summary-fix-title-visual-width {
+        font-size: 1.75rem;
+    }
 }
 
 @media screen and (min-width: 541px) and (max-width: 641px) {
@@ -805,10 +837,6 @@
         grid-template-columns: minmax(1fr, 700px);
         grid-template-rows: 1fr auto;
         grid-auto-flow: dense;
-    }
-
-    .travel-tips-wrapper__trip-content-header, .travel-tips-wrapper__trip-content-footer {
-        max-height: 400px;
     }
     
     .travel-tips-wrapper__trip-content-summary {
