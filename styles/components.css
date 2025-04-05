@@ -138,7 +138,7 @@
   border-radius: .25rem;
   font-weight: 700;
   border: 2px solid transparent;
-  transition: background-color .25s ease-in-out, color .25s ease-in-out, border .25s ease-in-out;
+  transition: background-color var(--transition, .25s ease-in-out), color var(--transition, .25s ease-in-out), border var(--transition, .25s ease-in-out);
   box-shadow: 0 2px 12px var(--gray, #A09C9C);
   overflow: hidden;
   z-index: 0;
@@ -175,7 +175,7 @@
   background-color: transparent;
   color: var(--primary, #512100);
   border: 2px solid var(--primary, #512100);
-  transition: box-shadow .25s ease-in-out;
+  transition: box-shadow var(--transition, .25s ease-in-out);
 }
 
 .button--transparent:hover {
@@ -190,7 +190,7 @@
 
 .button--no-shadow {
   box-shadow: none;
-  transition: background-color .25s ease-in-out, color .25s ease-in-out;
+  transition: background-color var(--transition, .25s ease-in-out), color var(--transition, .25s ease-in-out);
 }
 
 .button--no-shadow:hover {
@@ -478,7 +478,7 @@
 /*Card - hover*/
 
 .card--dark-zoom-hover-img, .card--dark-zoom-hover-figure {
-  transition: transform .25s ease-in-out, opacity .25s ease-in-out;
+  transition: transform var(--transition, .25s ease-in-out), opacity var(--transition, .25s ease-in-out);
 }
 
 .card--dark-zoom-hover-img:hover {

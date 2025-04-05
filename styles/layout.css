@@ -51,7 +51,7 @@
     color: var(--background-primary, #FFFFFF);
     text-decoration: none;
     padding: var(--padding);
-    transition: color .25s ease-in-out;
+    transition: color var(--transition, .25s ease-in-out);
     font-style: normal;
 }
 
@@ -255,7 +255,7 @@
         color: var(--black, #010B13);
         text-decoration: none;
         font-weight: 700;
-        transition: color .25s ease-in-out;;
+        transition: color var(--transition, .25s ease-in-out);
     }
 
     .navbar__desktop-menu-item-href:hover {
@@ -271,7 +271,7 @@
         height: 2px;
         background-color: var(--primary, #512100);
         transform: scaleX(0);
-        transition: transform 0.25s ease-in-out;
+        transition: transform var(--transition, .25s ease-in-out);
     }
 
     .underline-effect:hover::after {
