@@ -27,8 +27,8 @@
                     <a class="contact-container__contacts-list-item-href contact-container__href icon icon--phone" href="tel:+420602726090" target="_blank">602 726 090</a>
                 </address>
                 <ul class="contact-container__socials-list">
-                    <li class="contact-container__socials-list-item"><a class="contact-container__socials-list-item-href contact-container__href icon icon--instagram" href="https://www.facebook.com/share/15izFVYbRi/?mibextid=wwXIfr" target="_blank" aria-label="Instagram"></a></li>
-                    <li class="contact-container__socials-list-item"><a class="contact-container__socials-list-item-href contact-container__href icon icon--facebook" href="#" target="_blank" aria-label="Facebook"></a></li>
+                    <li class="contact-container__socials-list-item"><a class="contact-container__socials-list-item-href contact-container__href icon icon--instagram" href="https://www.facebook.com/share/15izFVYbRi/?mibextid=wwXIfr" target="_blank"><span class="contact-container__socials-list-item-hidden-content">Instagram</span></a></li>
+                    <li class="contact-container__socials-list-item"><a class="contact-container__socials-list-item-href contact-container__href icon icon--facebook" href="#" target="_blank"><span class="contact-container__socials-list-item-hidden-content">Facebook</span></a></li>
                 </ul>
             </div>
         </div>
@@ -412,90 +412,126 @@
             </div>
         </section>
         <section class="page__price-list" id="price-list">
-            <h2>Ceník ubytování</h2>
-            <p>Minimální obsazenost: <span>8 dospělých osob</span></p>
-            <h3>Ceny ubytování na osobu</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Období</th>
-                        <th>Dospělá osoba</th>
-                        <th>Děti 3-12 let</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Zima (1. října - 30. dubna)</td>
-                        <td>530 Kč / noc</td>
-                        <td>370 Kč / noc</td>
-                    </tr>
-                    <tr>
-                        <td>Léto (1. května - 30. září)</td>
-                        <td>480 Kč / noc</td>
-                        <td>370 Kč / noc</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p>Děti do 3 let: <span>zdarma</span></p>
-            <h3>Povinné poplatky</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Poplatek</th>
-                        <th>Cena</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Spotřeba energií (květen - září)</td>
-                        <td>600 Kč / chata / noc</td>
-                    </tr>
-                    <tr>
-                        <td>Spotřeba energií (říjen - duben)</td>
-                        <td>1000 Kč / chata / noc</td>
-                    </tr>
-                    <tr>
-                        <td>Povlečení a ručníky</td>
-                        <td>80 Kč / osoba / pobyt</td>
-                    </tr>
-                    <tr>
-                        <td>Závěrečný úklid</td>
-                        <td>1200 Kč / pobyt</td>
-                    </tr>
-                    <tr>
-                        <td>Městský poplatek</td>
-                        <td>30 Kč / osoba / noc</td>
-                    </tr>
-                </tbody>
-            </table>
-            <h3>Volitelné služby</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Služba</th>
-                        <th>Cena</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Sauna</td>
-                        <td>2500 Kč / pobyt</td>
-                    </tr>
-                    <tr>
-                        <td>Společenská místnost</td>
-                        <td>3000 Kč / pobyt</td>
-                    </tr>
-                    <tr>
-                        <td>Mazlíčci</td>
-                        <td>500 Kč / noc</td>
-                    </tr>
-                    <tr>
-                        <td>Dětská postýlka (včetně peřinek)</td>
-                        <td>200 Kč / pobyt</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p>Pro jakékoliv dotazy nebo specifické požadavky nás neváhejte kontaktovat!</p>
+            <div class="price-list-wrapper">
+                <h2 class="underline sections-title">Ceník ubytování</h2>
+                <p class="price-list-wrapper__heading heading">Minimální obsazenost<span class="price-list-wrapper__heading-colon">:</span> <span class="price-list-wrapper__heading-red">8 dospělých osob</span></p>
+                <div class="price-list-wrapper__tables-container">
+                    <div class="price-list-wrapper__price-per-person-container">
+                        <table class="price-list-wrapper__table price-list-wrapper__price-per-person--mobile">
+                            <caption class="price-list-wrapper__table-caption">Ceny ubytování na osobu</caption>
+                            <col class="price-list-wrapper__table-col--pink">
+                            <col>
+                            <col>
+                            <thead class="price-list-wrapper__table-thead">
+                                <tr>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody class="price-list-wrapper__table-tbody">
+                                <tr>
+                                    <th class="price-list-wrapper__table-th">Období</th>
+                                    <td class="price-list-wrapper__table-td">Zima <span class="price-list-wrapper__table-drop">(1. 10 - 30. 4)</span></td>
+                                    <td class="price-list-wrapper__table-td">Léto <span class="price-list-wrapper__table-drop">(1. května - 30. září)</span></td>
+                                </tr>
+                                <tr>
+                                    <th class="price-list-wrapper__table-th">Dospělá osoba</th>
+                                    <td class="price-list-wrapper__table-td">530 Kč <span class="price-list-wrapper__table-drop price-list-wrapper__table-drop--td">/</span> noc</td>
+                                    <td class="price-list-wrapper__table-td">480 Kč <span class="price-list-wrapper__table-drop price-list-wrapper__table-drop--td">/</span> noc</td>
+                                </tr>
+                                <tr>
+                                    <th class="price-list-wrapper__table-th">Děti 3-12 let</th>
+                                    <td class="price-list-wrapper__table-td">370 Kč <span class="price-list-wrapper__table-drop price-list-wrapper__table-drop--td">/</span> noc</td>
+                                    <td class="price-list-wrapper__table-td">370 Kč <span class="price-list-wrapper__table-drop price-list-wrapper__table-drop--td">/</span> noc</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="price-list-wrapper__price-per-person--desktop">
+                            <caption>Ceny ubytování na osobu</caption>
+                            <thead>
+                                <tr>
+                                    <th>Období</th>
+                                    <th>Dospělá osoba</th>
+                                    <th>Děti 3-12 let</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Zima (1. 10 - 30. 4), (kromě Vánoc a Silvestra - cena na vyžádání)</td>
+                                    <td>530 Kč / noc</td>
+                                    <td>370 Kč / noc</td>
+                                </tr>
+                                <tr>
+                                    <td>Léto (1. května - 30. září)</td>
+                                    <td>480 Kč / noc</td>
+                                    <td>370 Kč / noc</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p class="price-list-wrapper__table-paragraph paragraph">Děti do 3 let: <span class="price-list-wrapper__table-paragraph-red">zdarma</span></p>
+                    </div>
+                    <table class="price-list-wrapper__table price-list-wrapper__mandatory-fees">
+                        <caption class="price-list-wrapper__table-caption">Povinné poplatky</caption>
+                        <thead class="price-list-wrapper__table-thead--pink">
+                            <tr>
+                                <th class="price-list-wrapper__table-th">Poplatek</th>
+                                <th class="price-list-wrapper__table-th">Cena</th>
+                            </tr>
+                        </thead>
+                        <tbody class="price-list-wrapper__table-tbody">
+                            <tr>
+                                <td class="price-list-wrapper__table-td">Spotřeba energií <span class="price-list-wrapper__table-drop">(květen - září)</span></td>
+                                <td class="price-list-wrapper__table-td">600 Kč <span class="price-list-wrapper__table-drop price-list-wrapper__table-drop--td">/</span> chata <span class="price-list-wrapper__table-drop price-list-wrapper__table-drop--td">/</span> noc</td>
+                            </tr>
+                            <tr>
+                                <td class="price-list-wrapper__table-td">Spotřeba energií <span class="price-list-wrapper__table-drop">(říjen - duben)</span></td>
+                                <td class="price-list-wrapper__table-td">1000 Kč <span class="price-list-wrapper__table-drop price-list-wrapper__table-drop--td">/</span> chata <span class="price-list-wrapper__table-drop price-list-wrapper__table-drop--td">/</span> noc</td>
+                            </tr>
+                            <tr>
+                                <td class="price-list-wrapper__table-td">Povlečení a ručníky</td>
+                                <td class="price-list-wrapper__table-td">80 Kč <span class="price-list-wrapper__table-drop price-list-wrapper__table-drop--td">/</span> osoba <span class="price-list-wrapper__table-drop price-list-wrapper__table-drop--td">/</span> noc</td>
+                            </tr>
+                            <tr>
+                                <td class="price-list-wrapper__table-td">Závěrečný úklid</td>
+                                <td class="price-list-wrapper__table-td">1200 Kč <span class="price-list-wrapper__table-drop price-list-wrapper__table-drop--td">/</span> pobyt</td>
+                            </tr>
+                            <tr>
+                                <td class="price-list-wrapper__table-td">Městský poplatek</td>
+                                <td class="price-list-wrapper__table-td">30 Kč <span class="price-list-wrapper__table-drop price-list-wrapper__table-drop--td">/</span> osoba <span class="price-list-wrapper__table-drop price-list-wrapper__table-drop--td">/</span> noc</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="price-list-wrapper__table price-list-wrapper__optional-services">
+                        <caption class="price-list-wrapper__table-caption">Volitelné služby</caption>
+                        <thead class="price-list-wrapper__table-thead--pink">
+                            <tr>
+                                <th class="price-list-wrapper__table-th">Služba</th>
+                                <th class="price-list-wrapper__table-th">Cena</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="price-list-wrapper__table-td">Sauna</td>
+                                <td class="price-list-wrapper__table-td">2500 Kč <span class="price-list-wrapper__table-drop price-list-wrapper__table-drop--td">/</span> pobyt</td>
+                            </tr>
+                            <tr>
+                                <td class="price-list-wrapper__table-td">Společenská místnost</td>
+                                <td class="price-list-wrapper__table-td">3000 Kč <span class="price-list-wrapper__table-drop price-list-wrapper__table-drop--td">/</span> pobyt</td>
+                            </tr>
+                            <tr>
+                                <td class="price-list-wrapper__table-td">Mazlíčci</td>
+                                <td class="price-list-wrapper__table-td">500 Kč <span class="price-list-wrapper__table-drop price-list-wrapper__table-drop--td">/</span> noc</td>
+                            </tr>
+                            <tr>
+                                <td class="price-list-wrapper__table-td">Dětská postýlka <span class="price-list-wrapper__table-drop">(včetně peřinek)</span></td>
+                                <td class="price-list-wrapper__table-td">200 Kč <span class="price-list-wrapper__table-drop price-list-wrapper__table-drop--td">/</span> pobyt</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="price-list-wrapper__table-paragraph paragraph">Pro jakékoliv dotazy nebo specifické požadavky nás neváhejte kontaktovat!</p>
+            </div>
         </section>
         <section class="page__reviews" id="reviews">
             <header>

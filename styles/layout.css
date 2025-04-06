@@ -60,6 +60,11 @@
     margin-top: .5rem;
 }
 
+.contact-container__socials-list-item-hidden-content {
+    position: absolute;
+    top: -1000%;
+}
+
 @media screen and (min-width: 961px) {
     .contact-container__wrapper {
         flex-direction: row;
@@ -889,7 +894,7 @@
 }
 
 .travel-tips-wrapper__trip-content.animate-slide {
-    animation: slide-in-from-right 1.5s forwards;
+    animation: show-up--opacity-25 1.5s forwards;
 }
 
 /*slider-dots*/
@@ -909,3 +914,115 @@
 }
 
 /*page__price-list*/
+
+.page__price-list {
+    display: flex;
+    align-items: center;
+    background-color: var(--background-secondary, #F9E8E8);
+    padding-bottom: .5rem;
+    margin-top: 1rem;
+}
+
+/* @media screen and (min-width: 1281px) {
+    .page__price-list {
+        background-position: center;
+        background-size: cover;
+        background-image: url(../images/assets/original/price-image.svg);
+        background-color: transparent;
+        height: 125vh;
+        height: 125svh;
+        margin-top: -1rem;
+    }
+} */
+
+.price-list-wrapper {
+    max-width: var(--max-width);
+    margin: 1.5rem auto;
+    padding: 0 .5rem;
+    border: 2px solid;
+    flex-grow: 1;
+}
+
+/* @media screen and (min-width: 1281px) {
+    .rooms-wrapper {
+        margin-top: -4rem;
+    }
+} */
+
+.price-list-wrapper__heading {
+    font-weight: 400;
+    padding: 1.5rem 3rem;
+    background-color: var(--white, #FFFFFF);
+    border-radius: .5rem;
+    border-left: .5rem solid;
+}
+
+.price-list-wrapper__heading-colon {
+    display: none;
+}
+
+.price-list-wrapper__heading-red {
+    display: block;
+    color: var(--red, #FF0004);
+}
+
+.price-list-wrapper__tables-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    background-color: var(--background-primary, #FFFFFF);
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+}
+
+.price-list-wrapper__price-per-person--desktop {
+    display: none;
+}
+
+.price-list-wrapper__table {
+    border-collapse: collapse;
+}
+
+.price-list-wrapper__table-caption {
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-bottom: .5rem;
+    margin-bottom: .5rem;
+    border-bottom: 2px solid;
+}
+
+.price-list-wrapper__table-th, .price-list-wrapper__table-td {
+    border: 2px solid;
+    padding: .5rem 1rem;
+    text-align: center;
+}
+
+.price-list-wrapper__table-drop {
+    display: block;
+    font-size: .75rem;
+}
+
+.price-list-wrapper__table-drop--td {
+    display: none;
+}
+
+@media screen and (min-width: 541px) {
+    .price-list-wrapper__table-drop--td {
+        display: inline;
+    }
+}
+
+.price-list-wrapper__table-col--pink, .price-list-wrapper__table-thead--pink {
+    background-color: var(--background-secondary, #F9E8E8);
+}
+
+.price-list-wrapper__table-paragraph {
+    margin-top: .5rem;
+}
+
+.price-list-wrapper__table-paragraph-red {
+    color: var(--red, #FF0004);
+}
