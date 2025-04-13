@@ -583,7 +583,7 @@
     }
 }
 
-@media screen and (min-width: 1700px) {
+@media screen and (min-width: 1701px) {
     .about-wrapper__accommodation-info-wrapper {
         justify-content: space-between;
     }
@@ -918,31 +918,49 @@
     margin-top: 1rem;
 }
 
-/* @media screen and (min-width: 1281px) {
+@media screen and (min-width: 1281px) {
     .page__price-list {
         background-position: center;
         background-size: cover;
         background-image: url(../images/assets/original/price-image.svg);
         background-color: transparent;
-        height: 125vh;
-        height: 125svh;
-        margin-top: -1rem;
+        height: 190vh;
+        height: 190svh;
     }
-} */
+}
+
+@media screen and (min-width: 1537px) {
+    .page__price-list {
+        height: 180vh;
+        height: 180svh;
+    }
+}
+
+@media screen and (min-width: 1701px) {
+    .page__price-list {
+        height: 160vh;
+        height: 160svh;
+    }
+}
 
 .price-list-wrapper {
     max-width: var(--max-width);
     margin: 1.5rem auto;
     padding: 0 .5rem;
-    border: 2px solid;
     flex-grow: 1;
 }
 
-/* @media screen and (min-width: 1281px) {
-    .rooms-wrapper {
-        margin-top: -4rem;
+@media screen and (min-width: 1281px) {
+    .price-list-wrapper {
+        margin-top: 7.5rem;
     }
-} */
+}
+
+@media screen and (min-width: 1701px) {
+    .price-list-wrapper {
+        margin-top: 5rem;
+    }
+}
 
 .price-list-wrapper__heading {
     font-weight: 400;
@@ -951,6 +969,12 @@
     border-radius: .5rem;
     border-left: .5rem solid;
     width: fit-content;
+}
+
+@media screen and (min-width: 961px) {
+    .price-list-wrapper__heading {
+        font-size: 2.5rem;
+    }
 }
 
 .price-list-wrapper__heading-colon {
@@ -965,6 +989,7 @@
 .price-list-wrapper__tables-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 1.5rem;
     margin-top: 1rem;
     background-color: var(--background-primary, #FFFFFF);
@@ -974,19 +999,39 @@
 
 @media screen and (min-width: 1281px) {
     .price-list-wrapper__tables-container {
-        gap: 7.5rem;
+        gap: 3.6rem;
     }
 }
 
 .price-list-wrapper__table {
+    position: relative;
     border-collapse: collapse;
     margin-top: .5rem;
-    flex-basis: 55%;
+    width: 100%;
+}
+
+@media screen and (min-width: 1281px) {
+    .price-list-wrapper__price-per-person--desktop, .price-list-wrapper__optional-services {
+        flex-basis: 72.5%;
+    }
+
+    .price-list-wrapper__mandatory-fees {
+        flex-basis: 60%;
+    }
+}
+
+@media screen and (min-width: 1537px) {
+    .price-list-wrapper__price-per-person--desktop, .price-list-wrapper__optional-services {
+        flex-basis: 80%;
+    }
+
+    .price-list-wrapper__mandatory-fees {
+        flex-basis: 70%;
+    }
 }
 
 .price-list-wrapper__price-per-person--mobile {
     margin: 0 auto;
-    width: 100%;
 }
 
 .price-list-wrapper__price-per-person--desktop {
@@ -1000,31 +1045,63 @@
     }
 
     .price-list-wrapper__price-per-person--desktop {
-        display: block;
+        display: table;
     }
 }
 
-.price-list-wrapper__table-caption {
-    font-size: 1.5rem;
-    font-weight: 700;
+@media screen and (min-width: 1281px) {
+    .price-list-wrapper__after-mandatory-fees {
+        margin-top: 1.5rem;
+    }
+}
+
+.price-list-wrapper__after-optional-services {
     margin-bottom: 1rem;
 }
 
-@media screen and (min-width: 761px) {
-    .price-list-wrapper__table-caption {
-        text-align: left;
-    }
+.price-list-wrapper__price-per-person-container, .price-list-wrapper__after-mandatory-fees, .price-list-wrapper__after-optional-services {
+    width: 100%;
+}
+
+.price-list-wrapper__table-caption {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.price-list-wrapper__table-caption::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-bottom: 1.5px solid;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-top: 2.5rem;
 }
 
 .price-list-wrapper__table-th, .price-list-wrapper__table-td {
     border: 2px solid;
     padding: .5rem 1rem;
-    text-align: center;
+    text-align: left;
+}
+
+@media screen and (min-width: 1281px) {
+    .price-list-wrapper__table-th, .price-list-wrapper__table-td {
+        font-size: 1.5rem;
+    }
 }
 
 .price-list-wrapper__table-drop {
     display: block;
     font-size: .75rem;
+}
+
+@media screen and (min-width: 961px) {
+    .price-list-wrapper__table-drop {
+        font-size: 1rem;
+    }
 }
 
 .price-list-wrapper__table-drop--td {
@@ -1045,6 +1122,10 @@
     margin-top: .5rem;
 }
 
+.price-list-wrapper__table-paragraph--absolute {
+    margin-top: .5rem;
+}
+
 @media screen and (min-width: 761px) {
     .price-list-wrapper__table-paragraph {
         text-align: left;
@@ -1056,47 +1137,54 @@
 }
 
 @media screen and (min-width: 1281px) {
-    .price-list-wrapper__affter-price-per-person--desktop {
+    .price-list-wrapper__after-price-per-person--desktop {
         position: relative;
     }
     
     .price-list-wrapper__table-paragraph--absolute {
         position: absolute;
         left: 0;
-        top: 65%;
+        top: 100%;
     }
 }
 
 /*images*/
 
-.price-list-wrapper__affter-price-per-person--desktop, .price-list-wrapper__affter-mandatory-fees, .price-list-wrapper__affter-optional-services {
-    display: flex;
-    justify-content: space-between;
-}
+@media screen and (min-width: 1281px) {
+    .price-list-wrapper__after-price-per-person--desktop, .price-list-wrapper__after-mandatory-fees, .price-list-wrapper__after-optional-services {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-.price-list-wrapper__affter-price-per-person--desktop::after {
-    content: "";
-    height: 269px;
-    width: 300px;
-    background-image: url(../images/assets/original/price-per-person-image.svg);
-    background-repeat: no-repeat;
-    object-fit: cover;
-}
-
-.price-list-wrapper__affter-mandatory-fees::before {
-    content: "";
-    height: 269px;
-    width: 300px;
-    background-image: url(../images/assets/original/price-per-person-image.svg);
-    background-repeat: no-repeat;
-    object-fit: cover;
-}
-
-.price-list-wrapper__affter-optional-services::after {
-    content: "";
-    height: 269px;
-    width: 300px;
-    background-image: url(../images/assets/original/price-per-person-image.svg);
-    background-repeat: no-repeat;
-    object-fit: cover;
+    .price-list-wrapper__after-price-per-person--desktop {
+        align-items: end;
+    }
+    
+    .price-list-wrapper__after-price-per-person--desktop::after {
+        content: "";
+        height: 171px;
+        width: 190px;
+        background-image: url(../images/assets/original/price-per-person-image.svg);
+        background-repeat: no-repeat;
+        object-fit: cover;
+    }
+    
+    .price-list-wrapper__after-mandatory-fees::before {
+        content: "";
+        height: 217px;
+        width: 400px;
+        background-image: url(../images/assets/original/mandatory-fees-image.svg);
+        background-repeat: no-repeat;
+        object-fit: cover;
+    }
+    
+    .price-list-wrapper__after-optional-services::after {
+        content: "";
+        height: 201px;
+        width: 230px;
+        background-image: url(../images/assets/original/optional-services-image.svg);
+        background-repeat: no-repeat;
+        object-fit: cover;
+    }
 }
