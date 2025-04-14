@@ -995,6 +995,7 @@
     background-color: var(--background-primary, #FFFFFF);
     padding: 1rem 2rem;
     border-radius: .5rem;
+    box-shadow: 0 2px 12px var(--gray, #A09C9C);
 }
 
 @media screen and (min-width: 1281px) {
@@ -1118,11 +1119,7 @@
     background-color: var(--background-secondary, #F9E8E8);
 }
 
-.price-list-wrapper__table-paragraph {
-    margin-top: .5rem;
-}
-
-.price-list-wrapper__table-paragraph--absolute {
+.price-list-wrapper__table-paragraph, .price-list-wrapper__table-paragraph--absolute {
     margin-top: .5rem;
 }
 
