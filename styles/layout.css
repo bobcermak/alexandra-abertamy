@@ -1052,12 +1052,12 @@
 
 @media screen and (min-width: 1281px) {
     .price-list-wrapper__after-mandatory-fees {
-        margin-top: 1.5rem;
+        margin-top: 1.75rem;
     }
 }
 
 .price-list-wrapper__after-optional-services {
-    margin-bottom: 1rem;
+    margin-bottom: .75rem;
 }
 
 .price-list-wrapper__price-per-person-container, .price-list-wrapper__after-mandatory-fees, .price-list-wrapper__after-optional-services {
@@ -1185,3 +1185,37 @@
         object-fit: cover;
     }
 }
+
+/*section - page__reviews*/
+
+/* .page__rooms {
+    display: flex;
+    align-items: center;
+    background-color: var(--background-secondary, #F9E8E8);
+    padding-bottom: .5rem;
+}
+
+@media screen and (min-width: 1281px) {
+    .page__rooms {
+        background-position: center;
+        background-size: cover;
+        background-image: url(../images/assets/original/rooms-image.svg);
+        background-color: transparent;
+        height: 125vh;
+        height: 125svh;
+        margin-top: -1rem;
+    }
+}
+
+.rooms-wrapper {
+    max-width: var(--max-width);
+    margin: 1.5rem auto;
+    padding: 0 .5rem;
+    flex-grow: 1;
+}
+
+@media screen and (min-width: 1281px) {
+    .rooms-wrapper {
+        margin-top: -4rem;
+    }
+} */
