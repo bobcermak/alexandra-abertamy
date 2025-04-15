@@ -112,10 +112,10 @@
                         <h3 class="welcome-wrapper__content-intro-text heading">Obklopte se klidem Krušnohoří a užijte si nezapomenutelný pobyt.</h3>
                         <p class="welcome-wrapper__content-about-text paragraph">Chata Alexandra se nachází v obci Hřebečná - Abertamy. Chata s přátelskou atmosférou je ideální pro Vaši dovolenou v kterémkoliv ročním období. Je moderně a vkusně vybavena.</p>
                     </div>
-                    <footer class="welcome-wrapper__content-footer">
+                    <div class="welcome-wrapper__content-footer">
                         <a class="button" href="#" aria-label="Tlačítko pokoje">Pokoje</a>
                         <a class="button button--transparent" href="#" aria-label="Tlačítko o nás">O Nás</a>
-                    </footer>
+                    </div>
                 </div>
                 <div class="welcome-wrapper__footer bend">
                     <figure class="welcome-wrapper__card welcome-wrapper__footer-card welcome-wrapper__footer-card--sauna figure--corner">
@@ -192,15 +192,15 @@
                             </div>
                         </header>
                         <div class="about-wrapper__accommodation-info-summary">
-                            <div class="highlight highlight--text-align-center highlight--text-align-left">
+                            <div class="highlight">
                                 <p class="highlight-title">Abertamy - Hřebečná</p>
                                 <small class="highlight-text">Pohodlí v přírodě</small>
                             </div>
-                            <div class="highlight highlight--text-align-center highlight--text-align-left">
+                            <div class="highlight">
                                 <p class="highlight-title">5 ložnic  - 15 hostů</p>
                                 <small class="highlight-text">Maximální kapacita</small>
                             </div>
-                            <div class="highlight highlight--text-align-center highlight--text-align-left">
+                            <div class="highlight">
                                 <p class="highlight-title">Strava dle domluvy</p>
                                 <small class="highlight-text">Stravování na míru</small>
                             </div>
@@ -414,12 +414,12 @@
         <section class="page__price-list" id="price-list">
             <div class="price-list-wrapper">
                 <h2 class="underline sections-title">Ceník ubytování</h2>
-                <p class="price-list-wrapper__heading heading">Minimální obsazenost<span class="price-list-wrapper__heading-colon">:</span> <span class="price-list-wrapper__heading-red">8 dospělých osob</span></p>
+                <h3 class="price-list-wrapper__heading heading">Minimální obsazenost<span class="price-list-wrapper__heading-colon">:</span> <span class="price-list-wrapper__heading-red">8 dospělých osob</span></h3>
                 <div class="price-list-wrapper__tables-container">
                     <div class="price-list-wrapper__price-per-person-container">
                         <div class="price-list-wrapper__after-price-per-person--mobile">
                             <table class="price-list-wrapper__table price-list-wrapper__price-per-person--mobile">
-                                <caption class="price-list-wrapper__table-caption">Ceny ubytování na osobu</caption>
+                                <caption class="price-list-wrapper__table-caption price-list-wrapper__table-caption--drop-price">Ceny ubytování na osobu</caption>
                                 <col class="price-list-wrapper__table-col--pink">
                                 <col>
                                 <col>
@@ -477,7 +477,7 @@
                     </div>
                     <div class="price-list-wrapper__after-mandatory-fees">
                         <table class="price-list-wrapper__table price-list-wrapper__mandatory-fees">
-                            <caption class="price-list-wrapper__table-caption">Povinné poplatky</caption>
+                            <caption class="price-list-wrapper__table-caption price-list-wrapper__table-caption--drop-mandatory">Povinné poplatky</caption>
                             <thead class="price-list-wrapper__table-thead--pink">
                                 <tr>
                                     <th class="price-list-wrapper__table-th">Poplatek</th>
@@ -542,59 +542,19 @@
             </div>
         </section>
         <section class="page__reviews" id="reviews">
-            <header>
-                <h2>Recenze</h2>
-            </header>
-            <div>
-                <p><b>Co Se O Nás Povídá<span>?</span></b></p>
+            <div class="reviews-wrapper">
+                <header class="reviews-wrapper__header">
+                    <h2 class="underline sections-title">Recenze</h2>
+                    <h3 class="heading">Co se o nás povídá?</h3>
+                </header>
+                <div class="reviews-wrapper__text">
+                    <p class="paragraph">Říká se, že nejlepší reklama je spokojený zákazník. A my s tím souhlasíme na 100 %! Mrkni, co o nás říkají ti, kteří už s námi mají vlastní zkušenost - jejich slova mluví za všechno. Každá recenze nás posouvá dál a dává nám smysl pokračovat v tom, co děláme srdcem.</p>
+                    <a class="reviews-wrapper__text-button button" href="#" aria-label="Tlačítko více">Chci znát více</a>
+                </div>
+                <div class="reviews-wrapper__content">
+                    
+                </div>
             </div>
-            <footer>
-                <article class="card--bigger footer-reviews__c-1" aria-label="Karta recenze zákazníka"> <!--zmena classes-->
-                    <header>
-                        <picture>
-                            <source srcset="./images/bckps/v-s.avif" type="image/avif">
-                            <source srcset="./images/bckps/v-s.webp" type="image/webp">
-                            <img class="img-responsive card--img-b" src="./images/original/v-s.jpg" loading="lazy" width="1120" height="1120" alt="Alexandra Abertamy - anonymní náhled zákazníka">
-                        </picture>
-                    </header>
-                    <div>
-                        <p class="container--fix">„Skromný, útulný penzion hned vedle silnice v Hřebečné, sauna, krbovna, venkovní posezení s ohništěm a grilem, domluvení pípy se sudem není problém, zařízená kuchyně s vlastním vařením.“</p>
-                    </div>
-                    <footer class="margin-top--plus0-5">
-                        <a href="https://maps.app.goo.gl/h8163junwTtCBFAXA" target="_blank">Přečíst recenzi na Google Maps</a>
-                    </footer>
-                </article>
-                <article class="card--bigger footer-reviews__c-1" aria-label="Karta recenze zákazníka"> <!--zmena classes-->
-                    <header>
-                        <picture>
-                            <source srcset="./images/bckps/s-p.avif" type="image/avif">
-                            <source srcset="./images/bckps/s-p.webp" type="image/webp">
-                            <img class="img-responsive card--img-b" src="./images/original/s-p.jpg" loading="lazy" width="1120" height="1120" alt="Alexandra Abertamy - anonymní náhled zákazníka">
-                        </picture>
-                    </header>
-                    <div>
-                        <p class="container--fix">„Tento krát býlí jsme příjemné překvapení, nový provozovatel dá záležet na opravě a už většina toho co se nám nelíbilo předtím mizí. Renovují saunu a společenskou místnost.Těšíme na příští!“</p>
-                    </div>
-                    <footer class="margin-top--plus0-5">
-                        <a href="https://maps.app.goo.gl/W1fTM1cVBeiDSvVR6" target="_blank">Přečíst recenzi na Google Maps</a>
-                    </footer>
-                </article>
-                <article class="card--bigger footer-reviews__c-1" aria-label="Karta recenze zákazníka"> <!--zmena classes-->
-                    <header>
-                        <picture>
-                            <source srcset="./images/bckps/j-j.avif" type="image/avif">
-                            <source srcset="./images/bckps/j-j.webp" type="image/webp">
-                            <img class="img-responsive card--img-b" src="./images/original/j-j.jpg" loading="lazy" width="1120" height="1120" alt="Alexandra Abertamy - anonymní náhled zákazníka">
-                        </picture>
-                    </header>
-                    <div>
-                        <p class="container--fix">„Skvělé místo, kam se rádi vracíme.“</p>
-                    </div>
-                    <footer class="margin-top--plus0-5">
-                        <a href="https://maps.app.goo.gl/T3viDsH7s76YvtE76" target="_blank">Přečíst recenzi na Google Maps</a>
-                    </footer>
-                </article>
-            </footer>
         </section>
         <section class="page__reservation" id="reservation">
             <header>
@@ -636,7 +596,7 @@
             </footer>
         </section>
     </main>
-    <footer class="page__footer" id="footer"> <!--https://codepen.io/GabbeV/pen/DMRPox-->
+    <footer class="page__footer" id="footer">
         <section class="page__contact" id="contact-us">
             <div>
                 <h3>Kontakt<span>:</span></h3>

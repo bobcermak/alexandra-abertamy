@@ -408,16 +408,6 @@
   }
 }
 
-.highlight--text-align-center {
-  text-align: center;
-}
-
-@media screen and (min-width: 961px) {
-  .highlight--text-align-left {
-    text-align: left;
-  }
-}
-
 /*Cards*/
 
 /*Card - rooms*/

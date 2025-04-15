@@ -592,7 +592,7 @@
 .about-wrapper__accommodation-info-summary {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     gap: 1rem;
     margin: 1rem auto;
 }
@@ -1074,12 +1074,27 @@
 .price-list-wrapper__table-caption::after {
     content: "";
     position: absolute;
-    width: 100%;
-    border-bottom: 1.5px solid;
+    border-bottom: 1.5px solid var(--primary, #512100);
     top: 0;
     left: 0;
     right: 0;
-    margin-top: 2.5rem;
+    margin-top: 5rem;
+}
+
+.price-list-wrapper__table-caption--drop-price, .price-list-wrapper__table-caption--drop-mandatory {
+    container-type: inline-size;
+}
+
+@container (min-width: 364px) {
+    .price-list-wrapper__table-caption--drop-price::after {
+        margin-top: 2.5rem;
+    }
+}
+
+@container (min-width: 334px) {
+    .price-list-wrapper__table-caption--drop-mandatory::after {
+        margin-top: 2.5rem;
+    }
 }
 
 .price-list-wrapper__table-th, .price-list-wrapper__table-td {
@@ -1188,34 +1203,27 @@
 
 /*section - page__reviews*/
 
-/* .page__rooms {
-    display: flex;
-    align-items: center;
-    background-color: var(--background-secondary, #F9E8E8);
+.page__reviews {
     padding-bottom: .5rem;
 }
 
-@media screen and (min-width: 1281px) {
-    .page__rooms {
-        background-position: center;
-        background-size: cover;
-        background-image: url(../images/assets/original/rooms-image.svg);
-        background-color: transparent;
-        height: 125vh;
-        height: 125svh;
-        margin-top: -1rem;
-    }
-}
-
-.rooms-wrapper {
+.reviews-wrapper {
     max-width: var(--max-width);
     margin: 1.5rem auto;
     padding: 0 .5rem;
-    flex-grow: 1;
 }
 
 @media screen and (min-width: 1281px) {
-    .rooms-wrapper {
-        margin-top: -4rem;
+    .reviews-wrapper {
+        margin-top: 3.5rem;
     }
-} */
+}
+
+.reviews-wrapper__text {
+    border-bottom: 1.5px solid var(--primary, #512100);
+    padding-bottom: 3rem;
+}
+
+.reviews-wrapper__text-button {
+    margin-top: 1.5rem;
+}
