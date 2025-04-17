@@ -62,11 +62,11 @@
                                 </picture>
                             </a>
                         </li>
-                        <li class="menu-wrapper__item"><a class="menu-wrapper__item-href active-item" href="#header">Domů</a></li>
-                        <li class="menu-wrapper__item"><a class="menu-wrapper__item-href" href="#about-us">O Nás</a></li>
-                        <li class="menu-wrapper__item"><a class="menu-wrapper__item-href" href="#rooms">Pokoje</a></li>
-                        <li class="menu-wrapper__item"><a class="menu-wrapper__item-href" href="#price-list">Ceník</a></li>
-                        <li class="menu-wrapper__item-href menu-wrapper__item"><a class="button" href="#reservation" aria-label="Tlačítko rezervace">Rezervace</a></li>
+                        <li class="menu-wrapper__item"><a class="menu-wrapper__item-href menu-wrapper__item-href--uppercase  active-item" href="#header">Domů</a></li>
+                        <li class="menu-wrapper__item"><a class="menu-wrapper__item-href menu-wrapper__item-href--uppercase" href="#about-us">O Nás</a></li>
+                        <li class="menu-wrapper__item"><a class="menu-wrapper__item-href menu-wrapper__item-href--uppercase" href="#rooms">Pokoje</a></li>
+                        <li class="menu-wrapper__item"><a class="menu-wrapper__item-href menu-wrapper__item-href--uppercase" href="#price-list">Ceník</a></li>
+                        <li class="menu-wrapper__item-href menu-wrapper__item-href--uppercase menu-wrapper__item"><a class="button" href="#reservation" aria-label="Tlačítko rezervace">Rezervace</a></li>
                     </div>
                     <div class="menu-wrapper__contacts-list">
                         <h2 class="underline sections-title">Kontakty</h2>
@@ -82,11 +82,11 @@
             </menu>            
             <!--desktop-->
             <menu class="navbar__desktop-menu">
-                <li class="navbar__desktop-menu-item"><a class="navbar__desktop-menu-item-href active-item underline-effect" href="#header">Domů</a></li>
-                <li class="navbar__desktop-menu-item"><a class="navbar__desktop-menu-item-href underline-effect" href="#about-us">O Nás</a></li>
-                <li class="navbar__desktop-menu-item"><a class="navbar__desktop-menu-item-href underline-effect" href="#rooms">Pokoje</a></li>
-                <li class="navbar__desktop-menu-item"><a class="navbar__desktop-menu-item-href underline-effect" href="#price-list">Ceník</a></li>
-                <li class="navbar__desktop-menu-item"><a class="navbar__desktop-menu-item-href button" href="#reservation" aria-label="Tlačítko rezervace">Rezervace</a></li>
+                <li class="navbar__desktop-menu-item"><a class="navbar__desktop-menu-item-href navbar__desktop-menu-item-href--uppercase active-item underline-effect" href="#header">Domů</a></li>
+                <li class="navbar__desktop-menu-item"><a class="navbar__desktop-menu-item-href navbar__desktop-menu-item-href--uppercase underline-effect" href="#about-us">O Nás</a></li>
+                <li class="navbar__desktop-menu-item"><a class="navbar__desktop-menu-item-href navbar__desktop-menu-item-href--uppercase underline-effect" href="#rooms">Pokoje</a></li>
+                <li class="navbar__desktop-menu-item"><a class="navbar__desktop-menu-item-href navbar__desktop-menu-item-href--uppercase underline-effect" href="#price-list">Ceník</a></li>
+                <li class="navbar__desktop-menu-item"><a class="navbar__desktop-menu-item-href navbar__desktop-menu-item-href--uppercase button" href="#reservation" aria-label="Tlačítko rezervace">Rezervace</a></li>
             </menu>
             <!--languge-dropdown-->
         </nav>
@@ -549,21 +549,148 @@
                 </header>
                 <div class="reviews-wrapper__text">
                     <p class="paragraph">Říká se, že nejlepší reklama je spokojený zákazník. A my s tím souhlasíme na 100 %! Mrkni, co o nás říkají ti, kteří už s námi mají vlastní zkušenost - jejich slova mluví za všechno. Každá recenze nás posouvá dál a dává nám smysl pokračovat v tom, co děláme srdcem.</p>
-                    <a class="reviews-wrapper__text-button button" href="#" aria-label="Tlačítko více">Chci znát více</a>
+                    <a class="reviews-wrapper__text-button button" href="https://www.google.com/maps/place/Chata+Alexandra+Abertamy/@50.3773759,12.8247056,17z/data=!4m8!3m7!1s0x47a0bc984134b211:0x4cb468edbb0debc4!8m2!3d50.3773725!4d12.8272805!9m1!1b1!16s%2Fg%2F11f4wtkvcp?entry=ttu&g_ep=EgoyMDI1MDQxNC4xIKXMDSoASAFQAw%3D%3D" aria-label="Tlačítko více" target="_blank">Chci znát více</a>
                 </div>
                 <div class="reviews-wrapper__content">
-                    <article>
-                        <header>
-                            <h4>Vladimír Šatava</h4>
-                            <a href="">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512"><path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"/></svg>
+                    <article class="reviews-wrapper__content-card reviews-wrapper__content-card--first">
+                        <header class="reviews-wrapper__content-card-header">
+                            <h4 class="reviews-wrapper__content-card-title">Vladimír Šatava</h4>
+                            <a class="reviews-wrapper__content-card-link-google" href="https://maps.app.goo.gl/nxavpGPC6GvRwbfL7" target="_blank">
+                                <svg class="reviews-wrapper__content-card-link-google-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512"><path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"/></svg>
                             </a>
                         </header>
-                        <div>
-
+                        <div class="reviews-wrapper__content-card-rate">
+                            <svg class="reviews-wrapper__content-card-rate-image" xmlns="http://www.w3.org/2000/svg" width="225" height="45" viewBox="0 0 225 45" fill="none">
+                                <g clip-path="url(#clip0_312_378)">
+                                <path d="M27.0563 18.75L22.5 3.75L17.9437 18.75H3.75L15.3375 27.0187L10.9312 41.25L22.5 32.4562L34.0875 41.25L29.6812 27.0187L41.25 18.75H27.0563Z" fill="#FFB9B9"/>
+                                </g>
+                                <g clip-path="url(#clip1_312_378)">
+                                <path d="M72.0563 18.75L67.5 3.75L62.9437 18.75H48.75L60.3375 27.0187L55.9312 41.25L67.5 32.4562L79.0875 41.25L74.6812 27.0187L86.25 18.75H72.0563Z" fill="#FFB9B9"/>
+                                </g>
+                                <g clip-path="url(#clip2_312_378)">
+                                <path d="M117.056 18.75L112.5 3.75L107.944 18.75H93.75L105.338 27.0187L100.931 41.25L112.5 32.4562L124.088 41.25L119.681 27.0187L131.25 18.75H117.056Z" fill="#FFB9B9"/>
+                                </g>
+                                <g clip-path="url(#clip3_312_378)">
+                                <path d="M162.056 18.75L157.5 3.75L152.944 18.75H138.75L150.338 27.0187L145.931 41.25L157.5 32.4562L169.088 41.25L164.681 27.0187L176.25 18.75H162.056Z" fill="#FFB9B9"/>
+                                </g>
+                                <g clip-path="url(#clip4_312_378)">
+                                <path d="M207.056 18.75L202.5 3.75L197.944 18.75H183.75L195.338 27.0187L190.931 41.25L202.5 32.4562L214.088 41.25L209.681 27.0187L221.25 18.75H207.056Z" fill="#FFB9B9"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_312_378">
+                                <rect width="45" height="45" fill="white"/>
+                                </clipPath>
+                                <clipPath id="clip1_312_378">
+                                <rect width="45" height="45" fill="white" transform="translate(45)"/>
+                                </clipPath>
+                                <clipPath id="clip2_312_378">
+                                <rect width="45" height="45" fill="white" transform="translate(90)"/>
+                                </clipPath>
+                                <clipPath id="clip3_312_378">
+                                <rect width="45" height="45" fill="white" transform="translate(135)"/>
+                                </clipPath>
+                                <clipPath id="clip4_312_378">
+                                <rect width="45" height="45" fill="white" transform="translate(180)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
                         </div>
-                        <footer>
-                            <p>Skromný, útulný penzion hned vedle silnice v Hřebečné, sauna, krbovna, venkovní posezení s ohništěm a grilem, domluvení pípy se sudem není problém, zařízená kuchyně s vlastním vařením</p>
+                        <footer class="reviews-wrapper__content-card-content">
+                            <p class="reviews-wrapper__content-card-content-text paragraph">Skromný, útulný penzion hned vedle silnice v Hřebečné, sauna, krbovna, venkovní posezení s ohništěm a grilem, domluvení pípy se sudem není problém, zařízená kuchyně s vlastním vařením</p>
+                        </footer>
+                    </article>
+                    <article class="reviews-wrapper__content-card reviews-wrapper__content-card--second">
+                        <header class="reviews-wrapper__content-card-header">
+                            <h4 class="reviews-wrapper__content-card-title">Svetlana Pauts</h4>
+                            <a class="reviews-wrapper__content-card-link-google" href="https://maps.app.goo.gl/eFNBQFJ6SwfLKg248" target="_blank">
+                                <svg class="reviews-wrapper__content-card-link-google-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512"><path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"/></svg>
+                            </a>
+                        </header>
+                        <div class="reviews-wrapper__content-card-rate">
+                            <svg class="reviews-wrapper__content-card-rate-image" xmlns="http://www.w3.org/2000/svg" width="225" height="45" viewBox="0 0 225 45" fill="none">
+                                <g clip-path="url(#clip0_312_378)">
+                                <path d="M27.0563 18.75L22.5 3.75L17.9437 18.75H3.75L15.3375 27.0187L10.9312 41.25L22.5 32.4562L34.0875 41.25L29.6812 27.0187L41.25 18.75H27.0563Z" fill="#FFB9B9"/>
+                                </g>
+                                <g clip-path="url(#clip1_312_378)">
+                                <path d="M72.0563 18.75L67.5 3.75L62.9437 18.75H48.75L60.3375 27.0187L55.9312 41.25L67.5 32.4562L79.0875 41.25L74.6812 27.0187L86.25 18.75H72.0563Z" fill="#FFB9B9"/>
+                                </g>
+                                <g clip-path="url(#clip2_312_378)">
+                                <path d="M117.056 18.75L112.5 3.75L107.944 18.75H93.75L105.338 27.0187L100.931 41.25L112.5 32.4562L124.088 41.25L119.681 27.0187L131.25 18.75H117.056Z" fill="#FFB9B9"/>
+                                </g>
+                                <g clip-path="url(#clip3_312_378)">
+                                <path d="M162.056 18.75L157.5 3.75L152.944 18.75H138.75L150.338 27.0187L145.931 41.25L157.5 32.4562L169.088 41.25L164.681 27.0187L176.25 18.75H162.056Z" fill="#FFB9B9"/>
+                                </g>
+                                <g clip-path="url(#clip4_312_378)">
+                                <path d="M207.056 18.75L202.5 3.75L197.944 18.75H183.75L195.338 27.0187L190.931 41.25L202.5 32.4562L214.088 41.25L209.681 27.0187L221.25 18.75H207.056Z" fill="#FFB9B9"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_312_378">
+                                <rect width="45" height="45" fill="white"/>
+                                </clipPath>
+                                <clipPath id="clip1_312_378">
+                                <rect width="45" height="45" fill="white" transform="translate(45)"/>
+                                </clipPath>
+                                <clipPath id="clip2_312_378">
+                                <rect width="45" height="45" fill="white" transform="translate(90)"/>
+                                </clipPath>
+                                <clipPath id="clip3_312_378">
+                                <rect width="45" height="45" fill="white" transform="translate(135)"/>
+                                </clipPath>
+                                <clipPath id="clip4_312_378">
+                                <rect width="45" height="45" fill="white" transform="translate(180)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <footer class="reviews-wrapper__content-card-content">
+                            <p class="reviews-wrapper__content-card-content-text paragraph">Tento krát býlí jsme příjemné překvapení, nový provozovatel dá záležet na opravě a už většina toho co se nám nelíbilo předtím mizí. Renovují saunu a společenskou místnost.Těšíme na příští!</p>
+                        </footer>
+                    </article>
+                    <article class="reviews-wrapper__content-card reviews-wrapper__content-card--third">
+                        <header class="reviews-wrapper__content-card-header">
+                            <h4 class="reviews-wrapper__content-card-title">Jindřich Jindřich</h4>
+                            <a class="reviews-wrapper__content-card-link-google" href="https://maps.app.goo.gl/2ioos6k8VJkY6Zan6" target="_blank">
+                                <svg class="reviews-wrapper__content-card-link-google-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512"><path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"/></svg>
+                            </a>
+                        </header>
+                        <div class="reviews-wrapper__content-card-rate">
+                            <svg class="reviews-wrapper__content-card-rate-image" xmlns="http://www.w3.org/2000/svg" width="225" height="45" viewBox="0 0 225 45" fill="none">
+                                <g clip-path="url(#clip0_312_378)">
+                                <path d="M27.0563 18.75L22.5 3.75L17.9437 18.75H3.75L15.3375 27.0187L10.9312 41.25L22.5 32.4562L34.0875 41.25L29.6812 27.0187L41.25 18.75H27.0563Z" fill="#FFB9B9"/>
+                                </g>
+                                <g clip-path="url(#clip1_312_378)">
+                                <path d="M72.0563 18.75L67.5 3.75L62.9437 18.75H48.75L60.3375 27.0187L55.9312 41.25L67.5 32.4562L79.0875 41.25L74.6812 27.0187L86.25 18.75H72.0563Z" fill="#FFB9B9"/>
+                                </g>
+                                <g clip-path="url(#clip2_312_378)">
+                                <path d="M117.056 18.75L112.5 3.75L107.944 18.75H93.75L105.338 27.0187L100.931 41.25L112.5 32.4562L124.088 41.25L119.681 27.0187L131.25 18.75H117.056Z" fill="#FFB9B9"/>
+                                </g>
+                                <g clip-path="url(#clip3_312_378)">
+                                <path d="M162.056 18.75L157.5 3.75L152.944 18.75H138.75L150.338 27.0187L145.931 41.25L157.5 32.4562L169.088 41.25L164.681 27.0187L176.25 18.75H162.056Z" fill="#FFB9B9"/>
+                                </g>
+                                <g clip-path="url(#clip4_312_378)">
+                                <path d="M207.056 18.75L202.5 3.75L197.944 18.75H183.75L195.338 27.0187L190.931 41.25L202.5 32.4562L214.088 41.25L209.681 27.0187L221.25 18.75H207.056Z" fill="#FFB9B9"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_312_378">
+                                <rect width="45" height="45" fill="white"/>
+                                </clipPath>
+                                <clipPath id="clip1_312_378">
+                                <rect width="45" height="45" fill="white" transform="translate(45)"/>
+                                </clipPath>
+                                <clipPath id="clip2_312_378">
+                                <rect width="45" height="45" fill="white" transform="translate(90)"/>
+                                </clipPath>
+                                <clipPath id="clip3_312_378">
+                                <rect width="45" height="45" fill="white" transform="translate(135)"/>
+                                </clipPath>
+                                <clipPath id="clip4_312_378">
+                                <rect width="45" height="45" fill="white" transform="translate(180)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <footer class="reviews-wrapper__content-card-content">
+                            <p class="reviews-wrapper__content-card-content-text paragraph">Skvělé místo, kam se rádi vracíme.</p>
                         </footer>
                     </article>
                 </div>

@@ -75,10 +75,11 @@
     /*texts*/
 
     .heading {
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-weight: 700;
         margin: 0;
         margin-bottom: .5rem;
+        text-transform: uppercase;
     }
     
     .paragraph {

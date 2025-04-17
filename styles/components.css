@@ -141,6 +141,7 @@
   transition: background-color var(--transition, .25s ease-in-out), color var(--transition, .25s ease-in-out), border var(--transition, .25s ease-in-out);
   box-shadow: 0 2px 12px var(--gray, #A09C9C);
   overflow: hidden;
+  text-transform: uppercase;
   z-index: 0;
 }
 
@@ -355,9 +356,10 @@
 
 .sections-title {
   font-family: 'K2D', sans-serif;
-  font-size: 32px;
+  font-size: 1.5rem;
   margin-top: 0;
   margin-bottom: 1rem;
+  text-transform: uppercase;
 }
 
 /*Figure*/

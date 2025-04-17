@@ -195,6 +195,10 @@
     list-style: none;
 }
 
+.menu-wrapper__item-href--uppercase, .navbar__desktop-menu-item-href--uppercase {
+    text-transform: uppercase;
+}
+
 .menu-wrapper__item-href {
     padding: 1rem 0;
     padding-right: 1rem;
@@ -1268,4 +1272,89 @@
 
 .reviews-wrapper__text-button {
     margin-top: 1.5rem;
+}
+
+.reviews-wrapper__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.reviews-wrapper__content-card--first, .reviews-wrapper__content-card--second, .reviews-wrapper__content-card--third {
+    flex-basis: 100%;
+}
+
+@media screen and (min-width: 761px) {
+    .reviews-wrapper__content-card--first, .reviews-wrapper__content-card--second {
+        flex-basis: 30%;
+    }
+}
+
+/*cards*/
+
+.reviews-wrapper__content-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 350px;
+    padding: 0 2rem;
+    padding-bottom: 5rem;
+    border-top-left-radius: 35%;
+    border-bottom-right-radius: 35%;
+    box-shadow: 0 2px 24px #51200018;
+    flex-grow: 1;
+}
+
+@media screen and (min-width: 441px) {
+    .reviews-wrapper__content-card {
+        height: 270px;
+    }
+}
+
+.reviews-wrapper__content-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4.5rem;
+}
+
+.reviews-wrapper__content-card-title {
+    font-size: 1rem;
+    margin: 0;
+}
+
+@media screen and (min-width: 441px) {
+    .reviews-wrapper__content-card-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1281px) {
+    .reviews-wrapper__content-card-title {
+        font-size: 2rem;
+    }
+}
+
+.reviews-wrapper__content-card-link-google-image {
+    height: 35px;
+    fill: var(--accent, #3B1900);
+    transition: fill var(--transition, .25s ease-in-out);
+}
+
+.reviews-wrapper__content-card-link-google-image:hover {
+    fill: var(--dark-pink, #FFB6B6);
+}
+
+.reviews-wrapper__content-card-rate {
+    margin-top: .5rem;
+}
+
+.reviews-wrapper__content-card-rate-image {
+    height: 35px;
+    width: auto;
+}
+
+.reviews-wrapper__content-card-content {
+    margin-top: .75rem;
 }
