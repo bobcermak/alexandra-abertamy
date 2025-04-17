@@ -41,6 +41,14 @@
     text-align: center;
 }
 
+.contact-container__contacts-list {
+    margin-left: 1rem;
+}
+
+.contact-container__socials-list {
+    margin-right: 1rem;
+}
+
 .contact-container__contacts-list-item-href {
     display: inline-block;
     list-style: none;
@@ -98,7 +106,7 @@
 
 .navbar__logo {
     display: inline-block;
-    margin-left: -1.25rem;
+    margin-left: -.25rem;
     
 }
 
@@ -243,7 +251,7 @@
         display: flex;
         align-items: center;
         list-style: none;
-        gap: 1rem;
+        gap: .75rem;
     }
 
     .navbar__desktop-menu-item {
@@ -252,7 +260,7 @@
 
     .navbar__desktop-menu-item:last-child {
         padding-left: 1rem;
-        padding-right: .5rem;
+        padding-right: 1.5rem;
     }
 
     .navbar__desktop-menu-item-href {
@@ -353,7 +361,7 @@
 }
 
 .welcome-wrapper__content {
-    margin: 1rem .5rem;
+    margin: 1rem 1.5rem;
 }
 
 @media screen and (min-width: 961px) {
@@ -433,7 +441,7 @@
     display: grid;
     grid-template-rows: repeat(3, minmax(auto, 400px));
     gap: .5rem;
-    margin: 0 .5rem;
+    margin: 0 1.5rem;
 }
 
 .welcome-wrapper__footer-card {
@@ -523,7 +531,7 @@
 
 .about-wrapper {
     max-width: var(--max-width);
-    margin: 0 auto;
+    margin: 0 1.5rem;
     padding: .5rem;
 }
 
@@ -564,6 +572,7 @@
 .about-wrapper__accommodation-info-wrapper {
     display: flex;
     align-items: start;
+    justify-content: center;
     column-gap: 2rem;
     row-gap: 1rem;
     flex-wrap: wrap;
@@ -578,6 +587,10 @@
 }
 
 @media screen and (min-width: 961px) {
+    .about-wrapper__accommodation-info-wrapper {
+        justify-content: space-between;
+    }
+
     .about-wrapper__accommodation-info-wrapper-card {
         margin-left: 0;
     }
@@ -657,7 +670,7 @@
 
 .rooms-wrapper {
     max-width: var(--max-width);
-    margin: 1.5rem auto;
+    margin: 1.5rem 1.5rem;
     padding: 0 .5rem;
     flex-grow: 1;
 }
@@ -708,7 +721,7 @@
 
 .travel-tips-wrapper {
     max-width: var(--max-width);
-    margin: 1.25rem auto;
+    margin: 1.25rem 1.5rem;
     padding: 0 .5rem;
 }
 
@@ -950,6 +963,10 @@
     flex-grow: 1;
 }
 
+.price-list-wrapper__title {
+    margin-left: 1.5rem;
+}
+
 @media screen and (min-width: 1281px) {
     .price-list-wrapper {
         margin-top: 7.5rem;
@@ -964,11 +981,12 @@
 
 .price-list-wrapper__heading {
     font-weight: 400;
-    padding: 1.5rem 3rem;
+    padding: 1.5rem 2rem;
     background-color: var(--white, #FFFFFF);
     border-radius: .5rem;
     border-left: .5rem solid;
     width: fit-content;
+    margin: 0 1.5rem;
 }
 
 @media screen and (min-width: 961px) {
@@ -1078,11 +1096,25 @@
     top: 0;
     left: 0;
     right: 0;
+    margin-top: 2.5rem;
+}
+
+.price-list-wrapper__table-caption--drop-price::after, .price-list-wrapper__table-caption--drop-mandatory::after, .price-list-wrapper__table-caption--drop-optional::after {
     margin-top: 5rem;
 }
 
-.price-list-wrapper__table-caption--drop-price, .price-list-wrapper__table-caption--drop-mandatory {
+.price-list-wrapper__table-caption--drop-price::after {
+    margin-top: 7.5rem;
+}
+
+.price-list-wrapper__table-caption--drop-price, .price-list-wrapper__table-caption--drop-mandatory, .price-list-wrapper__table-caption--drop-optional {
     container-type: inline-size;
+}
+
+@container (min-width: 227px) {
+    .price-list-wrapper__table-caption--drop-price::after {
+        margin-top: 5rem;
+    }
 }
 
 @container (min-width: 364px) {
@@ -1091,8 +1123,14 @@
     }
 }
 
-@container (min-width: 334px) {
+@container (min-width: 254px) {
     .price-list-wrapper__table-caption--drop-mandatory::after {
+        margin-top: 2.5rem;
+    }
+}
+
+@container (min-width: 227px) {
+    .price-list-wrapper__table-caption--drop-optional::after {
         margin-top: 2.5rem;
     }
 }
@@ -1101,6 +1139,10 @@
     border: 2px solid;
     padding: .5rem 1rem;
     text-align: left;
+}
+
+.price-list-wrapper__table-th--small, .price-list-wrapper__table-td--small {
+    padding: .5rem .5rem;
 }
 
 @media screen and (min-width: 1281px) {
@@ -1209,7 +1251,7 @@
 
 .reviews-wrapper {
     max-width: var(--max-width);
-    margin: 1.5rem auto;
+    margin: 1.5rem 1.5rem;
     padding: 0 .5rem;
 }
 
