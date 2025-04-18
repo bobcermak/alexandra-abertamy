@@ -1281,12 +1281,12 @@
     margin-top: 3rem;
 }
 
-.reviews-wrapper__content-card--first, .reviews-wrapper__content-card--second, .reviews-wrapper__content-card--third {
+.reviews-wrapper__content-card-first, .reviews-wrapper__content-card-second, .reviews-wrapper__content-card-third {
     flex-basis: 100%;
 }
 
 @media screen and (min-width: 761px) {
-    .reviews-wrapper__content-card--first, .reviews-wrapper__content-card--second {
+    .reviews-wrapper__content-card-first, .reviews-wrapper__content-card-second {
         flex-basis: 30%;
     }
 }
