@@ -17,7 +17,7 @@
     background-color: var(--accent, #3B1900);
 }
 
-@media screen and (min-width: 761px) {
+@media screen and (min-width: 961px) {
     .hamburger {
         display: none;
     }

@@ -21,7 +21,7 @@
     padding: .5rem 0;
 }
 
-@media screen and (min-width: 761px) {
+@media screen and (min-width: 961px) {
     .contact-container {
         display: block;
     }
@@ -47,6 +47,7 @@
 
 .contact-container__socials-list {
     margin-right: 1rem;
+    display: flex;
 }
 
 .contact-container__contacts-list-item-href {
@@ -250,7 +251,7 @@
     display: none;
 }
 
-@media screen and (min-width: 761px) {
+@media screen and (min-width: 961px) {
     .navbar__desktop-menu {
         display: flex;
         align-items: center;
@@ -539,6 +540,12 @@
     padding: .5rem;
 }
 
+@media screen and (min-width: 961px) {
+    .about-wrapper {
+        margin: 0 auto;
+    }
+}
+
 @media screen and (min-width: 1281px) {
     .about-wrapper__details {
         display: flex;
@@ -679,6 +686,12 @@
     flex-grow: 1;
 }
 
+@media screen and (min-width: 961px) {
+    .rooms-wrapper {
+        margin: 1.5rem auto;
+    }
+}
+
 @media screen and (min-width: 1281px) {
     .rooms-wrapper {
         margin-top: -4rem;
@@ -727,6 +740,12 @@
     max-width: var(--max-width);
     margin: 1.25rem 1.5rem;
     padding: 0 .5rem;
+}
+
+@media screen and (min-width: 961px) {
+    .travel-tips-wrapper {
+        margin: 1.25rem auto;
+    }
 }
 
 .travel-tips-wrapper__summary {
@@ -967,8 +986,20 @@
     flex-grow: 1;
 }
 
+/* @media screen and (min-width: 1281px) {
+    .price-list-wrapper {
+        margin: 1.5rem auto;
+    }
+} */
+
 .price-list-wrapper__title {
     margin-left: 1.5rem;
+}
+
+@media screen and (min-width: 961px) {
+    .price-list-wrapper__title {
+        margin-left: 0;
+    }
 }
 
 @media screen and (min-width: 1281px) {
@@ -996,6 +1027,7 @@
 @media screen and (min-width: 961px) {
     .price-list-wrapper__heading {
         font-size: 2.5rem;
+        margin: 0 0;
     }
 }
 
@@ -1013,11 +1045,19 @@
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
+    margin: 0 1.5rem;
     margin-top: 1rem;
     background-color: var(--background-primary, #FFFFFF);
     padding: 1rem 2rem;
     border-radius: .5rem;
     box-shadow: 0 2px 12px var(--gray, #A09C9C);
+}
+
+@media screen and (min-width: 961px) {
+    .price-list-wrapper__tables-container {
+        margin: 0 0;
+        margin-top: 1rem;
+    }
 }
 
 @media screen and (min-width: 1281px) {
@@ -1257,6 +1297,12 @@
     max-width: var(--max-width);
     margin: 1.5rem 1.5rem;
     padding: 0 .5rem;
+}
+
+@media screen and (min-width: 961px) {
+    .reviews-wrapper {
+        margin: 1.5rem auto;
+    }
 }
 
 @media screen and (min-width: 1281px) {
