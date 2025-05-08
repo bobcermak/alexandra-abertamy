@@ -20,7 +20,6 @@
         --background-secondary: #F9E8E8;
         --semi-transparent-dark: rgba(0, 0, 0, 0.5);
         --transition: .25s ease-in-out;
-        --max-width: 100%;
         --max-width: 100vw;
         --max-width: 100svw;
     }
