@@ -21,11 +21,14 @@
         --semi-transparent-dark: rgba(0, 0, 0, 0.5);
         --transition: .25s ease-in-out;
         --max-width: 100%;
+        --max-width: 100vw;
+        --max-width: 100svw;
     }
 
     @media screen and (min-width: 961px) {
         :root {
-            --max-width: 92.5%;
+            --max-width: 92.5vw;
+            --max-width: 92.5svw;
         }
     }
 
